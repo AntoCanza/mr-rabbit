@@ -6,16 +6,24 @@ A first 2D home scene for a children's tablet game, based on our house drawing.
 
 1. Open this project in Unity Hub with **Unity 6.3 LTS (6000.3.25f1)**.
 2. Open `Assets/Scenes/Home.unity`.
-3. Press **Play** at the top of Unity, then drag the rabbit with the mouse.
-4. Press **Play** again to stop. The rabbit returns to its starting position next time.
+3. Press **Play** at the top of Unity. Click the Game view to give it keyboard focus.
+4. Use **Left / Right** to walk along the current floor.
+5. Near the bottom of the stairs, hold **Up** to climb. Near the top, hold **Down** to descend.
+6. While on the stairs, **Up / Down** change direction. **Right / Left** also climb / descend.
+7. Press **Play** again to stop. The rabbit returns to its starting position next time.
 
-The rabbit also accepts touch input. The first scene is designed for landscape screens.
+You can also click or tap a floor or stair to walk there. Mr Rabbit follows the connected
+walkways and uses the staircase to change floors. Dragging adjusts his destination;
+arrow keys take over immediately. He stops at the outside walls and cannot move through
+the floor/ceiling away from the stairs.
+
+The first scene is designed for landscape screens.
 If the Game view looks cropped, reduce its Scale slider to fit the window.
 
 For a first activity together, choose a name for each room and decide what the rabbit
-should do there. The house is currently one background picture; furniture interaction,
-walking, stairs, sound, and objectives are future steps. The rabbit is a temporary
-character drawn with simple shapes.
+should do there. The house is currently one background picture; the rabbit walks in
+front of the furniture. Furniture interaction, sound, and objectives are future steps.
+The rabbit is a temporary character with a simple stepping animation.
 
 ## Project contents
 
@@ -24,13 +32,19 @@ character drawn with simple shapes.
 - `ArtSources/Home.original.jpg`: preserved source drawing.
 - `ArtSources/House.prompt.txt`: the built-in image-generation prompt and provenance.
 - `Assets/Scripts/RabbitGraphic.cs`: the lightweight placeholder character.
-- `Assets/Scripts/DraggableRabbit.cs`: mouse and touch dragging within the picture.
+- `Assets/Scripts/RabbitWalker.cs`: connected floor/stair paths, arrow movement, and tap routing.
+- `Assets/Scripts/HousePointerInput.cs`: mouse/touch destinations on those paths.
 - `Assets/Scripts/SafeAreaLayout.cs`: safe-area layout and 60 FPS target.
 - `AgentScripts/`: Unity CLI helpers; these are outside Assets and excluded from player builds.
 
 This uses URP 2D, uGUI and the Input System. The background has no mipmaps or CPU-readable
 copy and uses ASTC 6x6 mobile texture overrides. The scene has no post-processing or
 physics simulation. Actual memory use and performance still need device measurements.
+
+The walkways use coordinates relative to the picture, so they resize with the house.
+Select **Mr Rabbit (Placeholder)** in the Scene view with Gizmos enabled to see the
+green floor paths and orange stair path. The Rabbit Walker component exposes walking
+speed, wall limits, landing reach, and stair points for later adjustments.
 
 ## Versions and builds
 
@@ -46,14 +60,22 @@ a macOS/Xcode build environment and Apple signing setup.
 The official beta Codex integration uses `com.unity.pipeline` 0.8.0-exp.1. Target this
 project explicitly in Unity CLI commands if another Editor is open.
 
-## Initial verification
+## Movement verification
 
 Checked in Unity Play mode on 8 October 2026:
 
 - Compilation and Console: no errors or warnings after scene setup.
 - Actual Game view sizes: 1440 x 1080 tablet and 2340 x 1080 landscape phone.
 - Full house, title, character, and hint remain visible without distorting the art.
-- Simulated Input System mouse and touch drags move the rabbit through the UI module.
-- Dragging beyond the picture clamps the position; releasing restores normal scale.
+- Automated movement checks cover both outside walls on both floors, blocked vertical
+  movement away from stairs, ascent, descent, mid-stair reversal, and large frame times.
+- Tap routes use the stairs between floors, stop at stair destinations, and never teleport.
+- Out-of-bounds destinations stay on walkways, and arrow input cancels a tap route.
+- Simulated Input System arrow keys climb the stairs and walk to a wall in real Update frames.
+- A simulated touch on the phone layout routes from upstairs to a downstairs destination.
+
+To repeat the movement-rule checks while Home is playing, use the Unity CLI's
+`run_script` command with file `AgentScripts/VerifyHomeWalking.cs` and entry
+`VerifyHomeWalking.Run`.
 
 These are Editor checks, not physical-device touch, performance, or store validation.

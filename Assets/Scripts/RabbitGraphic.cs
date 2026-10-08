@@ -10,6 +10,17 @@ namespace MrRabbit
         private static readonly Color Fur = new Color32(255, 252, 242, 255);
         private static readonly Color Pink = new Color32(238, 170, 164, 255);
         private static readonly Color Blue = new Color32(111, 164, 169, 255);
+        private float stride;
+        private int facing = 1;
+
+        public void SetGait(float phase, int direction, bool walking)
+        {
+            float next = walking ? Mathf.Sin(phase) : 0;
+            if (Mathf.Approximately(next, stride) && direction == facing) return;
+            stride = next;
+            facing = direction;
+            SetVerticesDirty();
+        }
 
         protected override void OnPopulateMesh(UnityEngine.UI.VertexHelper mesh)
         {
@@ -20,11 +31,11 @@ namespace MrRabbit
             Ellipse(mesh, .27f, .82f, .041f, .12f, Pink, -10);
             Ellipse(mesh, .69f, .82f, .041f, .12f, Pink, 9);
             Outlined(mesh, .70f, .24f, .12f, .078f, Fur);
-            Outlined(mesh, .35f, .09f, .15f, .06f, Fur);
-            Outlined(mesh, .62f, .09f, .15f, .06f, Fur);
+            Outlined(mesh, .35f, .09f + Mathf.Max(0, stride) * .04f, .15f, .06f, Fur);
+            Outlined(mesh, .62f, .09f + Mathf.Max(0, -stride) * .04f, .15f, .06f, Fur);
             Outlined(mesh, .49f, .29f, .235f, .195f, Blue);
-            Outlined(mesh, .26f, .34f, .08f, .11f, Fur, -17);
-            Outlined(mesh, .72f, .34f, .08f, .11f, Fur, 17);
+            Outlined(mesh, .26f, .34f, .08f, .11f, Fur, -17 + stride * 12);
+            Outlined(mesh, .72f, .34f, .08f, .11f, Fur, 17 + stride * 12);
             Ellipse(mesh, .49f, .31f, .12f, .115f, new Color32(153, 194, 190, 255));
             Outlined(mesh, .49f, .57f, .30f, .19f, Fur);
             Ellipse(mesh, .31f, .535f, .055f, .032f, new Color32(248, 203, 190, 255));
@@ -47,6 +58,7 @@ namespace MrRabbit
             float rx, float ry, Color fill, float angle = 0)
         {
             const int segments = 24;
+            if (facing < 0) { x = 1 - x; angle = -angle; }
             Rect rect = rectTransform.rect;
             var center = new Vector2(rect.xMin + x * rect.width, rect.yMin + y * rect.height);
             int first = mesh.currentVertCount;

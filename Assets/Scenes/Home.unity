@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 344857614}
   - component: {fileID: 344857613}
   - component: {fileID: 344857612}
+  - component: {fileID: 344857615}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -275,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -299,6 +300,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344857610}
   m_CullTransparentMesh: 1
+--- !u!114 &344857615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344857610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6518e969399d51f4083c9e13b6b00c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MrRabbit.HousePointerInput
+  rabbit: {fileID: 1010793168}
 --- !u!114 &436711832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +762,7 @@ GameObject:
   - component: {fileID: 1010793164}
   - component: {fileID: 1010793167}
   - component: {fileID: 1010793166}
-  - component: {fileID: 1010793165}
+  - component: {fileID: 1010793168}
   m_Layer: 0
   m_Name: Mr Rabbit (Placeholder)
   m_TagString: Untagged
@@ -775,19 +789,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1010793165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010793163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31cfb403120107d488d8ee9f925a78dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MrRabbit.DraggableRabbit
-  board: {fileID: 344857611}
 --- !u!114 &1010793166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -816,6 +817,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010793163}
   m_CullTransparentMesh: 1
+--- !u!114 &1010793168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010793163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b0de5df5f1a5f409637fc6ab3e7d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MrRabbit.RabbitWalker
+  house: {fileID: 344857611}
+  walkingSpeed: 0.18
+  floorLimits: {x: 0.22, y: 0.81}
+  landingReach: 0.055
+  stairs:
+  - {x: 0.43, y: 0.118}
+  - {x: 0.432, y: 0.16}
+  - {x: 0.448, y: 0.186}
+  - {x: 0.463, y: 0.214}
+  - {x: 0.479, y: 0.248}
+  - {x: 0.496, y: 0.283}
+  - {x: 0.515, y: 0.319}
+  - {x: 0.533, y: 0.357}
+  - {x: 0.552, y: 0.393}
+  - {x: 0.57, y: 0.431}
+  - {x: 0.586, y: 0.474}
 --- !u!1 &1054965676
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +938,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Drag Mr Rabbit around his home
+  m_text: 'Left / Right to walk | Up / Down near the stairs
+
+    Tap a floor to walk
+    there'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -936,8 +968,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -89,7 +89,7 @@ public static class BuildHomeScene
         var houseImage = board.gameObject.AddComponent<UnityEngine.UI.Image>();
         houseImage.sprite = house;
         houseImage.preserveAspect = true;
-        houseImage.raycastTarget = false;
+        houseImage.raycastTarget = true;
         var aspect = board.gameObject.AddComponent<UnityEngine.UI.AspectRatioFitter>();
         aspect.aspectMode = UnityEngine.UI.AspectRatioFitter.AspectMode.FitInParent;
         aspect.aspectRatio = house.rect.width / house.rect.height;
@@ -100,10 +100,13 @@ public static class BuildHomeScene
         rabbit.pivot = new Vector2(.5f, 0);
         rabbit.sizeDelta = Vector2.zero;
         rabbit.gameObject.AddComponent<MrRabbit.RabbitGraphic>().raycastTarget = true;
-        rabbit.gameObject.AddComponent<MrRabbit.DraggableRabbit>().Configure(board);
+        var walker = rabbit.gameObject.AddComponent<MrRabbit.RabbitWalker>();
+        walker.Configure(board);
+        board.gameObject.AddComponent<MrRabbit.HousePointerInput>().Configure(walker);
 
-        var hint = Label("Touch Hint", safeArea, "Drag Mr Rabbit around his home", font,
-            24, new Color32(114, 98, 75, 255), TMPro.FontStyles.Normal);
+        var hint = Label("Touch Hint", safeArea,
+            "Left / Right to walk | Up / Down near the stairs\nTap a floor to walk there", font,
+            22, new Color32(114, 98, 75, 255), TMPro.FontStyles.Normal);
         hint.rectTransform.anchorMin = new Vector2(0, 0);
         hint.rectTransform.anchorMax = new Vector2(1, 0);
         hint.rectTransform.pivot = new Vector2(.5f, 0);
