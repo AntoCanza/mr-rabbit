@@ -94,12 +94,15 @@ public static class BuildHomeScene
         aspect.aspectMode = UnityEngine.UI.AspectRatioFitter.AspectMode.FitInParent;
         aspect.aspectRatio = house.rect.width / house.rect.height;
 
-        var rabbit = Rect("Mr Rabbit (Placeholder)", board);
+        var rabbit = Rect("Miss Rabbit", board);
         rabbit.anchorMin = new Vector2(.344f, .116f);
         rabbit.anchorMax = new Vector2(.436f, .286f);
         rabbit.pivot = new Vector2(.5f, 0);
         rabbit.sizeDelta = Vector2.zero;
-        rabbit.gameObject.AddComponent<MrRabbit.RabbitGraphic>().raycastTarget = true;
+        var character = rabbit.gameObject.AddComponent<MrRabbit.RabbitGraphic>();
+        character.sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Characters/MissRabbit.png");
+        character.preserveAspect = true;
+        character.raycastTarget = true;
         var walker = rabbit.gameObject.AddComponent<MrRabbit.RabbitWalker>();
         walker.Configure(board);
         board.gameObject.AddComponent<MrRabbit.HousePointerInput>().Configure(walker);

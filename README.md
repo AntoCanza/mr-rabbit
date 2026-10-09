@@ -12,9 +12,9 @@ A first 2D home scene for a children's tablet game, based on our house drawing.
 6. While on the stairs, **Up / Down** change direction. **Right / Left** also climb / descend.
 7. Press **Play** again to stop. The rabbit returns to its starting position next time.
 
-You can also click or tap a floor or stair to walk there. Mr Rabbit follows the connected
-walkways and uses the staircase to change floors. Dragging adjusts his destination;
-arrow keys take over immediately. He stops at the outside walls and cannot move through
+You can also click or tap a floor or stair to walk there. Miss Rabbit follows the connected
+walkways and uses the staircase to change floors. Dragging adjusts her destination;
+arrow keys take over immediately. She stops at the outside walls and cannot move through
 the floor/ceiling away from the stairs.
 
 The first scene is designed for landscape screens.
@@ -23,7 +23,8 @@ If the Game view looks cropped, reduce its Scale slider to fit the window.
 For a first activity together, choose a name for each room and decide what the rabbit
 should do there. The house is currently one background picture; the rabbit walks in
 front of the furniture. Furniture interaction, sound, and objectives are future steps.
-The rabbit is a temporary character with a simple stepping animation.
+Miss Rabbit uses a transparent sprite adapted from our character drawing, with a small
+walking sway and automatic left/right facing.
 
 ## Project contents
 
@@ -31,7 +32,10 @@ The rabbit is a temporary character with a simple stepping animation.
 - `Assets/Art/Home/House.png`: clean game art recreated from the original drawing.
 - `ArtSources/Home.original.jpg`: preserved source drawing.
 - `ArtSources/House.prompt.txt`: the built-in image-generation prompt and provenance.
-- `Assets/Scripts/RabbitGraphic.cs`: the lightweight placeholder character.
+- `Assets/Art/Characters/MissRabbit.png`: the transparent character sprite.
+- `ArtSources/MissRabbit.original.jpg`: preserved original character drawing.
+- `ArtSources/MissRabbit.prompt.txt`: the built-in image-generation prompt and provenance.
+- `Assets/Scripts/RabbitGraphic.cs`: the character's sprite rendering and walking sway.
 - `Assets/Scripts/RabbitWalker.cs`: connected floor/stair paths, arrow movement, and tap routing.
 - `Assets/Scripts/HousePointerInput.cs`: mouse/touch destinations on those paths.
 - `Assets/Scripts/SafeAreaLayout.cs`: safe-area layout and 60 FPS target.
@@ -40,9 +44,11 @@ The rabbit is a temporary character with a simple stepping animation.
 This uses URP 2D, uGUI and the Input System. The background has no mipmaps or CPU-readable
 copy and uses ASTC 6x6 mobile texture overrides. The scene has no post-processing or
 physics simulation. Actual memory use and performance still need device measurements.
+The character texture is limited to 512 pixels on its longest side, uses mobile ASTC 6x6,
+and has no mipmaps or CPU-readable copy. The full-resolution source PNG remains on disk.
 
 The walkways use coordinates relative to the picture, so they resize with the house.
-Select **Mr Rabbit (Placeholder)** in the Scene view with Gizmos enabled to see the
+Select **Miss Rabbit** in the Scene view with Gizmos enabled to see the
 green floor paths and orange stair path. The Rabbit Walker component exposes walking
 speed, wall limits, landing reach, and stair points for later adjustments.
 
@@ -79,3 +85,7 @@ To repeat the movement-rule checks while Home is playing, use the Unity CLI's
 `VerifyHomeWalking.Run`.
 
 These are Editor checks, not physical-device touch, performance, or store validation.
+
+On 9 October 2026, the character was replaced with Miss Rabbit. The movement-rule checks
+passed again; the transparent sprite, preserved proportions, left/right facing, floor and
+stair placement were checked in the 1440 x 1080 Game view. The Console had no errors.

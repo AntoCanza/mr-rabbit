@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 1010793166}
   - component: {fileID: 1010793168}
   m_Layer: 0
-  m_Name: Mr Rabbit (Placeholder)
+  m_Name: Miss Rabbit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,6 +809,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: efea03bfb7b62c24e8d115b4d556eddb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1010793167
 CanvasRenderer:
   m_ObjectHideFlags: 0
