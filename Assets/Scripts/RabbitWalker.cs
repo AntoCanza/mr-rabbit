@@ -53,8 +53,18 @@ namespace MrRabbit
             if (house == null || stairs == null || stairs.Length < 2) { enabled = false; return; }
             if (house.rect.width > 0) imageAspect = house.rect.height / house.rect.width;
             for (int i = 1; i < stairs.Length; i++) stairLength += Distance(stairs[i - 1], stairs[i]);
+            ResetToStart();
+        }
+
+        public void ResetToStart()
+        {
+            if (body == null || graphic == null) return;
             surface = WalkSurface.GroundFloor;
             coordinate = Mathf.Clamp(.39f, floorLimits.x, floorLimits.y);
+            hasDestination = false;
+            gait = 0;
+            facing = 1;
+            graphic.SetGait(0, 1, false);
             ApplyPosition();
         }
 
