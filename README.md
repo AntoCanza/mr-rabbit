@@ -27,6 +27,14 @@ destinations and has a left boundary. Every trip outside asks about footwear aga
 The first scene is designed for landscape screens.
 If the Game view looks cropped, reduce its Scale slider to fit the window.
 
+Day, sunset, night and dawn now alternate automatically. One full cycle takes **120 seconds**
+of play: 48 seconds of daylight, 12 of sunset, 48 of night and 12 of dawn. A new Play session
+starts partway through daylight, so the first night arrives after roughly 46 seconds of play.
+The Italian label at the top left shows the current period. Sun, moon and stars appear in
+the house sky and over the meadow. Scenery changes gently while characters and controls
+remain readable. The same clock continues between the house and meadow; it pauses during
+character/footwear choices and app suspension. Switching rabbits preserves the current time.
+
 For a first activity together, choose a name for each room and decide what the rabbit
 should do there. The house is currently one background picture; the rabbit walks in
 front of the furniture. Furniture interaction, sound, and objectives are future steps.
@@ -48,6 +56,8 @@ walking sway and automatic left/right facing.
 - `Assets/Scripts/HousePointerInput.cs`: mouse/touch destinations on those paths.
 - `Assets/Scripts/OutdoorAdventure.cs`: exit, footwear choice, meadow movement/camera, and return with shoes.
 - `Assets/Scripts/OutdoorPointerInput.cs`: mouse/touch destinations on the meadow.
+- `Assets/Scripts/DayNightCycle.cs`: shared clock, smooth light transitions and menu/suspension pauses.
+- `Assets/Scripts/SkyCycleGraphic.cs`: vector sun, crescent moon and stars in one UI mesh per location.
 - `Assets/Art/Outdoors/Meadow.png` and `Roller.png`: panorama and transparent skate sprite.
 - `ArtSources/Roller.original.jpg`: preserved red skate/yellow wheel drawing.
 - `ArtSources/Outdoors.prompts.txt`: built-in image-generation prompts for both new assets.
@@ -64,6 +74,10 @@ The lawn uses one panorama (maximum 2048 pixels) and reuses one 512-pixel skate 
 both feet and the selection card. Both use ASTC 6x6 mobile overrides without mipmaps or
 CPU-readable copies. Only the current home/meadow view is active; there is no physics simulation
 or per-frame object creation for this feature.
+Day/night reuses the existing paintings with color tints and two small UI meshes. It adds
+no bitmap textures, dynamic lights or post-processing. Sky/tint updates are limited to 20 Hz;
+movement still targets 60 FPS. Adjust **Cycle Seconds** on **Safe Area / Day Night Cycle** to
+change the cycle duration. Device performance still needs measurement on actual hardware.
 
 The walkways use coordinates relative to the picture, so they resize with the house.
 Select **Player Rabbit** under **House Viewport / House** in the saved scene (or the chosen
@@ -127,3 +141,13 @@ return with automatic shoes, touch on the exit door, touch selection of shoes, a
 the return sign. The live frame counter advanced. Tablet (1440 x 1080) and landscape phone
 (2340 x 1080) views were inspected. Compilation and Console finished without errors or warnings.
 These checks run in the Editor; no physical-device build or performance measurement was made.
+
+Day/night was verified on 15 October 2026 with `AgentScripts/VerifyDayNight.cs`
+(`VerifyDayNight.Run`): full-cycle timing and wrap, gradual color at all period boundaries,
+readable characters, sky graphics that do not intercept taps, and clock preservation/pause
+across location changes, both menus, character changes and application suspension. Live
+Update frames also crossed sunset into night and dawn into day. A simulated mouse click
+on the exit door worked at night. Both home/meadow movement suites still passed.
+Day, sunset and night were visually checked at tablet/phone sizes. The cream UI retains
+its contrast throughout the transitions. Compilation and the final Console had no errors
+or warnings. No publication or physical-device validation is implied by these Editor checks.
