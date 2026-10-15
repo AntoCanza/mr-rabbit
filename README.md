@@ -1,6 +1,6 @@
 # Mr Rabbit
 
-A first 2D home scene for a children's tablet game, based on our house drawing.
+A 2D home and meadow prototype for a children's tablet game, based on our drawings.
 
 ## Play together
 
@@ -11,13 +11,18 @@ A first 2D home scene for a children's tablet game, based on our house drawing.
 5. Use **Left / Right** to walk along the current floor.
 6. Near the bottom of the stairs, hold **Up** to climb. Near the top, hold **Down** to descend.
 7. While on the stairs, **Up / Down** change direction. **Right / Left** also climb / descend.
-8. Use **Choose rabbit** at the top right to return to the starting screen and switch characters.
-9. Press **Play** again to stop. The next play session starts with the character choices.
+8. Walk **Left** into the downstairs exit door, or tap **< Esci**. From upstairs, tapping the door walks down the stairs first.
+9. Choose **Scarpe normali** or **Roller** to go outside. **Resta in casa** cancels the choice.
+10. Keep going **Left** to explore the scrolling meadow. Roller skates are visible and move faster than walking.
+11. Go **Right** to the **Casa >** sign (or tap it) to return home. The rabbit automatically wears normal shoes indoors.
+12. Use **Choose rabbit** at the top right to return to the starting screen and switch characters.
+13. Press **Play** again to stop. The next play session starts with the character choices.
 
 You can also click or tap a floor or stair to walk there. The chosen rabbit follows the connected
 walkways and uses the staircase to change floors. Dragging adjusts the destination;
-arrow keys take over immediately. Both rabbits stop at the outside walls and cannot move through
-the floor/ceiling away from the stairs.
+arrow keys take over immediately. Both rabbits stop at the walls except for the downstairs left exit,
+and cannot move through the floor/ceiling away from the stairs. The meadow also supports click/tap
+destinations and has a left boundary. Every trip outside asks about footwear again.
 
 The first scene is designed for landscape screens.
 If the Game view looks cropped, reduce its Scale slider to fit the window.
@@ -41,6 +46,11 @@ walking sway and automatic left/right facing.
 - `Assets/Scripts/RabbitGraphic.cs`: the character's sprite rendering and walking sway.
 - `Assets/Scripts/RabbitWalker.cs`: connected floor/stair paths, arrow movement, and tap routing.
 - `Assets/Scripts/HousePointerInput.cs`: mouse/touch destinations on those paths.
+- `Assets/Scripts/OutdoorAdventure.cs`: exit, footwear choice, meadow movement/camera, and return with shoes.
+- `Assets/Scripts/OutdoorPointerInput.cs`: mouse/touch destinations on the meadow.
+- `Assets/Art/Outdoors/Meadow.png` and `Roller.png`: panorama and transparent skate sprite.
+- `ArtSources/Roller.original.jpg`: preserved red skate/yellow wheel drawing.
+- `ArtSources/Outdoors.prompts.txt`: built-in image-generation prompts for both new assets.
 - `Assets/Scripts/SafeAreaLayout.cs`: safe-area layout and 60 FPS target.
 - `AgentScripts/`: Unity CLI helpers; these are outside Assets and excluded from player builds.
 
@@ -50,6 +60,10 @@ physics simulation. Actual memory use and performance still need device measurem
 Each character texture is limited to 512 pixels on its longest side, uses mobile ASTC 6x6,
 and has no mipmaps or CPU-readable copy. Full-resolution source PNGs remain on disk.
 Menu portraits and the player share these sprites. The house is inactive until a choice is made.
+The lawn uses one panorama (maximum 2048 pixels) and reuses one 512-pixel skate sprite for
+both feet and the selection card. Both use ASTC 6x6 mobile overrides without mipmaps or
+CPU-readable copies. Only the current home/meadow view is active; there is no physics simulation
+or per-frame object creation for this feature.
 
 The walkways use coordinates relative to the picture, so they resize with the house.
 Select **Player Rabbit** under **House Viewport / House** in the saved scene (or the chosen
@@ -100,3 +114,16 @@ and landscape-phone (2340 x 1080) sizes. Both portraits are visible; the house s
 before selection. A simulated mouse click chose Mr Rabbit; a simulated touch returned to
 the menu and chose Miss Rabbit. Switching cancels any walk destination and resets the
 new character downstairs. Movement-rule checks passed for both choices, with no Console errors.
+
+On 15 October 2026, `AgentScripts/VerifyMeadow.cs` (`VerifyMeadow.Run`) checked both rabbits
+with both footwear choices: upstairs door routes use stairs, the upper left wall does not exit,
+the footwear menu blocks movement, cancel returns safely, left travel scrolls the meadow,
+the left boundary clamps movement, taps work, keys override tap destinations, and returning
+removes rollers and resumes walking indoors. Changing rabbits clears outdoor state.
+`VerifyHomeWalking.Run` passed with the new downstairs exit behavior.
+
+Input System events also verified left-arrow exit, mouse selection of rollers, right-arrow
+return with automatic shoes, touch on the exit door, touch selection of shoes, and touch on
+the return sign. The live frame counter advanced. Tablet (1440 x 1080) and landscape phone
+(2340 x 1080) views were inspected. Compilation and Console finished without errors or warnings.
+These checks run in the Editor; no physical-device build or performance measurement was made.

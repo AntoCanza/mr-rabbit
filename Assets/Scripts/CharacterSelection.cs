@@ -14,6 +14,9 @@ namespace MrRabbit
         [SerializeField] private UnityEngine.UI.Button maleButton;
         [SerializeField] private UnityEngine.UI.Button femaleButton;
         [SerializeField] private UnityEngine.UI.Button changeButton;
+        [SerializeField] private OutdoorAdventure adventure;
+
+        public void SetAdventure(OutdoorAdventure value) => adventure = value;
 
         public bool IsChoosing => selectionPanel.activeSelf;
         public string SelectedCharacter { get; private set; }
@@ -54,6 +57,7 @@ namespace MrRabbit
             selectionPanel.SetActive(false);
             houseView.SetActive(true);
             player.ResetToStart();
+            if (adventure != null) adventure.StartAtHome();
             movementHint.SetActive(true);
             changeButton.gameObject.SetActive(true);
             // House arrow keys must not keep navigating an invisible selection button.
@@ -62,6 +66,7 @@ namespace MrRabbit
 
         public void ShowSelection()
         {
+            if (adventure != null) adventure.Close();
             SelectedCharacter = null;
             houseView.SetActive(false);
             movementHint.SetActive(false);

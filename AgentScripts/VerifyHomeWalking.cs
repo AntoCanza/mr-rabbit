@@ -12,13 +12,20 @@ public static class VerifyHomeWalking
         var rabbit = UnityEngine.Object.FindFirstObjectByType<RabbitWalker>();
         if (rabbit == null) throw new InvalidOperationException("Home has no RabbitWalker.");
         var passed = new List<string>();
+        var adventure = UnityEngine.Object.FindFirstObjectByType<OutdoorAdventure>();
 
         GoTo(rabbit, new Vector2(.39f, .118f));
 
         Step(rabbit, Vector2.left, 500);
         AssertPosition(rabbit, .22f, .118f, "Ground left wall");
+        if (adventure != null)
+        {
+            Require(adventure.Location == OutdoorAdventure.Place.FootwearChoice, "Left door must ask about footwear");
+            adventure.ReturnHome();
+            GoTo(rabbit, new Vector2(.30f, .118f));
+        }
         Step(rabbit, Vector2.up, 200);
-        AssertPosition(rabbit, .22f, .118f, "Cannot rise through ceiling away from stairs");
+        AssertPosition(rabbit, adventure == null ? .22f : .30f, .118f, "Cannot rise through ceiling away from stairs");
         passed.Add("Ground wall and ceiling boundaries");
 
         Step(rabbit, Vector2.right, 500);
@@ -61,6 +68,7 @@ public static class VerifyHomeWalking
         AssertPosition(rabbit, .22f, .118f, "Large frame cannot pass a wall");
         passed.Add("Out-of-bounds targets, keyboard takeover, and large-frame limits");
 
+        if (adventure != null && adventure.Location == OutdoorAdventure.Place.FootwearChoice) adventure.ReturnHome();
         GoTo(rabbit, new Vector2(.39f, .118f));
         return passed.ToArray();
     }

@@ -33,6 +33,9 @@ namespace MrRabbit
         private float gait;
         private int facing = 1;
         private bool hasDestination;
+        private bool exitPending;
+        public event System.Action ExitRequested;
+        public bool MovementEnabled { get; set; } = true;
         private WalkSurface destinationSurface;
         private float destinationCoordinate;
         private Vector2 characterSize = new Vector2(.092f, .17f);
@@ -58,6 +61,8 @@ namespace MrRabbit
 
         public void ResetToStart()
         {
+            MovementEnabled = true;
+            exitPending = false;
             if (body == null || graphic == null) return;
             surface = WalkSurface.GroundFloor;
             coordinate = Mathf.Clamp(.39f, floorLimits.x, floorLimits.y);
@@ -80,12 +85,13 @@ namespace MrRabbit
         // Shared by keyboard movement and automated play checks. No physics or per-frame allocations.
         public void Advance(Vector2 input, float deltaTime)
         {
-            if (house == null || body == null) return;
+            if (!MovementEnabled || house == null || body == null) return;
             Vector2 before = PositionNormalized;
             float distance = walkingSpeed * Mathf.Max(0, deltaTime);
             if (input.sqrMagnitude > 0)
             {
                 hasDestination = false;
+                exitPending = false;
                 MoveWithArrows(input, distance);
             }
             else if (hasDestination) MoveToDestination(distance);
@@ -99,6 +105,32 @@ namespace MrRabbit
                 ApplyPosition();
             }
             graphic.SetGait(gait, facing, travelled > .00001f);
+            if (surface == WalkSurface.GroundFloor && coordinate <= floorLimits.x + .0001f &&
+                (input.x < 0 || exitPending))
+            {
+                exitPending = false;
+                ExitRequested?.Invoke();
+            }
+        }
+
+        public void StopWalking()
+        {
+            hasDestination = exitPending = false;
+            if (graphic != null) graphic.SetGait(0, facing, false);
+        }
+
+        public void WalkToExit()
+        {
+            if (!MovementEnabled) return;
+            WalkTo(new Vector2(floorLimits.x, stairs[0].y));
+            exitPending = true;
+        }
+
+        public void ReturnThroughDoor()
+        {
+            ResetToStart();
+            coordinate = floorLimits.x + .045f;
+            ApplyPosition();
         }
 
         private void MoveWithArrows(Vector2 input, float distance)
@@ -124,6 +156,8 @@ namespace MrRabbit
         // Taps select the nearest walkway, then follow the connected floors/staircase to it.
         public void WalkTo(Vector2 normalizedPoint)
         {
+            if (!MovementEnabled) return;
+            exitPending = false;
             float x = Mathf.Clamp(normalizedPoint.x, floorLimits.x, floorLimits.y);
             destinationSurface = WalkSurface.GroundFloor;
             destinationCoordinate = x;
