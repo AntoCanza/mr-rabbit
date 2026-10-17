@@ -14,6 +14,7 @@ namespace MrRabbit
         [SerializeField] private RabbitWalker homeRabbit;
         [SerializeField] private GameObject homeView, outdoorView, footwearPanel, rollerPair;
         [SerializeField] private RectTransform scenery;
+        [SerializeField] private RectTransform friendsLayer;
         [SerializeField] private RabbitGraphic outdoorRabbit;
         [SerializeField] private RectTransform leftSkate, rightSkate;
         [SerializeField] private UnityEngine.UI.Button exitDoor, shoesButton, rollersButton, cancelButton, homeSign;
@@ -27,6 +28,8 @@ namespace MrRabbit
         public float Position => position;
         public float CameraLeft => cameraLeft;
         public bool HasDestination => hasDestination;
+
+        public void SetFriendsLayer(RectTransform layer) => friendsLayer = layer;
 
         public void Configure(RabbitWalker player, GameObject home, GameObject outdoors,
             GameObject panel, RectTransform world, RabbitGraphic rabbit, GameObject pair,
@@ -167,6 +170,13 @@ namespace MrRabbit
             scenery.anchorMin = new Vector2(-cameraLeft, 0);
             scenery.anchorMax = new Vector2(WorldWidth - cameraLeft, 1);
             scenery.offsetMin = scenery.offsetMax = Vector2.zero;
+            // Friends scroll with the painting but render above the sun, moon and stars.
+            if (friendsLayer != null)
+            {
+                friendsLayer.anchorMin = scenery.anchorMin;
+                friendsLayer.anchorMax = scenery.anchorMax;
+                friendsLayer.offsetMin = friendsLayer.offsetMax = Vector2.zero;
+            }
             var body = outdoorRabbit.rectTransform;
             body.anchorMin = new Vector2(position - cameraLeft - .10f, .18f);
             body.anchorMax = body.anchorMin + new Vector2(.20f, .38f);

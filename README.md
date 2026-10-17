@@ -27,6 +27,13 @@ destinations and has a left boundary. Every trip outside asks about footwear aga
 The first scene is designed for landscape screens.
 If the Game view looks cropped, reduce its Scale slider to fit the window.
 
+Two friends now wait in the meadow: **Zebralla**, a zebra in a lilac dress, and
+**Coccodella**, a green crocodile in a blue dress. Walk left from the house to meet them.
+Click or tap a friend or her name to see an Italian greeting and a small friendly sway.
+The greeting lasts 4.5 seconds; tapping again restarts it. You can keep walking during
+the greeting. The bubble stays within the viewport and closes when the friend goes
+offscreen, you return home, or you change rabbits.
+
 Day, sunset, night and dawn now alternate automatically. One full cycle takes **120 seconds**
 of play: 48 seconds of daylight, 12 of sunset, 48 of night and 12 of dawn. A new Play session
 starts partway through daylight, so the first night arrives after roughly 46 seconds of play.
@@ -151,3 +158,24 @@ on the exit door worked at night. Both home/meadow movement suites still passed.
 Day, sunset and night were visually checked at tablet/phone sizes. The cream UI retains
 its contrast throughout the transitions. Compilation and the final Console had no errors
 or warnings. No publication or physical-device validation is implied by these Editor checks.
+
+## Meadow friends
+
+Added on 17 October 2026. Both portraits are new designs generated with the built-in
+image generator, using Miss Rabbit as a visual style reference. Their source PNGs are
+in `Assets/Art/Characters/`; the exact prompts are in `ArtSources/Friends.prompts.txt`.
+Each sprite imports at a maximum of 512 pixels with Android/iOS ASTC 6x6, without
+mipmaps or a CPU-readable copy. The feature adds no physics, Animator or particles.
+
+`MeadowFriend` handles greetings; the `Meadow Friends` layer scrolls with the landscape
+and renders above the sky decorations. `AgentScripts/AddFriends.cs` is a guarded
+one-time scene setup helper. `AgentScripts/VerifyFriends.cs` checks both rabbits with
+shoes and rollers, greeting timing/repeats, night readability, movement during greetings,
+and cleanup on returning home or changing characters.
+
+Verified in Unity Play mode at 1440 x 1080 and 2340 x 1080: actual Input System mouse
+and simulated touch events opened the correct greetings without moving the rabbit.
+Bubble bounds were checked at both edges, live frames confirmed timeout and offscreen
+cleanup, and both names and portraits were inspected by day and night. Existing meadow
+and day/night checks passed. Compilation and the final Console had no errors or warnings.
+These are Editor checks; physical-device performance and publishing remain separate work.
