@@ -73,6 +73,6 @@ in treno e guida vocale italiana offline.
 
 Nome pubblico dello sviluppatore: **SofiaAntonio Games**.
 Email pubblica di assistenza e privacy: **antoniocanza@gmail.com**.
-L'URL pubblico dell'informativa privacy sarà registrato dopo la pubblicazione della pagina.
+URL pubblico dell'informativa privacy: [informativa in sola lettura](https://raw.githubusercontent.com/AntoCanza/mr-rabbit/main/Assets/Resources/InformativaPrivacy.txt).
 Il questionario di classificazione dei contenuti va compilato nella console;
 non è stata assegnata una classificazione IARC in questa preparazione.

@@ -48,7 +48,12 @@ Non chiedono dati, consensi o invii di messaggi.
 Il testo canonico è [InformativaPrivacy.txt](../Assets/Resources/InformativaPrivacy.txt).
 La [pagina pubblica sorgente](privacy/index.html) deriva dallo stesso testo:
 rigenerarla con `python tools/export_privacy.py` in caso di modifiche.
-L'URL pubblico sarà registrato dopo la conferma dell'attivazione dell'hosting.
+L'[informativa pubblica in sola lettura](https://raw.githubusercontent.com/AntoCanza/mr-rabbit/main/Assets/Resources/InformativaPrivacy.txt) è stata verificata
+con una richiesta senza autenticazione: HTTP 200, testo identico a quello del gioco.
+Questo è l'URL preparato per il campo privacy della console. Il token GitHub
+non consente di attivare GitHub Pages e l'account del browser non dispone delle
+impostazioni del repository; non sono stati modificati permessi o credenziali.
+La pagina HTML resta disponibile nei sorgenti per un eventuale hosting dedicato.
 
 Il nuovo manifesto Android rimuove INTERNET e ACCESS_NETWORK_STATE e imposta
 allowBackup=false. Progressi e riconoscimento della scrittura rimangono locali;
@@ -77,6 +82,8 @@ e ripristina le impostazioni di firma al termine. Il metodo da eseguire con lo
 strumento dell'Editor è `BuildGooglePlay.Run`; deve partire fuori da Play.
 Il pacchetto previsto è `Builds/Android/MrRabbit-0.10.1.aab`.
 Compilazione riuscita con zero errori e tre avvisi; dimensione 65.281.281 byte.
+Gli avvisi riguardano Pipeline di sviluppo disabilitato nel gioco e i due formati
+di icone tradizionali/rotonde deprecati da Unity.
 Impronta SHA256: `AC96BE4B36273DA12B1AA621F169C41321D6CE197C57F38DD45557EC7C7E777C`.
 La validazione con bundletool è superata e la firma JAR è verificata.
 Il controllo del manifesto finale conferma versione 0.10.1/codice 18, API 36,
@@ -140,7 +147,7 @@ verifica su dispositivo fisico. Seguire [AGENTS.md](../AGENTS.md) e
 ## Passaggi residui
 
 1. Completare e verificare l'account sviluppatore.
-2. Confermare l'hosting pubblico della privacy; il controllo dell'AAB finale è superato.
+2. Usare l'URL pubblico della privacy e il pacchetto AAB finale già verificati.
 3. Creare l'app nella console, caricare il pacchetto e i materiali, compilare le dichiarazioni.
 4. Eseguire il test chiuso obbligatorio se l'account personale vi è soggetto e richiedere l'accesso alla produzione.
 5. Inviare la versione alla revisione Google e verificare la disponibilità effettiva prima di dichiararla pubblicata.
