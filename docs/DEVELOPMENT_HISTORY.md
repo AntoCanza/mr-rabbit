@@ -935,3 +935,35 @@ Captures/Release-0.10.0/Tablet-2026-10-19. Guida lasciata sulla prima pagina, an
 incompleta, pronta per il bambino. Accuratezza fisica della scrittura infantile
 non rimisurata. Una regressione finale mirata al riascolto conferma inoltre che le
 spiegazioni contestuali richieste vengono riprodotte una volta senza duplicato automatico.
+
+
+## 0.10.1 — preparazione Google Play e informativa per i genitori, 24 ottobre 2026
+
+Preparata la distribuzione gratuita, senza pubblicità né acquisti in-app,
+con nome pubblico SofiaAntonio Games e assistenza antoniocanza@gmail.com.
+Il gioco non è ancora pubblicato: l'account sviluppatore deve essere creato e
+l'iter Google di test e revisione non è iniziato.
+
+Aggiunta l'informativa italiana offline alla scelta del personaggio, con quattro
+pagine e comandi verificati tramite veri raycast. La consultazione blocca i tocchi
+sottostanti e sospende temporaneamente la guida, preservando i progressi. Lo stesso
+testo genera la pagina HTML pubblica. Il manifesto Android rimuove i permessi di
+rete e disabilita il backup; API di destinazione fissata a 36, codice versione 18.
+Il nome aziendale interno di Unity viene conservato per la compatibilità dei
+PlayerPrefs su PC. La chiave di caricamento è esterna al repository, con password
+protetta per l'account Windows.
+
+Superata la regressione funzionale completa e la logica didattica, inclusi 93
+risposte effettive del percorso, tutte le undici medaglie, ricompense, acquisti
+con monete del gioco e salvataggi. Il riferimento sintetico della scrittura resta
+316/324 corretti, 1 errato e 7 incerti. Prove visive a 1340×800, 1920×1200 e
+2048×1536: 219 acquisizioni del gioco, 120 della guida e 12 della privacy, con
+21 tavole ispezionate, raycast e controlli del testo superati. La guida della
+cucina è verificata anche con una ricetta precedente priva di ingredienti;
+le verifiche scolastiche riconoscono il personaggio con i vestiti equipaggiati.
+Salvataggi PC originali ripristinati. Nessun tablet collegato: non sono state
+eseguite nuove installazioni o prove su un dispositivo fisico.
+
+Materiali italiani dello store, icona 512×512, immagine 1024×500 e dodici schermate
+preparati dalle risorse e dalle acquisizioni reali. Dettagli e stato della
+compilazione nella [guida di pubblicazione](PUBBLICAZIONE_GOOGLE_PLAY.md).

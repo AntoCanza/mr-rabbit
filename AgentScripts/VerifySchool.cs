@@ -60,7 +60,9 @@ public static class VerifySchool
                 Check(Mathf.Abs(a.Position-SchoolController.SchoolX)<.03f,"School position");
                 s.Sit();s.Advance(2);Check(s.State==SchoolController.Phase.Listen&&s.UI.seated.gameObject.activeSelf,"Seated");
                 Check(s.UI.listenCue.Highlighted&&!s.UI.desk.gameObject.activeSelf,"Listening cue");
-                Check(s.UI.seated.sprite==(female?s.UI.femaleSeated:s.UI.maleSeated),"Selected pupil");
+                var city=a.GetComponent<CityController>();
+                var seated=city.Progress.equipped[female?1:0]>0?(female?city.UI.femaleCitySeated:city.UI.maleCitySeated):(female?s.UI.femaleSeated:s.UI.maleSeated);
+                Check(seated!=null&&s.UI.seated.sprite==seated,"Selected pupil and equipped outfit");
                 s.Listen();s.Advance(2);
                 Check(s.UI.lessons.Length==2&&s.UI.lessonCues.Length==2,"School must offer exactly two activities");
                 s.ChooseSubject(2);Check(s.State==SchoolController.Phase.Subjects,"Removed activity was accessible");

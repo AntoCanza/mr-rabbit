@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <title>Mr Rabbit — La scuola al centro dell'avventura</title>
+  <defs><clipPath id="schermata"><rect x="514" y="106" width="458" height="274" rx="14"/></clipPath></defs>
+  <rect width="1024" height="500" fill="#fff9e9"/>
+  <circle cx="947" cy="18" r="189" fill="#e2eddb"/>
+  <circle cx="992" cy="525" r="155" fill="#f5e0ab"/>
+  <text x="54" y="58" font-family="Arial,sans-serif" font-size="16" letter-spacing="1.4" fill="#5e7561">SofiaAntonio Games</text>
+  <text x="50" y="155" font-family="Trebuchet MS,Arial,sans-serif" font-size="76" font-weight="bold" fill="#355442">Mr Rabbit</text>
+  <text x="54" y="220" font-family="Arial,sans-serif" font-size="31" fill="#355442">La scuola al centro</text>
+  <text x="54" y="263" font-family="Arial,sans-serif" font-size="31" fill="#355442">dell'avventura.</text>
+  <rect x="54" y="298" width="369" height="46" rx="23" fill="#e0ecda"/>
+  <text x="76" y="328" font-family="Arial,sans-serif" font-size="21" fill="#355442">Prima elementare · In italiano</text>
+  <text x="54" y="411" font-family="Arial,sans-serif" font-size="21" fill="#637362">Impara. Gioca. Esplora.</text>
+  <rect x="500" y="92" width="486" height="302" rx="24" fill="#d4a668"/>
+  <rect x="506" y="98" width="474" height="290" rx="19" fill="#fffdf2"/>
+  <image href="GooglePlayClassroom.reference.png" x="514" y="106" width="458" height="274" preserveAspectRatio="xMidYMid meet" clip-path="url(#schermata)"/>
+  <text x="743" y="435" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#52694f">Un mondo che cresce con ciò che impari.</text>
+</svg>

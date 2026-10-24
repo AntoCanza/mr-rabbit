@@ -15,13 +15,13 @@ Usare **File → Build Profiles**, scegliere Android e abilitare `Assets/Scenes/
 | Impostazione | Valore attuale |
 | --- | --- |
 | Prodotto | Mr Rabbit |
-| Versione dei sorgenti | 0.10.0 |
-| Codice versione Android | 17 |
+| Versione dei sorgenti | 0.10.1 |
+| Codice versione Android | 18 |
 | Identificatore del pacchetto | `com.mrrabbit.home` |
 | Backend di compilazione / architettura | IL2CPP / ARM64 |
 | Orientamento | Orizzontale |
 | SDK minimo | API 25 |
-| SDK di destinazione | Automatico in Unity |
+| SDK di destinazione | API 36 (Android 16) |
 
 Usare SDK, NDK e JDK installati per questa versione dell'Editor. Salvare gli APK di sviluppo in `Builds/Android/`, esclusa da Git. Chiavi di firma per il rilascio, password, credenziali degli store e percorsi specifici della macchina restano fuori da Git. I requisiti degli store vanno verificati separatamente al momento della pubblicazione.
 

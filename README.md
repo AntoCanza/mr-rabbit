@@ -5,7 +5,7 @@
   <p>Un gioco educativo illustrato in italiano per bambini di 6–8 anni, realizzato con Unity.</p>
   <p>
     <a href="ProjectSettings/ProjectVersion.txt"><img alt="Unity 6000.3.25f1" src="https://img.shields.io/badge/Unity-6000.3.25f1-222222?logo=unity" /></a>
-    <a href="ProjectSettings/ProjectSettings.asset"><img alt="Versione 0.10.0" src="https://img.shields.io/badge/versione-0.10.0-D99A45" /></a>
+    <a href="ProjectSettings/ProjectSettings.asset"><img alt="Versione 0.10.1" src="https://img.shields.io/badge/versione-0.10.1-D99A45" /></a>
     <img alt="Tablet Android" src="https://img.shields.io/badge/Android-tablet-87A878?logo=android&amp;logoColor=white" />
     <img alt="Italiano" src="https://img.shields.io/badge/lingua-italiano-639D9C" />
     <a href="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml"><img alt="Controlli del repository" src="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml/badge.svg?branch=main" /></a>
@@ -25,7 +25,7 @@ Scegli Mr Rabbit o Miss Rabbit ed entra in un mondo accogliente, nato da disegni
 
 Il gioco è pensato per tablet in orizzontale e per bambini che stanno imparando a leggere. Disegni riconoscibili, indicazioni animate e una voce italiana calma aiutano a capire il passo successivo. Il bambino può esplorare con i propri tempi, riascoltare una spiegazione o mettere in pausa la guida.
 
-**Versione attuale dei sorgenti: 0.10.0, codice versione Android 17.** Il repository contiene il progetto Unity e gli strumenti di sviluppo. La cronologia conserva le precedenti verifiche delle compilazioni e sui dispositivi; la pubblicazione dei sorgenti non costituisce una nuova versione del gioco.
+**Versione attuale dei sorgenti: 0.10.1, codice versione Android 18.** Il repository contiene il progetto Unity e gli strumenti di sviluppo. La cronologia conserva le precedenti verifiche delle compilazioni e sui dispositivi; la pubblicazione dei sorgenti non costituisce una nuova versione del gioco.
 
 ## Nel gioco
 
@@ -129,8 +129,8 @@ Consultare [Architettura](docs/ARCHITECTURE.md) per i sistemi principali e [Riso
 
 1. Aprire **File → Build Profiles**, selezionare Android e cambiare piattaforma attiva se necessario.
 2. Verificare che `Assets/Scenes/Home.unity` sia abilitata nell'elenco delle scene.
-3. Controllare le impostazioni del lettore: identificatore **`com.mrrabbit.home`**, orientamento orizzontale, **IL2CPP** e **ARM64**. L'API Android minima è **25**; quella di destinazione usa l'impostazione automatica di Unity.
-4. Generare un APK locale in **`Builds/Android/`**, con un nome che includa la versione, per esempio `MrRabbit-0.10.0.apk`.
+3. Controllare le impostazioni del lettore: identificatore **`com.mrrabbit.home`**, orientamento orizzontale, **IL2CPP** e **ARM64**. L'API Android minima è **25**; quella di destinazione è fissata a **36** (Android 16).
+4. Generare un APK locale in **`Builds/Android/`**, con un nome che includa la versione, per esempio `MrRabbit-0.10.1.apk`.
 
 Chiavi di firma e password restano fuori da Git. La distribuzione sugli store richiede una configurazione separata per firma e pubblicazione. Per iOS servono macOS, Xcode e la firma Apple; qui non viene dichiarato alcun rilascio iOS.
 
@@ -155,6 +155,14 @@ I contributi devono mantenere centrale l'apprendimento scolastico, preservare i 
 | [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md) | Disegni, illustrazioni generate, narrazione offline e materiali di terzi |
 | [Verifiche](docs/VERIFICATION.md) | Controlli del repository, prove delle funzionalità, tutela dei salvataggi e requisiti di rilascio |
 | [Cronologia dello sviluppo](docs/DEVELOPMENT_HISTORY.md) | Note di implementazione conservate ed evidenze dei rilasci precedenti |
+
+## Pubblicazione su Google Play
+
+La pubblicazione è prevista come gioco **gratuito, senza pubblicità né acquisti in-app**, con nome sviluppatore **SofiaAntonio Games** e contatto pubblico **antoniocanza@gmail.com**. Il gioco non è ancora disponibile su Google Play: l'account sviluppatore deve essere creato e l'iter di test e revisione deve essere completato.
+
+La versione 0.10.1 aggiunge l'informativa privacy offline, accessibile da **Per i genitori · Privacy** nella scelta del personaggio. Il manifesto Android rimuove i permessi di rete e disabilita il backup dei salvataggi, che restano sul dispositivo.
+
+Consultare la [preparazione della pubblicazione](docs/PUBBLICAZIONE_GOOGLE_PLAY.md), la [scheda italiana dello store](docs/SCHEDA_GOOGLE_PLAY_IT.md) e il [testo dell'informativa](Assets/Resources/InformativaPrivacy.txt).
 
 ## Crediti e licenze
 

@@ -74,3 +74,17 @@ Il riconoscimento della scrittura deve tollerare le variazioni dei bambini e
 classificare il segno indipendentemente dalla soluzione attesa. Conservare il
 rifiuto di risposte sbagliate, spazi vuoti e scarabocchi; aggiungere esempi variati
 a mano libera alle prove di regressione quando si modifica il riconoscimento.
+
+# Pubblicazione e privacy
+
+L'utente ha scelto Google Play, distribuzione gratuita senza pubblicità né acquisti
+in-app, nome pubblico SofiaAntonio Games ed email pubblica antoniocanza@gmail.com.
+La scuola rimane il fulcro. Non introdurre servizi di rete, analisi o raccolta di
+campioni di scrittura. La configurazione Android offline e il backup disabilitato
+devono corrispondere all'informativa inclusa nel gioco. Non modificare il nome
+aziendale interno di Unity senza gestire la compatibilità dei PlayerPrefs su PC.
+
+Il testo canonico della privacy è Assets/Resources/InformativaPrivacy.txt;
+rigenerare la pagina pubblica con tools/export_privacy.py quando viene aggiornato.
+Conservare chiavi di firma e password fuori dal repository. Non dichiarare la
+pubblicazione completata finché Google Play non conferma la disponibilità.
