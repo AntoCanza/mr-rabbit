@@ -1,47 +1,47 @@
-# Assets and audio
+# Risorse grafiche e audio
 
-## Drawings and illustrations
+## Disegni e illustrazioni
 
-`ArtSources` preserves original reference drawings, image-generation prompts, earlier visual variants and voice-generation provenance. Runtime content is under `Assets/Art`, divided into `Characters`, `Home`, `Outdoors`, `Garden`, `School` and `City`.
+`ArtSources` conserva disegni di riferimento originali, prompt di generazione delle immagini, varianti visive precedenti e provenienza della generazione vocale. I contenuti usati nel gioco sono in `Assets/Art`, suddivisi in `Characters`, `Home`, `Outdoors`, `Garden`, `School` e `City`.
 
-The game artwork was developed from original drawings with generated illustration work. Prompt files document the intended appearance and source process; they are not blanket third-party license grants. Keep original references and existing notices when changing assets. Do not move or replace Unity `.meta` files independently of their assets.
+Le illustrazioni del gioco derivano da disegni originali, sviluppati con strumenti di generazione delle immagini. I file dei prompt documentano l'aspetto desiderato e il processo di origine; non costituiscono concessioni generali di licenze di terzi. Conservare riferimenti originali e note esistenti quando si modificano le risorse. Non spostare o sostituire i file Unity `.meta` indipendentemente dalle rispettive risorse. I prompt originali sono materiali sorgente: se redatti in un'altra lingua, ne viene conservato il testo per documentare esattamente la generazione effettuata.
 
-The README gallery contains three selected historical 0.10.0 screenshots copied from local QA captures: home, guided vowel handwriting and train travel. The full capture archive and device logs remain ignored.
+La galleria del README comprende tre schermate storiche selezionate della versione 0.10.0, copiate dalle acquisizioni locali delle verifiche: casa, scrittura guidata delle vocali e viaggio in treno. L'archivio completo delle acquisizioni e i registri dei dispositivi restano esclusi da Git.
 
-## Offline Italian narration
+## Narrazione italiana offline
 
-| Source | Purpose |
+| Sorgente | Contenuto |
 | --- | --- |
-| `ArtSources/ItalianVoice.profile.json` | Approved `it-IT-ElsaNeural` voice, Italian locale, rate −5%, volume −5%, natural pitch and 24 kHz output |
-| `ArtSources/ItalianVoice.lines.json` | Canonical spoken script |
-| `ArtSources/VoiceAuditions/Guida-naturale-elsa-prova.mp3` | Approved comparison sample |
-| `ArtSources/ItalianVoiceNeural/manifest.json` | Synthetic audio provenance, generation version and clip hashes |
-| `Assets/Audio/Italian/` | Included mono 16-bit PCM WAV clips used by the game |
-| `AgentScripts/PrepareItalianVoice.py` | Optional preparation, validation and installation tool |
+| `ArtSources/ItalianVoice.profile.json` | Voce approvata `it-IT-ElsaNeural`, lingua italiana, velocità −5%, volume −5%, intonazione naturale e uscita a 24 kHz |
+| `ArtSources/ItalianVoice.lines.json` | Copione canonico delle frasi pronunciate |
+| `ArtSources/VoiceAuditions/Guida-naturale-elsa-prova.mp3` | Campione di confronto approvato |
+| `ArtSources/ItalianVoiceNeural/manifest.json` | Provenienza dell'audio sintetico, versione della generazione e impronte delle registrazioni |
+| `Assets/Audio/Italian/` | Registrazioni WAV mono PCM a 16 bit incluse e usate dal gioco |
+| `AgentScripts/PrepareItalianVoice.py` | Strumento facoltativo di preparazione, validazione e installazione |
 
-The game plays the included WAV clips offline. It does not call a runtime TTS service or need a microphone. Keep the approved Elsa neural voice for guidance, lessons and notifications; do not substitute the rejected desktop voice or another speaker.
+Il gioco riproduce offline i file WAV inclusi. Non chiama servizi di sintesi vocale durante il gioco e non richiede un microfono. Conservare la voce neurale Elsa approvata per guida, lezioni e notifiche; non sostituirla con la voce desktop rifiutata o con un'altra voce.
 
-### Optional audio regeneration
+### Rigenerazione audio facoltativa
 
-Audio preparation requires Python and the `edge-tts` and `imageio-ffmpeg` development dependencies. The preparation script documents their use. Use a separate virtual environment or the project's ignored development-tool location.
+La preparazione audio richiede Python e le dipendenze di sviluppo `edge-tts` e `imageio-ffmpeg`. Lo script di preparazione ne documenta l'utilizzo. Usare un ambiente virtuale separato o la posizione degli strumenti di sviluppo del progetto esclusa da Git.
 
 ```sh
 python -m venv .venv
-# Activate the environment using the command appropriate for your shell.
+# Attivare l'ambiente con il comando appropriato per la propria shell.
 python -m pip install edge-tts imageio-ffmpeg
 python AgentScripts/PrepareItalianVoice.py
 ```
 
-The last command prepares and validates the staging batch under `ArtSources/ItalianVoiceNeural`. Review the result before installing it:
+L'ultimo comando prepara e valida il lotto provvisorio in `ArtSources/ItalianVoiceNeural`. Esaminare il risultato prima di installarlo:
 
 ```sh
 python AgentScripts/PrepareItalianVoice.py --install
 ```
 
-Installation validates the complete batch and preserves the Unity WAV paths and GUIDs. Generation uses an online Microsoft speech service through `edge-tts`; the generated game playback remains offline. Review the service terms that apply to generation and distribution before using regenerated audio commercially. `PrepareGuideLines.py` updates guide text and should only be run when intentionally revising the script. The PowerShell voice helper delegates to the Python tool.
+L'installazione valida l'intero lotto e conserva percorsi e GUID dei WAV Unity. La generazione usa un servizio vocale Microsoft online tramite `edge-tts`; la riproduzione nel gioco rimane offline. Prima di usare commercialmente l'audio rigenerato, esaminare le condizioni del servizio applicabili a generazione e distribuzione. `PrepareGuideLines.py` aggiorna il testo della guida e va eseguito soltanto quando si vuole modificarne il copione. Lo strumento vocale PowerShell richiama quello Python.
 
-## Third-party content and licensing
+## Contenuti di terzi e licenze
 
-Unity dependencies retain their package licenses and notices. Imported TextMesh Pro resources and fonts retain the notices included under `Assets/TextMesh Pro`. Check those files and the restored package contents before redistribution.
+Le dipendenze Unity conservano le licenze e le note dei rispettivi pacchetti. Le risorse TextMesh Pro e i caratteri importati conservano le note incluse in `Assets/TextMesh Pro`. Controllare questi file e i contenuti dei pacchetti ripristinati prima della ridistribuzione. Il testo originale delle licenze e delle attribuzioni di terzi viene preservato.
 
-The repository does not introduce a project-wide reuse license. Original project content remains subject to its owners' rights; public hosting does not by itself select MIT, Apache, Creative Commons or another license. Do not remove third-party notices, imply ownership of third-party material or infer redistribution permissions from a file's presence.
+Il repository non introduce una licenza generale di riutilizzo del progetto. I contenuti originali restano soggetti ai diritti dei rispettivi titolari; la pubblicazione non seleziona automaticamente MIT, Apache, Creative Commons o altre licenze. Non rimuovere note di terzi, non attribuirsi la proprietà dei loro materiali e non dedurre permessi di ridistribuzione dalla sola presenza di un file.

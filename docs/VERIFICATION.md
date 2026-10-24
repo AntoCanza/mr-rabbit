@@ -1,46 +1,46 @@
-# Verification and release checks
+# Verifiche e controlli di rilascio
 
-## Repository integrity
+## Integrità del repository
 
-Run from a Git checkout with Python 3.10 or newer:
+Eseguire da una copia Git con Python 3.10 o successivo:
 
 ```sh
 python tools/check_repository.py
 ```
 
-The check uses only the Python standard library and Git. It verifies required Unity roots, valid and pinned package JSON, visible metadata and text serialization, the enabled Home build scene, asset/meta pairing, GUID uniqueness, and exclusion of local generated files and signing material. `.github/workflows/repository-checks.yml` runs it on pushes and pull requests.
+Il controllo usa soltanto la libreria standard di Python e Git. Verifica le cartelle Unity obbligatorie, la validità dei JSON dei pacchetti e le versioni fissate, i metadati visibili e la serializzazione testuale, la scena Home abilitata nella compilazione, l'abbinamento tra risorse e file `.meta`, l'unicità dei GUID e l'esclusione di file generati locali e materiali di firma. `.github/workflows/repository-checks.yml` lo esegue a ogni invio e richiesta di integrazione.
 
-This is a source integrity check. It does not launch or compile Unity, prove gameplay behavior, run every regression helper or validate a distributable release.
+È un controllo dell'integrità dei sorgenti. Non avvia né compila Unity, non dimostra il comportamento del gioco, non esegue tutti gli strumenti di regressione e non valida una versione distribuibile.
 
-## Protect real saves first
+## Proteggere prima i salvataggi reali
 
-Read [AGENTS.md](../AGENTS.md) before gameplay QA. Tests must preserve real progress. With Play mode stopped, the existing `AgentScripts/GuideSaveSafety.cs` helper can capture all current game/guide and mute keys into a fresh `Library/MrRabbitQA/guide-original-*.json` snapshot. Keep that returned path. After testing, stop Play mode and restore that same snapshot. Never commit it.
+Leggere [AGENTS.md](../AGENTS.md) prima delle verifiche di gioco. Le prove devono preservare i progressi reali. Con la modalità Play arrestata, lo strumento esistente `AgentScripts/GuideSaveSafety.cs` può copiare tutte le chiavi correnti del gioco, della guida e delle preferenze audio in un nuovo file `Library/MrRabbitQA/guide-original-*.json`. Conservare il percorso restituito. Dopo le prove, arrestare Play e ripristinare la stessa copia. Non includerla mai in Git.
 
-The older `ReleaseSaveSnapshot.cs` has narrower historical coverage and should not replace the current guide-aware backup. Some feature helpers also restore their own keys, but that does not remove the need for an encompassing backup.
+Il precedente `ReleaseSaveSnapshot.cs` copre un insieme storico più limitato e non deve sostituire la copia attuale che comprende la guida. Alcuni strumenti di verifica ripristinano anche le proprie chiavi, ma questo non elimina la necessità di una copia complessiva.
 
-## Existing feature checks
+## Verifiche esistenti delle funzionalità
 
-These are Editor evaluation sources under `AgentScripts`, not automatically discovered Unity Test Framework assemblies. Most need the open Home scene and some need Play mode. Read their public entry points and preconditions before running them through the compatible Editor scripting interface.
+Si tratta di sorgenti da eseguire nell'Editor sotto `AgentScripts`, non di raccolte di test individuate automaticamente da Unity Test Framework. La maggior parte richiede la scena Home aperta e alcuni richiedono la modalità Play. Leggere punti di ingresso pubblici e precondizioni prima di eseguirli tramite l'interfaccia di scripting compatibile con l'Editor.
 
-| Area | Representative helpers |
+| Area | Strumenti rappresentativi |
 | --- | --- |
-| Movement and home | `VerifyHomeWalking`, `VerifyHoldMovement`, `VerifyRelativeMovement`, `VerifyHomeExterior`, `VerifyHomeActivities` |
-| World and friends | `VerifyMeadow`, `VerifyFriends`, `VerifyNeighborhood`, `VerifyDayNight` |
-| Garden and city | `VerifyGarden`, `VerifyGardenTouch`, `VerifyCityTravel`, `VerifyCityTouch` |
-| School and writing | `VerifySchool`, `VerifySchoolHints`, `VerifyWordPictures`, `VerifyChildWriting`, `VerifyFreeWriting` |
-| Progression and guidance | `VerifyLearningJourney`, `VerifyGameGuide` |
-| Tablet UI and presentation | `VerifyTabletExperience`, `ReleaseVisualPass`, `LearningVisualPass` |
+| Movimento e casa | `VerifyHomeWalking`, `VerifyHoldMovement`, `VerifyRelativeMovement`, `VerifyHomeExterior`, `VerifyHomeActivities` |
+| Mondo e amiche | `VerifyMeadow`, `VerifyFriends`, `VerifyNeighborhood`, `VerifyDayNight` |
+| Orto e città | `VerifyGarden`, `VerifyGardenTouch`, `VerifyCityTravel`, `VerifyCityTouch` |
+| Scuola e scrittura | `VerifySchool`, `VerifySchoolHints`, `VerifyWordPictures`, `VerifyChildWriting`, `VerifyFreeWriting` |
+| Progressione e guida | `VerifyLearningJourney`, `VerifyGameGuide` |
+| Interfaccia e presentazione sui tablet | `VerifyTabletExperience`, `ReleaseVisualPass`, `LearningVisualPass` |
 
-Historical `Add*`, `Install*` and `Prepare*` helpers can modify scenes or reset versions. They are not a setup sequence or a regression suite to run indiscriminately.
+Gli strumenti storici `Add*`, `Install*` e `Prepare*` possono modificare scene o reimpostare versioni. Non costituiscono una sequenza di configurazione o una suite di regressione da eseguire indiscriminatamente.
 
-## Before packaging or installing a release
+## Prima di creare il pacchetto o installare una versione
 
-The complete release requirements live in [AGENTS.md](../AGENTS.md). Cover every available gameplay feature, navigation route, input mode and persistence path; check old-save compatibility. Inspect rendered screens for missing/clipped art, overlapping UI, controls outside the screen and actual UI raycast/touch reachability.
+I requisiti completi di rilascio sono in [AGENTS.md](../AGENTS.md). Coprire tutte le funzionalità disponibili, i percorsi di navigazione, le modalità di comando e i salvataggi; verificare la compatibilità con i vecchi salvataggi. Ispezionare le schermate renderizzate per immagini mancanti o tagliate, interfacce sovrapposte, comandi fuori schermo e raggiungibilità effettiva mediante raycast e tocchi.
 
-Include 4:3, 16:10 and the connected tablet's real aspect ratio. Exercise both rabbits, footwear, home/stairs, day/night, friends/visits, crops/watering/harvest, cooking/eating, TV/sleep, train travel, market delivery, outfits, school practice/checks, handwriting rejection/uncertainty, all medal/reward paths and guide replay/pause/skip/resume/mute.
+Includere 4:3, 16:10 e il rapporto d'aspetto reale del tablet collegato. Provare entrambi i conigli, calzature, casa e scale, giorno e notte, amiche e visite, colture, annaffiatura e raccolto, cucina e pasti, TV e sonno, viaggi in treno, consegne al mercato, vestiti, pratica e verifiche scolastiche, rifiuto e incertezza nel riconoscimento della scrittura, tutti i percorsi di medaglie e ricompense, riascolto, pausa, salto, ripresa e silenziamento della guida.
 
-Restore original saves, fix discovered issues, and recheck affected paths. After installation verify the actual installed version, launch and device logs. Record the tested commit, resolutions, devices, results, fixes and remaining limits. Physical-device checks and simulated checks must be described separately.
+Ripristinare i salvataggi originali, correggere i problemi trovati e ricontrollare i percorsi interessati. Dopo l'installazione verificare la versione effettivamente installata, l'avvio e i registri del dispositivo. Registrare commit provato, risoluzioni, dispositivi, risultati, correzioni e limiti residui. Descrivere separatamente le prove su dispositivi fisici e quelle simulate.
 
-## Historical evidence
+## Evidenze storiche
 
-[Development history](DEVELOPMENT_HISTORY.md) preserves the former README and its implementation and release notes. Those notes are historical records and include obsolete intermediate instructions. Use the current README and setup guide for present configuration. Historical evidence is not a new result for the current repository publication, and the full local capture/log archive is not included.
+La [Cronologia dello sviluppo](DEVELOPMENT_HISTORY.md) conserva, in traduzione italiana, i contenuti del precedente README e le sue note di implementazione e rilascio. Sono registrazioni storiche e includono istruzioni intermedie ormai superate. Per la configurazione attuale usare il README e la guida di configurazione correnti. Le evidenze storiche non costituiscono nuovi risultati per l'attuale pubblicazione del repository; l'archivio locale completo delle acquisizioni e dei registri non è incluso.

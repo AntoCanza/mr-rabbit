@@ -1,33 +1,34 @@
-# Contributing to Mr Rabbit
+# Contribuire a Mr Rabbit
 
-Read [README.md](README.md), [AGENTS.md](AGENTS.md) and the [architecture guide](docs/ARCHITECTURE.md) before changing the project. Use Unity **6000.3.25f1** and open the repository root in Unity Hub.
+Prima di modificare il progetto, leggere [README.md](README.md), [AGENTS.md](AGENTS.md) e la [guida all'architettura](docs/ARCHITECTURE.md). Usare Unity **6000.3.25f1** e aprire la radice del repository in Unity Hub.
 
-## Design expectations
+## Principi di progettazione
 
-- Design for Italian-speaking children aged 6–8. Keep essential exercise text and short orientation labels; use recognizable drawings and contextual highlights for actions.
-- Keep school learning as the principal progression. World activities and rewards support it. Do not add subtraction, a language picker or claims of complete curriculum coverage.
-- Preserve existing saves, earned medals, coins, inventory, outfits and unfinished tutorial progress. Keep guide state separate from earned rewards.
-- Keep the approved calm `it-IT-ElsaNeural` narration, profile and offline playback. Hints must advance from successful actions and respect real availability.
-- Decorative hints must not intercept touches. Check controls at tablet aspect ratios and respect the safe area.
+- Progettare per bambini italofoni di 6–8 anni. Conservare il testo essenziale degli esercizi e brevi indicazioni di orientamento; usare disegni riconoscibili ed evidenziazioni contestuali per le azioni.
+- Il gioco segue il programma scolastico italiano della prima elementare: la scuola è il fulcro dell'esperienza e dell'avanzamento. Attività nel mondo e ricompense sostengono l'apprendimento. I contenuti attuali coprono competenze selezionate di italiano e matematica; non dichiarare la copertura integrale del programma. Non aggiungere sottrazioni o un selettore della lingua.
+- Scrivere tutta la documentazione in **italiano**, compresi README, guide, note di rilascio, cronologia, istruzioni e modelli per segnalazioni e richieste di integrazione. Conservare identificatori tecnici, percorsi, comandi e diciture dell'Editor necessari a usare il progetto. Le licenze di terzi e i materiali sorgente originali conservano il proprio testo.
+- Preservare salvataggi esistenti, medaglie conquistate, monete, inventario, vestiti e progressi del tutorial incompleto. Tenere lo stato della guida separato dalle ricompense guadagnate.
+- Conservare la narrazione calma approvata `it-IT-ElsaNeural`, il suo profilo e la riproduzione offline. I suggerimenti devono avanzare dopo azioni riuscite e rispettare la disponibilità reale delle attività.
+- Le indicazioni decorative non devono intercettare i tocchi. Controllare i comandi nei rapporti d'aspetto dei tablet e rispettare l'area sicura.
 
-## Working on a change
+## Lavorare a una modifica
 
-1. Create a focused branch from the current default branch, for example `feature/garden-feedback` or `fix/school-touch-target`.
-2. Make asset moves and renames through Unity so their `.meta` files and GUIDs stay together. Keep runtime code under `Assets/Scripts` and Editor automation outside player assemblies.
-3. Commit `Assets`, `Packages` and `ProjectSettings` changes together when required. Keep both package JSON files in sync. Do not commit caches, bulk captures, builds, signing keys or player-save backups.
-4. Run `python tools/check_repository.py`, then the relevant Editor checks from [Verification](docs/VERIFICATION.md). Record what actually ran and its limits.
-5. Open a pull request explaining the child-visible change, validation and any save-compatibility impact. Attach a few useful screenshots for visual changes.
+1. Creare un ramo dedicato dal ramo predefinito attuale, per esempio `feature/garden-feedback` o `fix/school-touch-target`.
+2. Spostare e rinominare le risorse tramite Unity, mantenendole insieme ai relativi file `.meta` e GUID. Conservare il codice del gioco in `Assets/Scripts` e l'automazione dell'Editor fuori dalle sue compilazioni.
+3. Includere insieme le modifiche necessarie ad `Assets`, `Packages` e `ProjectSettings`. Mantenere sincronizzati entrambi i file JSON dei pacchetti. Non includere cache, acquisizioni massive, compilazioni, chiavi di firma o copie dei salvataggi dei giocatori.
+4. Eseguire `python tools/check_repository.py`, poi le verifiche dell'Editor pertinenti descritte in [Verifiche](docs/VERIFICATION.md). Registrare cosa è stato effettivamente eseguito e i relativi limiti.
+5. Aprire una richiesta di integrazione in italiano che spieghi il cambiamento visibile al bambino, le verifiche e l'eventuale impatto sulla compatibilità dei salvataggi. Allegare poche schermate utili per le modifiche visive.
 
-Avoid broad source-formatting changes and unnecessary moves: scene references and serialized field names matter. Each `MonoBehaviour` should have its own matching C# file. The current compact style in existing gameplay files can be retained.
+Evitare riformattazioni estese dei sorgenti e spostamenti superflui: i riferimenti delle scene e i nomi dei campi serializzati sono rilevanti. Ogni `MonoBehaviour` deve avere il proprio file C# con nome corrispondente. Si può conservare lo stile compatto già usato nei file di gioco.
 
-## Bugs and features
+## Problemi e nuove funzionalità
 
-Use the issue templates. Include the source version, Unity version, device, resolution, reproducible steps and expected/actual behavior. Keep children's names, handwriting samples, real saves and other personal data out of public reports.
+Usare i modelli delle segnalazioni. Indicare versione dei sorgenti, versione Unity, dispositivo, risoluzione, passi per riprodurre il problema e comportamento atteso ed effettivo. Non inserire nomi di bambini, campioni di scrittura, salvataggi reali o altri dati personali nelle segnalazioni pubbliche.
 
-## Releases
+## Rilasci
 
-Run the full feature and functional regression before packaging or installing a release, as required by [AGENTS.md](AGENTS.md). Restore real saves after testing. Clearly distinguish simulated tablet checks from actual device checks. Source-repository checks alone do not satisfy a release gate.
+Eseguire la regressione completa delle funzionalità prima di creare il pacchetto o installare una versione, come richiesto da [AGENTS.md](AGENTS.md). Ripristinare i salvataggi reali dopo le prove. Distinguere chiaramente le simulazioni dei tablet dalle verifiche su dispositivi fisici. I soli controlli sui sorgenti non soddisfano i requisiti di rilascio.
 
-## Licensing
+## Licenze
 
-A project-wide reuse license has not been chosen. Do not replace existing notices or introduce new third-party assets without recording their origin and applicable terms. See [Assets and audio](docs/ASSETS_AND_AUDIO.md).
+Non è stata scelta una licenza generale di riutilizzo. Non sostituire le note esistenti e non introdurre nuove risorse di terzi senza registrarne origine e condizioni applicabili. Consultare [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md).

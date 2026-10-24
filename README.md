@@ -1,158 +1,163 @@
 <div align="center">
   <img src="Assets/Art/Characters/MrRabbitIcon.png" alt="Mr Rabbit" width="120" />
   <h1>Mr Rabbit</h1>
-  <p><strong>A little world to explore. A gentle place to learn.</strong></p>
-  <p>An illustrated Italian learning adventure for children aged 6–8, built with Unity.</p>
+  <p><strong>Un piccolo mondo da esplorare. La scuola al centro dell'avventura.</strong></p>
+  <p>Un gioco educativo illustrato in italiano per bambini di 6–8 anni, realizzato con Unity.</p>
   <p>
     <a href="ProjectSettings/ProjectVersion.txt"><img alt="Unity 6000.3.25f1" src="https://img.shields.io/badge/Unity-6000.3.25f1-222222?logo=unity" /></a>
-    <a href="ProjectSettings/ProjectSettings.asset"><img alt="Version 0.10.0" src="https://img.shields.io/badge/version-0.10.0-D99A45" /></a>
-    <img alt="Android tablets" src="https://img.shields.io/badge/Android-tablets-87A878?logo=android&amp;logoColor=white" />
-    <img alt="Italian" src="https://img.shields.io/badge/language-Italian-639D9C" />
-    <a href="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml"><img alt="Repository checks" src="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml/badge.svg?branch=main" /></a>
+    <a href="ProjectSettings/ProjectSettings.asset"><img alt="Versione 0.10.0" src="https://img.shields.io/badge/versione-0.10.0-D99A45" /></a>
+    <img alt="Tablet Android" src="https://img.shields.io/badge/Android-tablet-87A878?logo=android&amp;logoColor=white" />
+    <img alt="Italiano" src="https://img.shields.io/badge/lingua-italiano-639D9C" />
+    <a href="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml"><img alt="Controlli del repository" src="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml/badge.svg?branch=main" /></a>
   </p>
-  <p><a href="#get-started">Get started</a> · <a href="#inside-the-game">The game</a> · <a href="#repository-layout">Repository layout</a> · <a href="docs/ARCHITECTURE.md">Architecture</a> · <a href="CONTRIBUTING.md">Contributing</a></p>
+  <p><a href="#primi-passi">Primi passi</a> · <a href="#nel-gioco">Il gioco</a> · <a href="#struttura-del-repository">Struttura del repository</a> · <a href="docs/ARCHITECTURE.md">Architettura</a> · <a href="CONTRIBUTING.md">Come contribuire</a></p>
 </div>
 
-![Mr Rabbit at home, with the kitchen, staircase and medal wall](docs/images/home.png)
+![Mr Rabbit in casa, con la cucina, la scala e la parete delle medaglie](docs/images/home.png)
 
-## A world built around learning
+## La scuola è il fulcro del gioco
 
-Choose Mr Rabbit or Miss Rabbit and step into a warm, painted world inspired by original drawings. Visit friends, grow food, cook at home and take the train into town. At the centre is school: short, varied Italian literacy and mathematics activities earn medals and unlock rewards to enjoy elsewhere.
+**Mr Rabbit segue il programma scolastico italiano della prima elementare (classe prima della scuola primaria). La scuola è il fulcro dell'esperienza e dell'avanzamento nel gioco.** Le attività accompagnano il bambino nell'apprendimento della lettura, della scrittura e dei primi concetti matematici, con esercizi brevi e variati, pratica e piccole verifiche da affrontare al proprio ritmo.
 
-The game is designed for landscape tablets and young readers. Recognizable illustrations, animated action cues and a calm Italian voice help children find their next step. Children can explore at their own pace, replay an explanation or pause the guide.
+Il percorso attualmente disponibile propone competenze selezionate di **italiano e matematica**: vocali, suoni delle lettere, scrittura, sillabe, parole, brevi consegne da leggere, conteggio, sequenze numeriche e addizioni. Il riferimento alla prima elementare orienta contenuti e progressione; la versione attuale non comprende ancora tutte le materie e tutti gli obiettivi del programma. Le sottrazioni sono volutamente escluse.
 
-**Current source version: 0.10.0, Android version code 17.** This repository contains the Unity project and development tools. The development history records earlier build and device checks; publishing this source does not create a new game release.
+Scegli Mr Rabbit o Miss Rabbit ed entra in un mondo accogliente, nato da disegni originali. Visita le amiche, coltiva l'orto, cucina a casa e prendi il treno per la città. **Queste attività sostengono il percorso scolastico:** le competenze apprese a scuola fanno guadagnare medaglie e sbloccano ricompense da usare nel resto del mondo, come nuove colture, vestiti e decorazioni per la casa.
 
-## Inside the game
+Il gioco è pensato per tablet in orizzontale e per bambini che stanno imparando a leggere. Disegni riconoscibili, indicazioni animate e una voce italiana calma aiutano a capire il passo successivo. Il bambino può esplorare con i propri tempi, riascoltare una spiegazione o mettere in pausa la guida.
 
-| Place | What children can do |
+**Versione attuale dei sorgenti: 0.10.0, codice versione Android 17.** Il repository contiene il progetto Unity e gli strumenti di sviluppo. La cronologia conserva le precedenti verifiche delle compilazioni e sui dispositivi; la pubblicazione dei sorgenti non costituisce una nuova versione del gioco.
+
+## Nel gioco
+
+| Luogo o attività | Cosa può fare il bambino |
 | --- | --- |
-| **School** | Practise vowels, letter sounds, handwriting, syllables, words, short reading prompts, counting, number sequences and addition. Earn eleven milestone medals through practice and short checks. |
-| **Home** | Walk between floors, hang and rearrange earned medals, cook harvested ingredients, eat, watch TV and rest upstairs. |
-| **Countryside** | Explore a continuous landscape, choose shoes or roller skates, experience day and night, and visit Zebrella and Coccodella. |
-| **Garden** | Prepare soil, choose seeds, sow, water and harvest. School rewards unlock additional crops. |
-| **Train and city** | Travel to town, accept produce orders, deliver crops for coins and buy outfits. |
-| **Elsa's guide** | Follow a resumable illustrated introduction and contextual spoken hints. Replay, mute, pause or skip guidance without losing earned progress. |
+| **Scuola** | Esercitarsi con vocali, suoni delle lettere, scrittura a mano, sillabe, parole, brevi consegne, conteggio, sequenze numeriche e addizioni. Conquistare undici medaglie attraverso la pratica e piccole verifiche. |
+| **Casa** | Spostarsi tra i piani, appendere e riordinare le medaglie conquistate, cucinare gli ingredienti raccolti, mangiare, guardare la TV e riposare al piano superiore. |
+| **Campagna** | Esplorare un paesaggio continuo, scegliere scarpe o pattini, osservare il giorno e la notte e visitare Zebrella e Coccodella. |
+| **Orto** | Preparare il terreno, scegliere i semi, seminare, annaffiare e raccogliere. Le ricompense scolastiche sbloccano nuove colture. |
+| **Treno e città** | Andare in città, accettare richieste di prodotti, consegnare i raccolti in cambio di monete e comprare vestiti. |
+| **Guida di Elsa** | Seguire un'introduzione illustrata riprendibile e suggerimenti vocali contestuali. Riascoltare, silenziare, sospendere o saltare la guida senza perdere i progressi conquistati. |
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/images/school.png" alt="Italian vowel exercise, handwriting pad and contextual finger hint" /></td>
-    <td width="50%"><img src="docs/images/train.png" alt="Miss Rabbit travelling to the city by train" /></td>
+    <td width="50%"><img src="docs/images/school.png" alt="Esercizio sulle vocali italiane, area di scrittura e suggerimento con il dito" /></td>
+    <td width="50%"><img src="docs/images/train.png" alt="Miss Rabbit in viaggio verso la città sul treno" /></td>
   </tr>
   <tr>
-    <td align="center"><em>Write, listen and learn through short activities.</em></td>
-    <td align="center"><em>Explore a world connected to school rewards.</em></td>
+    <td align="center"><em>Scrivere, ascoltare e imparare con brevi attività.</em></td>
+    <td align="center"><em>Esplorare un mondo legato alle ricompense scolastiche.</em></td>
   </tr>
 </table>
 
-The learning sequence covers selected first-primary skills in Italian. It does not claim complete national-curriculum coverage. Subtraction is intentionally excluded. Handwriting recognition runs locally; synthetic regression results are not a measurement of real children's handwriting accuracy.
+Il riconoscimento della scrittura funziona localmente. I risultati delle prove sintetiche di regressione non misurano l'accuratezza sulla scrittura di bambini reali.
 
-## Get started
+## Primi passi
 
-### Requirements
+### Requisiti
 
-- **Unity Hub** and **Unity Editor 6000.3.25f1**, matching [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
-- **Git** to clone the project. Current assets are stored directly in Git; Git LFS is not required.
-- For Android: install **Android Build Support**, including the SDK, NDK and OpenJDK, for this Editor through Unity Hub.
+- **Unity Hub** e **Unity Editor 6000.3.25f1**, come indicato in [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
+- **Git** per clonare il progetto. Le risorse attuali sono archiviate direttamente in Git; Git LFS non è necessario.
+- Per Android: installare **Android Build Support**, con SDK, NDK e OpenJDK, per questa versione dell'Editor tramite Unity Hub.
 
-### Open and play
+### Aprire il progetto e giocare
 
 ```sh
 git clone https://github.com/AntoCanza/mr-rabbit.git
 cd mr-rabbit
 ```
 
-1. In Unity Hub, choose **Add project from disk** and select the cloned `mr-rabbit` folder. This is the Unity project root.
-2. Open it with **6000.3.25f1**. Allow Unity to restore packages and import assets; the first import can take several minutes.
-3. Open **`Assets/Scenes/Home.unity`** and press **Play**.
-4. Follow or skip the introduction, choose a rabbit and explore. The illustrated help book reopens the guide.
+1. In Unity Hub scegliere **Add project from disk** e selezionare la cartella clonata `mr-rabbit`, che è la radice del progetto Unity.
+2. Aprirla con **6000.3.25f1**. Attendere il ripristino dei pacchetti e l'importazione delle risorse; il primo avvio può richiedere diversi minuti.
+3. Aprire **`Assets/Scenes/Home.unity`** e premere **Play**.
+4. Seguire o saltare l'introduzione, scegliere un coniglio ed esplorare. Il libro illustrato di aiuto permette di riaprire la guida.
 
-**Home** is the only enabled game build scene. The sample scene and scene templates are retained. Python and the Unity CLI are optional development tools; they are not required to open or play the project.
+**Home** è l'unica scena di gioco abilitata nella compilazione. La scena di esempio e i modelli di scena sono conservati. Python e Unity CLI sono strumenti di sviluppo facoltativi: non servono per aprire il progetto o giocare.
 
-### Controls
+### Comandi
 
-| Input | Action |
+| Interazione | Azione |
 | --- | --- |
-| **Drag on free background** | Move in the direction of the finger or mouse motion, keep holding to walk and release to stop. A small opposite motion reverses direction. |
-| **Tap an illustrated action** | Use a door, interact with a friend or activity, choose an item or operate an exercise control. |
-| **Arrow keys in the Editor** | Walk left/right; use up/down near stair landings to change floors. |
-| **Finger or mouse on a writing pad** | Draw the requested letter or number, then submit with the checkmark. |
-| **Speaker and guide controls** | Replay speech, save the mute preference, revisit the introduction or pause contextual guidance. |
+| **Trascinare su una zona libera dello sfondo** | Muoversi nella direzione del dito o del mouse, continuare a tenere premuto per camminare e rilasciare per fermarsi. Un piccolo movimento opposto inverte la direzione. |
+| **Toccare un'azione illustrata** | Usare una porta, interagire con un'amica o un'attività, scegliere un oggetto o usare i comandi di un esercizio. |
+| **Frecce della tastiera nell'Editor** | Camminare a destra e a sinistra; usare su e giù vicino ai pianerottoli per cambiare piano. |
+| **Dito o mouse nell'area di scrittura** | Disegnare la lettera o il numero richiesto, poi confermare con il segno di spunta. |
+| **Comandi dell'altoparlante e della guida** | Riascoltare la voce, salvare la preferenza audio, rivedere l'introduzione o sospendere i suggerimenti contestuali. |
 
-## Repository layout
+## Struttura del repository
 
-The repository root is the Unity project root, following [Unity's project directory conventions](https://docs.unity.com/en-us/engine/6000.3/manual/get-started/project-configuration/default-directories).
+La radice del repository coincide con quella del progetto Unity e segue le [convenzioni delle cartelle di progetto di Unity](https://docs.unity.com/en-us/engine/6000.3/manual/get-started/project-configuration/default-directories).
 
 ```text
 mr-rabbit/
-├── Assets/                     # Game content and matching .meta files
-│   ├── Art/                    # Characters, home, school, garden, city and countryside
-│   ├── Audio/Italian/          # Packaged offline Italian narration
-│   ├── Scenes/Home.unity       # Game entry point and enabled build scene
-│   ├── Scripts/                # Gameplay, learning, input, saves and UI
-│   ├── Settings/               # URP 2D renderer and input configuration
-│   ├── Screenshots/            # Existing in-project screenshots
-│   └── TextMesh Pro/           # Imported text resources and notices
-├── Packages/                   # manifest.json and packages-lock.json
-├── ProjectSettings/            # Editor version and shared Unity configuration
-├── AgentScripts/               # Optional Editor automation, QA and voice preparation
-├── ArtSources/                 # Original drawings, prompts and voice provenance
-├── docs/                       # Setup, architecture, QA, history and README images
-├── tools/                      # Repository integrity checker
-├── .github/                    # Repository checks and contribution templates
-├── .gitattributes              # Text line endings and binary file handling
-├── .gitignore                  # Unity caches, outputs, captures and local secrets
-├── .editorconfig               # Shared editor formatting defaults
-├── AGENTS.md                   # Gameplay and release constraints
-└── CONTRIBUTING.md             # Contribution and review expectations
+├── Assets/                     # Contenuti del gioco e relativi file .meta
+│   ├── Art/                    # Personaggi, casa, scuola, orto, città e campagna
+│   ├── Audio/Italian/          # Narrazione italiana inclusa per l'ascolto offline
+│   ├── Scenes/Home.unity       # Scena iniziale e scena abilitata nella compilazione
+│   ├── Scripts/                # Gioco, apprendimento, comandi, salvataggi e interfaccia
+│   ├── Settings/               # Renderer URP 2D e configurazione degli input
+│   ├── Screenshots/            # Schermate già presenti nel progetto
+│   └── TextMesh Pro/           # Risorse di testo importate e relative note
+├── Packages/                   # manifest.json e packages-lock.json
+├── ProjectSettings/            # Versione dell'Editor e configurazione Unity condivisa
+├── AgentScripts/               # Automazione dell'Editor, verifiche e preparazione vocale facoltative
+├── ArtSources/                 # Disegni originali, prompt e provenienza della voce
+├── docs/                       # Avvio, architettura, verifiche, cronologia e immagini del README
+├── tools/                      # Controllo dell'integrità del repository
+├── .github/                    # Controlli del repository e modelli per i contributi
+├── .gitattributes              # Terminatori di riga e gestione dei file binari
+├── .gitignore                  # Cache Unity, risultati, acquisizioni e segreti locali esclusi
+├── .editorconfig               # Impostazioni di formattazione condivise
+├── AGENTS.md                   # Vincoli di gioco, documentazione e rilascio
+└── CONTRIBUTING.md             # Indicazioni per contribuire e revisionare
 ```
 
-`Assets`, `Packages` and `ProjectSettings` are versioned together. Asset `.meta` files preserve Unity GUIDs and references. Generated `Library`, `Temp`, `Logs`, `UserSettings`, IDE projects, build packages and bulk QA captures stay local. The three README images are curated copies of existing 0.10.0 captures.
+`Assets`, `Packages` e `ProjectSettings` sono versionati insieme. I file `.meta` conservano i GUID e i riferimenti delle risorse Unity. Le cartelle generate `Library`, `Temp`, `Logs`, `UserSettings`, i progetti per gli IDE, i pacchetti compilati e le acquisizioni massive delle verifiche restano locali. Le tre immagini del README sono copie selezionate di schermate della versione 0.10.0.
 
-## Technology and conventions
+## Tecnologie e convenzioni
 
-- **C# / Unity 6**, **URP 2D**, **uGUI**, **TextMesh Pro** and the **Input System**.
-- **Visible Meta Files** and **Force Text** serialization are already enabled.
-- Packages are pinned in [manifest.json](Packages/manifest.json) and [packages-lock.json](Packages/packages-lock.json).
-- Runtime scripts live in `Assets/Scripts`, primarily under the `MrRabbit` namespace. Editor helpers stay outside `Assets` and player builds.
-- Versioned local `PlayerPrefs` keys store progress. Updates must preserve coins, owned items, crops, medals and unfinished guidance.
-- Italian guidance uses packaged **it-IT-ElsaNeural** clips. Gameplay needs neither online speech generation nor a microphone.
+- **C# / Unity 6**, **URP 2D**, **uGUI**, **TextMesh Pro** e **Input System**.
+- **Visible Meta Files** e serializzazione **Force Text** sono già abilitati.
+- Le versioni dei pacchetti sono fissate in [manifest.json](Packages/manifest.json) e [packages-lock.json](Packages/packages-lock.json).
+- Gli script eseguiti nel gioco si trovano in `Assets/Scripts`, principalmente nel namespace `MrRabbit`. Gli strumenti per l'Editor restano fuori da `Assets` e dalle compilazioni del gioco.
+- Chiavi locali `PlayerPrefs` versionate conservano i progressi. Gli aggiornamenti devono preservare monete, oggetti posseduti, colture, medaglie e guida incompleta.
+- La guida italiana usa registrazioni incluse di **it-IT-ElsaNeural**. Durante il gioco non servono generazione vocale online o microfono.
+- Tutta la documentazione del progetto, comprese guide, cronologia, note di rilascio e modelli per i contributi, deve essere scritta in **italiano**. Nomi di file, identificatori tecnici e diciture dei comandi Unity mantengono la forma necessaria al loro utilizzo.
 
-See [Architecture](docs/ARCHITECTURE.md) for the main systems and [Assets and audio](docs/ASSETS_AND_AUDIO.md) for provenance and optional voice preparation.
+Consultare [Architettura](docs/ARCHITECTURE.md) per i sistemi principali e [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md) per la provenienza dei materiali e la preparazione vocale facoltativa.
 
-## Build for Android
+## Compilare per Android
 
-1. Open **File → Build Profiles**, select Android and switch the active platform if needed.
-2. Confirm that `Assets/Scenes/Home.unity` is enabled in the scene list.
-3. Check Player settings: identifier **`com.mrrabbit.home`**, landscape orientation, **IL2CPP** and **ARM64**. The minimum Android API is **25**; the target API uses Unity's automatic setting.
-4. Build a local APK into **`Builds/Android/`**, using a versioned name such as `MrRabbit-0.10.0.apk`.
+1. Aprire **File → Build Profiles**, selezionare Android e cambiare piattaforma attiva se necessario.
+2. Verificare che `Assets/Scenes/Home.unity` sia abilitata nell'elenco delle scene.
+3. Controllare le impostazioni del lettore: identificatore **`com.mrrabbit.home`**, orientamento orizzontale, **IL2CPP** e **ARM64**. L'API Android minima è **25**; quella di destinazione usa l'impostazione automatica di Unity.
+4. Generare un APK locale in **`Builds/Android/`**, con un nome che includa la versione, per esempio `MrRabbit-0.10.0.apk`.
 
-Signing keys and passwords stay outside Git. Store distribution needs separate signing and publication setup. iOS builds require macOS, Xcode and Apple signing; no iOS release is asserted here.
+Chiavi di firma e password restano fuori da Git. La distribuzione sugli store richiede una configurazione separata per firma e pubblicazione. Per iOS servono macOS, Xcode e la firma Apple; qui non viene dichiarato alcun rilascio iOS.
 
-Read [Setup and builds](docs/GETTING_STARTED.md) before preparing a distributable build and follow the full [release verification requirements](docs/VERIFICATION.md).
+Leggere [Configurazione e compilazione](docs/GETTING_STARTED.md) prima di preparare una versione distribuibile e seguire tutti i [requisiti di verifica del rilascio](docs/VERIFICATION.md).
 
-## Checks and contribution
+## Controlli e contributi
 
 ```sh
 python tools/check_repository.py
 ```
 
-The **Repository checks** GitHub workflow runs this same lightweight check on pushes and pull requests. It checks asset metadata and GUIDs, package pinning, the build scene and excluded local outputs. It does **not** compile Unity, run gameplay or certify a release. Existing `AgentScripts/Verify*.cs` helpers provide feature-specific Editor checks.
+Il flusso GitHub di controllo del repository esegue lo stesso controllo leggero a ogni invio e richiesta di integrazione. Verifica metadati e GUID delle risorse, versioni dei pacchetti, scena da compilare ed esclusione dei risultati locali. Non compila Unity, non esegue il gioco e non certifica un rilascio. Gli strumenti esistenti `AgentScripts/Verify*.cs` offrono verifiche nell'Editor per singole funzionalità.
 
-Contributions should keep school progression central, preserve saves and make interactions clear to children aged 6–8. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md).
+I contributi devono mantenere centrale l'apprendimento scolastico, preservare i salvataggi e rendere le interazioni comprensibili ai bambini di 6–8 anni. Partire da [Come contribuire](CONTRIBUTING.md) e dalle [istruzioni per gli agenti](AGENTS.md).
 
-## Documentation
+## Documentazione
 
-| Guide | Purpose |
+| Guida | Contenuto |
 | --- | --- |
-| [Setup and builds](docs/GETTING_STARTED.md) | First import, Android configuration and troubleshooting |
-| [Architecture](docs/ARCHITECTURE.md) | Runtime systems, scene organization and saved progress |
-| [Assets and audio](docs/ASSETS_AND_AUDIO.md) | Drawings, generated art, offline narration and third-party content |
-| [Verification](docs/VERIFICATION.md) | Repository checks, feature QA, save safety and release gates |
-| [Development history](docs/DEVELOPMENT_HISTORY.md) | Preserved implementation notes and historical release evidence |
+| [Configurazione e compilazione](docs/GETTING_STARTED.md) | Prima importazione, configurazione Android e risoluzione dei problemi |
+| [Architettura](docs/ARCHITECTURE.md) | Sistemi di gioco, organizzazione della scena e progressi salvati |
+| [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md) | Disegni, illustrazioni generate, narrazione offline e materiali di terzi |
+| [Verifiche](docs/VERIFICATION.md) | Controlli del repository, prove delle funzionalità, tutela dei salvataggi e requisiti di rilascio |
+| [Cronologia dello sviluppo](docs/DEVELOPMENT_HISTORY.md) | Note di implementazione conservate ed evidenze dei rilasci precedenti |
 
-## Credits and licensing
+## Crediti e licenze
 
-Mr Rabbit grew from original drawings, developed into illustrated game assets with source prompts retained in `ArtSources`. Italian narration is synthesized during development and packaged for offline playback. Unity packages, TextMesh Pro resources, fonts and other third-party material retain their licenses and notices.
+Mr Rabbit nasce da disegni originali, trasformati in risorse illustrate per il gioco; i prompt sorgente sono conservati in `ArtSources`. La narrazione italiana viene sintetizzata durante lo sviluppo e inclusa per l'ascolto offline. Pacchetti Unity, risorse TextMesh Pro, caratteri tipografici e altri materiali di terzi conservano le rispettive licenze e note.
 
-A project-wide reuse license has not been selected. Public availability alone does not grant a new license to the original code, drawings, artwork, characters or narration. See [Assets and audio](docs/ASSETS_AND_AUDIO.md) for provenance and retained notices.
+Non è stata scelta una licenza generale di riutilizzo del progetto. La disponibilità pubblica non concede automaticamente una nuova licenza su codice originale, disegni, illustrazioni, personaggi o narrazione. Consultare [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md) per provenienza e note conservate.

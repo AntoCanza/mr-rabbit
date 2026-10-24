@@ -1,22 +1,23 @@
-name: Feature proposal
-description: Suggest a focused improvement to learning, play or development.
-title: "[Feature]: "
+name: Proposta di una funzionalità
+description: Proponi un miglioramento mirato per apprendimento, gioco o sviluppo.
+title: "[Proposta]: "
 body:
   - type: textarea
     id: need
     attributes:
-      label: What would this help a child or contributor do?
+      label: Quale attività del bambino o di chi contribuisce migliorerebbe?
+      description: Scrivi la proposta in italiano.
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed behavior
-      description: Explain the interaction and how it supports the Italian learning experience.
+      label: Comportamento proposto
+      description: Spiega l'interazione e come sostiene il percorso della prima elementare e la centralità della scuola.
     validations:
       required: true
   - type: textarea
     id: constraints
     attributes:
-      label: Existing progress and alternatives
-      description: Mention save compatibility, accessibility, available rewards and alternatives where relevant.
+      label: Progressi esistenti e alternative
+      description: Se pertinenti, indica compatibilità dei salvataggi, accessibilità, ricompense disponibili e alternative.

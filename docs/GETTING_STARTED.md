@@ -1,48 +1,48 @@
-# Setup and builds
+# Configurazione e compilazione
 
-## First import
+## Prima importazione
 
-Clone `https://github.com/AntoCanza/mr-rabbit.git`, add its root folder to Unity Hub and use **6000.3.25f1**, recorded in `ProjectSettings/ProjectVersion.txt`. Install Android Build Support, SDK/NDK and OpenJDK only if building Android.
+Clonare `https://github.com/AntoCanza/mr-rabbit.git`, aggiungere la cartella radice a Unity Hub e usare **6000.3.25f1**, indicata in `ProjectSettings/ProjectVersion.txt`. Installare Android Build Support, SDK/NDK e OpenJDK solo se si vuole compilare per Android.
 
-Let Package Manager restore `Packages/manifest.json` and `Packages/packages-lock.json`. First import rebuilds the ignored `Library` cache. The current binary assets are ordinary Git blobs, so a normal clone contains them without a Git LFS step.
+Lasciare che Package Manager ripristini `Packages/manifest.json` e `Packages/packages-lock.json`. La prima importazione ricostruisce la cache `Library`, esclusa da Git. Le risorse binarie attuali sono normali file Git: una clonazione ordinaria le comprende senza ulteriori passaggi con Git LFS.
 
-Open `Assets/Scenes/Home.unity` and enter Play mode. `SampleScene.unity` and the URP scene templates are not the game entry point. Narration WAV files are already included under `Assets/Audio/Italian`; voice generation is optional.
+Aprire `Assets/Scenes/Home.unity` e avviare la modalità Play. `SampleScene.unity` e i modelli di scena URP non sono il punto di ingresso del gioco. I file WAV della narrazione sono già inclusi in `Assets/Audio/Italian`; la generazione della voce è facoltativa.
 
-## Android build
+## Compilazione Android
 
-Use **File → Build Profiles**, choose Android and enable `Assets/Scenes/Home.unity`. Review these checked-in settings before building:
+Usare **File → Build Profiles**, scegliere Android e abilitare `Assets/Scenes/Home.unity`. Prima di compilare, controllare queste impostazioni presenti nel repository:
 
-| Setting | Current value |
+| Impostazione | Valore attuale |
 | --- | --- |
-| Product | Mr Rabbit |
-| Source version | 0.10.0 |
-| Android version code | 17 |
-| Package identifier | `com.mrrabbit.home` |
-| Scripting backend / architecture | IL2CPP / ARM64 |
-| Orientation | Landscape |
-| Minimum SDK | API 25 |
-| Target SDK | Automatic in Unity |
+| Prodotto | Mr Rabbit |
+| Versione dei sorgenti | 0.10.0 |
+| Codice versione Android | 17 |
+| Identificatore del pacchetto | `com.mrrabbit.home` |
+| Backend di compilazione / architettura | IL2CPP / ARM64 |
+| Orientamento | Orizzontale |
+| SDK minimo | API 25 |
+| SDK di destinazione | Automatico in Unity |
 
-Use the SDK, NDK and JDK installed for this Editor. Write development APKs to `Builds/Android/`, which is ignored. Release signing keys, passwords, store credentials and machine-specific paths stay outside Git. Store requirements must be reviewed separately at publication time.
+Usare SDK, NDK e JDK installati per questa versione dell'Editor. Salvare gli APK di sviluppo in `Builds/Android/`, esclusa da Git. Chiavi di firma per il rilascio, password, credenziali degli store e percorsi specifici della macchina restano fuori da Git. I requisiti degli store vanno verificati separatamente al momento della pubblicazione.
 
-The iOS identifier is also `com.mrrabbit.home`, but a real iOS build needs macOS, Xcode and Apple signing. The repository's history does not establish an iOS release.
+Anche l'identificatore iOS è `com.mrrabbit.home`, ma una vera compilazione iOS richiede macOS, Xcode e firma Apple. La cronologia del repository non documenta un rilascio iOS.
 
-## Optional Unity CLI automation
+## Automazione facoltativa con Unity CLI
 
-The project pins `com.unity.pipeline` for development-time Editor automation. The normal Unity Editor workflow works without installing the CLI. If using it, install the official Unity CLI and explicitly target this checkout when multiple Editors are open.
+Il progetto fissa la versione di `com.unity.pipeline` per l'automazione dell'Editor durante lo sviluppo. Il normale utilizzo di Unity Editor non richiede l'installazione della CLI. Se la si usa, installare Unity CLI ufficiale e indicare esplicitamente questa copia del progetto quando sono aperti più Editor.
 
-`AgentScripts/*.cs` are source files intended to be evaluated through a compatible Editor scripting tool. They are outside `Assets`, so their classes do not automatically appear in player assemblies or Unity menu commands. Read each helper before running it: several `Add*`, `Install*`, `Polish*` and `Prepare*` scripts are historical migrations that change scenes, art or version numbers. **A fresh clone already contains the completed scene; do not replay every helper.** In particular, the historical `PrepareTabletRelease.cs` sets an older version.
+`AgentScripts/*.cs` contiene sorgenti da eseguire mediante uno strumento di scripting compatibile con l'Editor. Si trovano fuori da `Assets`: le loro classi non compaiono automaticamente nelle compilazioni del gioco o nei menu di Unity. Leggere ogni strumento prima di eseguirlo: diversi script `Add*`, `Install*`, `Polish*` e `Prepare*` sono migrazioni storiche che cambiano scene, immagini o numeri di versione. **Una nuova clonazione contiene già la scena completa: non rieseguire tutti gli strumenti.** In particolare, il vecchio `PrepareTabletRelease.cs` imposta una versione precedente.
 
-For feature checks and save protection, follow [Verification](VERIFICATION.md). For optional development-time speech preparation, follow [Assets and audio](ASSETS_AND_AUDIO.md).
+Per le prove delle funzionalità e la tutela dei salvataggi, seguire [Verifiche](VERIFICATION.md). Per la preparazione vocale facoltativa durante lo sviluppo, seguire [Risorse grafiche e audio](ASSETS_AND_AUDIO.md).
 
-## Common setup issues
+## Problemi comuni di configurazione
 
-| Symptom | Check |
+| Sintomo | Controllo |
 | --- | --- |
-| Empty template scene | Open `Assets/Scenes/Home.unity`. |
-| Package or compile errors on first open | Confirm the exact Editor version, network access for the first restore and Package Manager diagnostics. Preserve the two package files when troubleshooting. |
-| Missing scripts, materials or references | Check that the asset and its original `.meta` file were both cloned. Do not regenerate GUIDs as a first fix. |
-| Game view appears cropped | Choose a landscape aspect ratio and reduce the Game view Scale slider to fit the panel. Some painting crop is intentional. |
-| Narration is silent | Check the saved mute preference, game/device volume and packaged `Assets/Audio/Italian` files. |
-| Android platform is unavailable | Install Android Build Support and its SDK, NDK and OpenJDK for the pinned Editor in Unity Hub. |
-| Old progress appears during Play mode | Progress uses local PlayerPrefs. Back it up before QA; do not clear real saves merely to reproduce a fresh install. |
+| Scena di esempio vuota | Aprire `Assets/Scenes/Home.unity`. |
+| Errori dei pacchetti o di compilazione al primo avvio | Verificare la versione esatta dell'Editor, l'accesso alla rete per il primo ripristino e la diagnostica di Package Manager. Conservare entrambi i file dei pacchetti durante la risoluzione del problema. |
+| Script, materiali o riferimenti mancanti | Verificare che siano stati clonati sia la risorsa sia il suo file `.meta` originale. Non rigenerare i GUID come primo tentativo di correzione. |
+| Vista Game apparentemente tagliata | Scegliere un rapporto d'aspetto orizzontale e ridurre il cursore Scale della vista Game per adattarla al pannello. Parte del ritaglio del paesaggio è intenzionale. |
+| Narrazione silenziosa | Controllare la preferenza audio salvata, il volume del gioco e del dispositivo e i file inclusi in `Assets/Audio/Italian`. |
+| Piattaforma Android non disponibile | Installare Android Build Support e i relativi SDK, NDK e OpenJDK per la versione fissata dell'Editor in Unity Hub. |
+| Progressi precedenti visibili in modalità Play | I progressi usano PlayerPrefs locali. Farne una copia prima delle verifiche; non cancellare salvataggi reali solo per simulare una nuova installazione. |

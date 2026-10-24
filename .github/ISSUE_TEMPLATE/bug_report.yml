@@ -1,32 +1,32 @@
-name: Bug report
-description: Report a reproducible gameplay, input or setup problem.
-title: "[Bug]: "
+name: Segnalazione di un problema
+description: Segnala un problema riproducibile di gioco, comandi o configurazione.
+title: "[Problema]: "
 body:
   - type: markdown
     attributes:
-      value: "Please keep children's names, real saves and personal information out of public reports."
+      value: "Scrivi in italiano. Non inserire nomi di bambini, salvataggi reali o informazioni personali nelle segnalazioni pubbliche."
   - type: input
     id: environment
     attributes:
-      label: Version and environment
-      description: Game/source version, Unity version, device, operating system and resolution.
+      label: Versione e ambiente
+      description: Versione del gioco o dei sorgenti, versione Unity, dispositivo, sistema operativo e risoluzione.
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to reproduce
-      description: Include the starting location and actions that cause the issue.
+      label: Passi per riprodurre il problema
+      description: Indica il luogo di partenza e le azioni che causano il problema.
     validations:
       required: true
   - type: textarea
     id: behavior
     attributes:
-      label: Expected and actual behavior
+      label: Comportamento atteso ed effettivo
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Screenshots and relevant errors
-      description: Include only the information needed to explain the problem.
+      label: Schermate ed errori pertinenti
+      description: Includi solo le informazioni necessarie a spiegare il problema.

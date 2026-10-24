@@ -1,18 +1,18 @@
-## Change
+## Modifica
 
-Describe the child-visible behavior and why it changes.
+Descrivere il comportamento visibile al bambino e il motivo della modifica. Scrivere la richiesta in italiano e spiegare come la modifica sostiene il percorso scolastico, quando pertinente.
 
-## Validation
+## Verifiche
 
-- Repository integrity check:
-- Relevant Editor/gameplay checks:
-- Resolutions and actual devices checked:
-- Screenshots for visual changes:
+- Controllo dell'integrità del repository:
+- Verifiche pertinenti nell'Editor e nel gioco:
+- Risoluzioni e dispositivi fisici provati:
+- Schermate delle modifiche visive:
 
-## Saves and content
+## Salvataggi e contenuti
 
-Describe save compatibility, asset/meta changes and any new third-party content. State whether real saves were backed up and restored when gameplay checks changed progress.
+Descrivere la compatibilità dei salvataggi, le modifiche alle risorse e ai relativi file .meta e gli eventuali nuovi contenuti di terzi. Indicare se i salvataggi reali sono stati copiati e ripristinati quando le prove di gioco hanno modificato i progressi.
 
-## Release impact
+## Impatto sul rilascio
 
-State whether this is a source change or a release. A release requires the complete regression in AGENTS.md; distinguish simulated and physical-device evidence.
+Indicare se si tratta di una modifica ai sorgenti o di un rilascio. Un rilascio richiede la regressione completa prevista da AGENTS.md; distinguere le evidenze simulate da quelle raccolte su dispositivi fisici.
