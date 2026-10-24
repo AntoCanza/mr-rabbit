@@ -14,8 +14,8 @@ public static class VerifyFriends
         var adventure = UnityEngine.Object.FindFirstObjectByType<OutdoorAdventure>();
         var rabbit = UnityEngine.Object.FindFirstObjectByType<RabbitWalker>(FindObjectsInactive.Include);
         var cycle = UnityEngine.Object.FindFirstObjectByType<DayNightCycle>();
-        var friends = adventure.GetComponentsInChildren<MeadowFriend>(true);
-        Require(friends.Length == 2 && friends.Any(f=>f.FriendName=="Zebralla") &&
+        var friends = adventure.transform.parent.GetComponentsInChildren<MeadowFriend>(true);
+        Require(friends.Length == 2 && friends.Any(f=>f.FriendName=="Zebrella") &&
             friends.Any(f=>f.FriendName=="Coccodella"),"Both named friends are required.");
         var passed = new List<string>();
         foreach (bool female in new[] { false, true })
@@ -32,6 +32,7 @@ public static class VerifyFriends
             rabbit.Advance(Vector2.left,10);
             if (rollers) adventure.ChooseRollers(); else adventure.ChooseShoes();
             adventure.Advance(-1,rollers?2.8f:5f);
+            var neighborhood=adventure.GetComponent<Neighborhood>();neighborhood.ResetResidents();neighborhood.StartOuting(2);
             cycle.PreviewTime(.65f);
             foreach (var friend in friends)
             {
@@ -45,8 +46,9 @@ public static class VerifyFriends
                     "Greeting must work and release keyboard focus.");
                 var bubble=friend.transform.Find("Greeting");
                 Require(bubble.gameObject.activeSelf &&
-                    bubble.GetComponentInChildren<TMPro.TMP_Text>().text.Contains(friend.FriendName),
-                    "Greeting must identify the correct friend.");
+                    bubble.GetComponentInChildren<UnityEngine.UI.RawImage>()!=null &&
+                    GardenArt.FindCell(bubble.GetComponentInChildren<UnityEngine.UI.RawImage>())==3,
+                    "Greeting must show a waving hand.");
                 Require(Mathf.Approximately(before,adventure.Position) && !adventure.HasDestination,
                     "Greeting must not move the rabbit.");
                 Require(friend.transform.Find("Portrait").GetComponent<UnityEngine.UI.Image>().color==Color.white,

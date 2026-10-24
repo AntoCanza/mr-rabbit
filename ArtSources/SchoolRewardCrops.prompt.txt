@@ -1,0 +1,6 @@
+Mode: built-in image_gen, reference-guided generation, transparent background.
+Reference (style only): Assets/Art/Garden/GardenAtlas.png
+Final asset: Assets/Art/Garden/SchoolRewardCrops.png
+
+Final prompt:
+Create a production sprite atlas for the existing Mr Rabbit children's 2D game. The provided GardenAtlas.png is STYLE REFERENCE ONLY. Match its warm hand painted watercolor gouache shading, dark soft brown outlines, cheerful simple shapes. Transparent background, four isolated drawings in a perfectly even 2 by 2 square grid, each drawing centered in its quadrant with at least 8% empty padding and absolutely no marks crossing cell boundaries. Top left: one beautiful orange pumpkin with a little green curled stem, standalone harvested produce, no ground. Top right: a small cluster of ripe dark blue blueberries with two green leaves, harvested produce, no container or ground. Bottom left: low green pumpkin vine with two ripe orange pumpkins on a small mound of brown soil, a complete garden plant. Bottom right: compact green blueberry bush laden with blue berries on a small mound of brown soil, a complete garden plant. No words, letters, labels, numbers, background, shadows outside objects, or grid lines. All four drawings similarly scaled to fill 75 percent of their own cell. Square atlas, transparent genuine alpha.

@@ -1,0 +1,29 @@
+Built-in image generation. Final files: Assets/Art/School/*.png.
+
+SchoolMeadow
+Reference: Assets/Art/Home/House.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. A wide 2:1 horizontal meadow panorama for a side scrolling game. Friendly small school building in left half, red tiled roof, central blue door, two windows, small bell above entrance, a book emblem without letters. School occupies x=.18 to .52, bottom at y=.65. Wide walking grass strip across bottom 25 percent; rolling hills and trees far behind. Right half mostly empty meadow to join another garden panorama. Daylight pale blue sky. No characters.
+
+Classroom
+Reference: Assets/Art/Home/House.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. Interior of a cozy classroom, landscape 4:3 view facing the back wall. Large EMPTY dark green chalkboard upper center from x.30 to .79, y.12 to .43. Left wall window, right bookshelf with colorful books, left edge door. Entire lower half is empty wooden floor, no desks or chairs, no people. A small teacher cabinet at far right. Clean readable room for placing game sprites.
+
+Teacher
+Reference: Assets/Art/Home/House.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. One friendly female owl schoolteacher full body standing facing slightly RIGHT, spectacles, coral cardigan, teal skirt, one wing holding several cream worksheets, other wing gently presenting a sheet. Kind smiling expression. Isolated transparent game sprite. No ground, no background.
+
+SchoolDesk
+Reference: Assets/Art/Home/House.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. One small honey wood school desk with turquoise drawer and a matching simple chair behind it on the LEFT side, side/front three quarter view facing right. A blank white worksheet and one pencil sit on desktop. No person. Transparent isolated game sprite, full object, small margins. Chair back visible behind left half, desk tabletop in front on right, enough space to overlay a seated child at left.
+
+SchoolIcons
+Reference: Assets/Art/Garden/ActionIcons.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. A single 4 column by 3 row sprite atlas on transparent background. EXACT 12 square equal grid cells with generous transparent spacing, each icon entirely inside its cell and centered. Row 1: turquoise backpack, wrapped sandwich snack, blue reusable water bottle, yellow pencil. Row 2: pink eraser, green tick/check mark, friendly listening ear, empty school chair. Row 3: open book bearing only A E I O U, wooden counting beads with plus and minus, shiny gold reward star, curved orange back arrow. No other text, no panels, no outlines around cells. Consistent scale.
+
+CoccodellaSeated
+Reference: Assets/Art/Characters/Coccodella.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. The EXACT crocodile girl in reference, green skin, blue dress, teal back spikes and blue shoes. Change only pose to sitting on an invisible chair facing RIGHT, knees bent, hands resting on lap or holding a pencil, complete body visible. No chair, no background, transparent isolated sprite.
+
+ZebrellaSeated
+Reference: Assets/Art/Characters/Zebralla.png
+Warm children's storybook watercolor matching the reference house, soft cream paper texture, brown outlines, pastel colors, simple 2D shapes. No text, no lettering, no watermarks. The EXACT zebra girl in reference, cream and grey stripes, purple dress and yellow shoes. Change only pose to sitting on an invisible chair facing RIGHT, knees bent, hands resting on lap or holding a pencil, complete body visible. No chair, no background, transparent isolated sprite.

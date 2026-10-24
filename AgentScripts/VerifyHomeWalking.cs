@@ -17,7 +17,7 @@ public static class VerifyHomeWalking
         GoTo(rabbit, new Vector2(.39f, .118f));
 
         Step(rabbit, Vector2.left, 500);
-        AssertPosition(rabbit, .22f, .118f, "Ground left wall");
+        Require(rabbit.PositionNormalized.x >= .22f && rabbit.PositionNormalized.x <= rabbit.DoorReach, "Ground left boundary/door reach");
         if (adventure != null)
         {
             Require(adventure.Location == OutdoorAdventure.Place.FootwearChoice, "Left door must ask about footwear");
@@ -52,7 +52,7 @@ public static class VerifyHomeWalking
         passed.Add("Upper wall/floor boundaries and stair descent");
 
         GoTo(rabbit, new Vector2(.76f, .474f), true);
-        GoTo(rabbit, new Vector2(.25f, .118f), true);
+        GoTo(rabbit, new Vector2(.30f, .118f), true);
         GoTo(rabbit, new Vector2(.496f, .283f));
         Require(rabbit.Surface == RabbitWalker.WalkSurface.Stairs, "Tap can stop midway on stairs");
         GoTo(rabbit, new Vector2(.75f, .118f));
@@ -60,7 +60,8 @@ public static class VerifyHomeWalking
 
         rabbit.WalkTo(new Vector2(-5, -5));
         Drain(rabbit);
-        AssertPosition(rabbit, .22f, .118f, "Out-of-bounds tap clamps to walkway");
+        Require(rabbit.PositionNormalized.x >= .22f && rabbit.PositionNormalized.x <= rabbit.DoorReach, "Out-of-bounds tap stays within walkway and reaches door");
+        if (adventure != null) adventure.ReturnHome();
         rabbit.WalkTo(new Vector2(.75f, .474f));
         rabbit.Advance(Vector2.right, 1f / 60f);
         Require(!rabbit.HasDestination, "Arrows must cancel a tap destination");

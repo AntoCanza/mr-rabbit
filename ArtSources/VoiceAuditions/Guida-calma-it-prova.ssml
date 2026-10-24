@@ -1,0 +1,13 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="it-IT">
+  <voice name="Microsoft Elsa Desktop">
+    <prosody rate="-12%" volume="85">
+      Ciao.<break time="550ms"/> Sono qui con te.<break time="550ms"/>
+      Facciamo un piccolo passo alla volta.<break time="750ms"/>
+      Guarda la gocciolina.<break time="500ms"/>
+      L'orto ha bisogno d'acqua.<break time="650ms"/>
+      Tocca l'annaffiatoio,<break time="400ms"/> poi la piantina.<break time="900ms"/>
+      Ecco,<break time="350ms"/> ora la piantina ha di nuovo acqua.<break time="650ms"/>
+      Quando vuoi, possiamo continuare.
+    </prosody>
+  </voice>
+</speak>

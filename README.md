@@ -1,181 +1,158 @@
-# Mr Rabbit
+<div align="center">
+  <img src="Assets/Art/Characters/MrRabbitIcon.png" alt="Mr Rabbit" width="120" />
+  <h1>Mr Rabbit</h1>
+  <p><strong>A little world to explore. A gentle place to learn.</strong></p>
+  <p>An illustrated Italian learning adventure for children aged 6–8, built with Unity.</p>
+  <p>
+    <a href="ProjectSettings/ProjectVersion.txt"><img alt="Unity 6000.3.25f1" src="https://img.shields.io/badge/Unity-6000.3.25f1-222222?logo=unity" /></a>
+    <a href="ProjectSettings/ProjectSettings.asset"><img alt="Version 0.10.0" src="https://img.shields.io/badge/version-0.10.0-D99A45" /></a>
+    <img alt="Android tablets" src="https://img.shields.io/badge/Android-tablets-87A878?logo=android&amp;logoColor=white" />
+    <img alt="Italian" src="https://img.shields.io/badge/language-Italian-639D9C" />
+    <a href="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml"><img alt="Repository checks" src="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml/badge.svg?branch=main" /></a>
+  </p>
+  <p><a href="#get-started">Get started</a> · <a href="#inside-the-game">The game</a> · <a href="#repository-layout">Repository layout</a> · <a href="docs/ARCHITECTURE.md">Architecture</a> · <a href="CONTRIBUTING.md">Contributing</a></p>
+</div>
 
-A 2D home and meadow prototype for a children's tablet game, based on our drawings.
+![Mr Rabbit at home, with the kitchen, staircase and medal wall](docs/images/home.png)
 
-## Play together
+## A world built around learning
 
-1. Open this project in Unity Hub with **Unity 6.3 LTS (6000.3.25f1)**.
-2. Open `Assets/Scenes/Home.unity`.
-3. Press **Play** at the top of Unity. Both rabbits appear on the starting screen.
-4. Click or tap **Mr Rabbit (Male)** or **Miss Rabbit (Female)** to enter the house.
-5. Use **Left / Right** to walk along the current floor.
-6. Near the bottom of the stairs, hold **Up** to climb. Near the top, hold **Down** to descend.
-7. While on the stairs, **Up / Down** change direction. **Right / Left** also climb / descend.
-8. Walk **Left** into the downstairs exit door, or tap **< Esci**. From upstairs, tapping the door walks down the stairs first.
-9. Choose **Scarpe normali** or **Roller** to go outside. **Resta in casa** cancels the choice.
-10. Keep going **Left** to explore the scrolling meadow. Roller skates are visible and move faster than walking.
-11. Go **Right** to the **Casa >** sign (or tap it) to return home. The rabbit automatically wears normal shoes indoors.
-12. Use **Choose rabbit** at the top right to return to the starting screen and switch characters.
-13. Press **Play** again to stop. The next play session starts with the character choices.
+Choose Mr Rabbit or Miss Rabbit and step into a warm, painted world inspired by original drawings. Visit friends, grow food, cook at home and take the train into town. At the centre is school: short, varied Italian literacy and mathematics activities earn medals and unlock rewards to enjoy elsewhere.
 
-You can also click or tap a floor or stair to walk there. The chosen rabbit follows the connected
-walkways and uses the staircase to change floors. Dragging adjusts the destination;
-arrow keys take over immediately. Both rabbits stop at the walls except for the downstairs left exit,
-and cannot move through the floor/ceiling away from the stairs. The meadow also supports click/tap
-destinations and has a left boundary. Every trip outside asks about footwear again.
+The game is designed for landscape tablets and young readers. Recognizable illustrations, animated action cues and a calm Italian voice help children find their next step. Children can explore at their own pace, replay an explanation or pause the guide.
 
-The first scene is designed for landscape screens.
-If the Game view looks cropped, reduce its Scale slider to fit the window.
+**Current source version: 0.10.0, Android version code 17.** This repository contains the Unity project and development tools. The development history records earlier build and device checks; publishing this source does not create a new game release.
 
-Two friends now wait in the meadow: **Zebralla**, a zebra in a lilac dress, and
-**Coccodella**, a green crocodile in a blue dress. Walk left from the house to meet them.
-Click or tap a friend or her name to see an Italian greeting and a small friendly sway.
-The greeting lasts 4.5 seconds; tapping again restarts it. You can keep walking during
-the greeting. The bubble stays within the viewport and closes when the friend goes
-offscreen, you return home, or you change rabbits.
+## Inside the game
 
-Day, sunset, night and dawn now alternate automatically. One full cycle takes **120 seconds**
-of play: 48 seconds of daylight, 12 of sunset, 48 of night and 12 of dawn. A new Play session
-starts partway through daylight, so the first night arrives after roughly 46 seconds of play.
-The Italian label at the top left shows the current period. Sun, moon and stars appear in
-the house sky and over the meadow. Scenery changes gently while characters and controls
-remain readable. The same clock continues between the house and meadow; it pauses during
-character/footwear choices and app suspension. Switching rabbits preserves the current time.
+| Place | What children can do |
+| --- | --- |
+| **School** | Practise vowels, letter sounds, handwriting, syllables, words, short reading prompts, counting, number sequences and addition. Earn eleven milestone medals through practice and short checks. |
+| **Home** | Walk between floors, hang and rearrange earned medals, cook harvested ingredients, eat, watch TV and rest upstairs. |
+| **Countryside** | Explore a continuous landscape, choose shoes or roller skates, experience day and night, and visit Zebrella and Coccodella. |
+| **Garden** | Prepare soil, choose seeds, sow, water and harvest. School rewards unlock additional crops. |
+| **Train and city** | Travel to town, accept produce orders, deliver crops for coins and buy outfits. |
+| **Elsa's guide** | Follow a resumable illustrated introduction and contextual spoken hints. Replay, mute, pause or skip guidance without losing earned progress. |
 
-For a first activity together, choose a name for each room and decide what the rabbit
-should do there. The house is currently one background picture; the rabbit walks in
-front of the furniture. Furniture interaction, sound, and objectives are future steps.
-Both rabbits use transparent sprites adapted from our character drawings, with a small
-walking sway and automatic left/right facing.
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/school.png" alt="Italian vowel exercise, handwriting pad and contextual finger hint" /></td>
+    <td width="50%"><img src="docs/images/train.png" alt="Miss Rabbit travelling to the city by train" /></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Write, listen and learn through short activities.</em></td>
+    <td align="center"><em>Explore a world connected to school rewards.</em></td>
+  </tr>
+</table>
 
-## Project contents
+The learning sequence covers selected first-primary skills in Italian. It does not claim complete national-curriculum coverage. Subtraction is intentionally excluded. Handwriting recognition runs locally; synthetic regression results are not a measurement of real children's handwriting accuracy.
 
-- `Assets/Scenes/Home.unity`: the starting scene and only enabled build scene.
-- `Assets/Art/Home/House.png`: clean game art recreated from the original drawing.
-- `ArtSources/Home.original.jpg`: preserved source drawing.
-- `ArtSources/House.prompt.txt`: the built-in image-generation prompt and provenance.
-- `Assets/Art/Characters/MrRabbit.png` and `MissRabbit.png`: the transparent character sprites.
-- `ArtSources/MrRabbit.original.jpg` and `MissRabbit.original.jpg`: preserved character drawings.
-- `ArtSources/MrRabbit.prompt.txt` and `MissRabbit.prompt.txt`: built-in image-generation prompts and provenance.
-- `Assets/Scripts/CharacterSelection.cs`: character choices, gameplay gating, and switching back.
-- `Assets/Scripts/RabbitGraphic.cs`: the character's sprite rendering and walking sway.
-- `Assets/Scripts/RabbitWalker.cs`: connected floor/stair paths, arrow movement, and tap routing.
-- `Assets/Scripts/HousePointerInput.cs`: mouse/touch destinations on those paths.
-- `Assets/Scripts/OutdoorAdventure.cs`: exit, footwear choice, meadow movement/camera, and return with shoes.
-- `Assets/Scripts/OutdoorPointerInput.cs`: mouse/touch destinations on the meadow.
-- `Assets/Scripts/DayNightCycle.cs`: shared clock, smooth light transitions and menu/suspension pauses.
-- `Assets/Scripts/SkyCycleGraphic.cs`: vector sun, crescent moon and stars in one UI mesh per location.
-- `Assets/Art/Outdoors/Meadow.png` and `Roller.png`: panorama and transparent skate sprite.
-- `ArtSources/Roller.original.jpg`: preserved red skate/yellow wheel drawing.
-- `ArtSources/Outdoors.prompts.txt`: built-in image-generation prompts for both new assets.
-- `Assets/Scripts/SafeAreaLayout.cs`: safe-area layout and 60 FPS target.
-- `AgentScripts/`: Unity CLI helpers; these are outside Assets and excluded from player builds.
+## Get started
 
-This uses URP 2D, uGUI and the Input System. The background has no mipmaps or CPU-readable
-copy and uses ASTC 6x6 mobile texture overrides. The scene has no post-processing or
-physics simulation. Actual memory use and performance still need device measurements.
-Each character texture is limited to 512 pixels on its longest side, uses mobile ASTC 6x6,
-and has no mipmaps or CPU-readable copy. Full-resolution source PNGs remain on disk.
-Menu portraits and the player share these sprites. The house is inactive until a choice is made.
-The lawn uses one panorama (maximum 2048 pixels) and reuses one 512-pixel skate sprite for
-both feet and the selection card. Both use ASTC 6x6 mobile overrides without mipmaps or
-CPU-readable copies. Only the current home/meadow view is active; there is no physics simulation
-or per-frame object creation for this feature.
-Day/night reuses the existing paintings with color tints and two small UI meshes. It adds
-no bitmap textures, dynamic lights or post-processing. Sky/tint updates are limited to 20 Hz;
-movement still targets 60 FPS. Adjust **Cycle Seconds** on **Safe Area / Day Night Cycle** to
-change the cycle duration. Device performance still needs measurement on actual hardware.
+### Requirements
 
-The walkways use coordinates relative to the picture, so they resize with the house.
-Select **Player Rabbit** under **House Viewport / House** in the saved scene (or the chosen
-character while playing), with the house active and Scene view Gizmos enabled, to see the
-green floor paths and orange stair path. The Rabbit Walker component exposes walking
-speed, wall limits, landing reach, and stair points for later adjustments.
+- **Unity Hub** and **Unity Editor 6000.3.25f1**, matching [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
+- **Git** to clone the project. Current assets are stored directly in Git; Git LFS is not required.
+- For Android: install **Android Build Support**, including the SDK, NDK and OpenJDK, for this Editor through Unity Hub.
 
-## Versions and builds
+### Open and play
 
-Local Git history starts on `main`; no remote is configured. Unity caches, generated
-solutions, captures, and build outputs are ignored. Keep asset `.meta` files in Git.
+```sh
+git clone https://github.com/AntoCanza/mr-rabbit.git
+cd mr-rabbit
+```
 
-Android is configured for ARM64 / IL2CPP. The application identifier is
-`com.mrrabbit.home` for both Android and iOS, with version `0.1.0`; confirm the final
-identifier before store setup. This prototype has not been built or tested on a phone
-or tablet yet. Android builds can be made on this Windows PC; an iOS release will need
-a macOS/Xcode build environment and Apple signing setup.
+1. In Unity Hub, choose **Add project from disk** and select the cloned `mr-rabbit` folder. This is the Unity project root.
+2. Open it with **6000.3.25f1**. Allow Unity to restore packages and import assets; the first import can take several minutes.
+3. Open **`Assets/Scenes/Home.unity`** and press **Play**.
+4. Follow or skip the introduction, choose a rabbit and explore. The illustrated help book reopens the guide.
 
-The official beta Codex integration uses `com.unity.pipeline` 0.8.0-exp.1. Target this
-project explicitly in Unity CLI commands if another Editor is open.
+**Home** is the only enabled game build scene. The sample scene and scene templates are retained. Python and the Unity CLI are optional development tools; they are not required to open or play the project.
 
-## Movement verification
+### Controls
 
-Checked in Unity Play mode on 8 October 2026:
+| Input | Action |
+| --- | --- |
+| **Drag on free background** | Move in the direction of the finger or mouse motion, keep holding to walk and release to stop. A small opposite motion reverses direction. |
+| **Tap an illustrated action** | Use a door, interact with a friend or activity, choose an item or operate an exercise control. |
+| **Arrow keys in the Editor** | Walk left/right; use up/down near stair landings to change floors. |
+| **Finger or mouse on a writing pad** | Draw the requested letter or number, then submit with the checkmark. |
+| **Speaker and guide controls** | Replay speech, save the mute preference, revisit the introduction or pause contextual guidance. |
 
-- Compilation and Console: no errors or warnings after scene setup.
-- Actual Game view sizes: 1440 x 1080 tablet and 2340 x 1080 landscape phone.
-- Full house, title, character, and hint remain visible without distorting the art.
-- Automated movement checks cover both outside walls on both floors, blocked vertical
-  movement away from stairs, ascent, descent, mid-stair reversal, and large frame times.
-- Tap routes use the stairs between floors, stop at stair destinations, and never teleport.
-- Out-of-bounds destinations stay on walkways, and arrow input cancels a tap route.
-- Simulated Input System arrow keys climb the stairs and walk to a wall in real Update frames.
-- A simulated touch on the phone layout routes from upstairs to a downstairs destination.
+## Repository layout
 
-To repeat the movement-rule checks while Home is playing, first choose a character, then use the Unity CLI's
-`run_script` command with file `AgentScripts/VerifyHomeWalking.cs` and entry
-`VerifyHomeWalking.Run`.
+The repository root is the Unity project root, following [Unity's project directory conventions](https://docs.unity.com/en-us/engine/6000.3/manual/get-started/project-configuration/default-directories).
 
-These are Editor checks, not physical-device touch, performance, or store validation.
+```text
+mr-rabbit/
+├── Assets/                     # Game content and matching .meta files
+│   ├── Art/                    # Characters, home, school, garden, city and countryside
+│   ├── Audio/Italian/          # Packaged offline Italian narration
+│   ├── Scenes/Home.unity       # Game entry point and enabled build scene
+│   ├── Scripts/                # Gameplay, learning, input, saves and UI
+│   ├── Settings/               # URP 2D renderer and input configuration
+│   ├── Screenshots/            # Existing in-project screenshots
+│   └── TextMesh Pro/           # Imported text resources and notices
+├── Packages/                   # manifest.json and packages-lock.json
+├── ProjectSettings/            # Editor version and shared Unity configuration
+├── AgentScripts/               # Optional Editor automation, QA and voice preparation
+├── ArtSources/                 # Original drawings, prompts and voice provenance
+├── docs/                       # Setup, architecture, QA, history and README images
+├── tools/                      # Repository integrity checker
+├── .github/                    # Repository checks and contribution templates
+├── .gitattributes              # Text line endings and binary file handling
+├── .gitignore                  # Unity caches, outputs, captures and local secrets
+├── .editorconfig               # Shared editor formatting defaults
+├── AGENTS.md                   # Gameplay and release constraints
+└── CONTRIBUTING.md             # Contribution and review expectations
+```
 
-On 9 October 2026, the character was replaced with Miss Rabbit. The movement-rule checks
-passed again; the transparent sprite, preserved proportions, left/right facing, floor and
-stair placement were checked in the 1440 x 1080 Game view. The Console had no errors.
+`Assets`, `Packages` and `ProjectSettings` are versioned together. Asset `.meta` files preserve Unity GUIDs and references. Generated `Library`, `Temp`, `Logs`, `UserSettings`, IDE projects, build packages and bulk QA captures stay local. The three README images are curated copies of existing 0.10.0 captures.
 
-The character-selection flow was also checked on 9 October 2026 at tablet (1440 x 1080)
-and landscape-phone (2340 x 1080) sizes. Both portraits are visible; the house stays inactive
-before selection. A simulated mouse click chose Mr Rabbit; a simulated touch returned to
-the menu and chose Miss Rabbit. Switching cancels any walk destination and resets the
-new character downstairs. Movement-rule checks passed for both choices, with no Console errors.
+## Technology and conventions
 
-On 15 October 2026, `AgentScripts/VerifyMeadow.cs` (`VerifyMeadow.Run`) checked both rabbits
-with both footwear choices: upstairs door routes use stairs, the upper left wall does not exit,
-the footwear menu blocks movement, cancel returns safely, left travel scrolls the meadow,
-the left boundary clamps movement, taps work, keys override tap destinations, and returning
-removes rollers and resumes walking indoors. Changing rabbits clears outdoor state.
-`VerifyHomeWalking.Run` passed with the new downstairs exit behavior.
+- **C# / Unity 6**, **URP 2D**, **uGUI**, **TextMesh Pro** and the **Input System**.
+- **Visible Meta Files** and **Force Text** serialization are already enabled.
+- Packages are pinned in [manifest.json](Packages/manifest.json) and [packages-lock.json](Packages/packages-lock.json).
+- Runtime scripts live in `Assets/Scripts`, primarily under the `MrRabbit` namespace. Editor helpers stay outside `Assets` and player builds.
+- Versioned local `PlayerPrefs` keys store progress. Updates must preserve coins, owned items, crops, medals and unfinished guidance.
+- Italian guidance uses packaged **it-IT-ElsaNeural** clips. Gameplay needs neither online speech generation nor a microphone.
 
-Input System events also verified left-arrow exit, mouse selection of rollers, right-arrow
-return with automatic shoes, touch on the exit door, touch selection of shoes, and touch on
-the return sign. The live frame counter advanced. Tablet (1440 x 1080) and landscape phone
-(2340 x 1080) views were inspected. Compilation and Console finished without errors or warnings.
-These checks run in the Editor; no physical-device build or performance measurement was made.
+See [Architecture](docs/ARCHITECTURE.md) for the main systems and [Assets and audio](docs/ASSETS_AND_AUDIO.md) for provenance and optional voice preparation.
 
-Day/night was verified on 15 October 2026 with `AgentScripts/VerifyDayNight.cs`
-(`VerifyDayNight.Run`): full-cycle timing and wrap, gradual color at all period boundaries,
-readable characters, sky graphics that do not intercept taps, and clock preservation/pause
-across location changes, both menus, character changes and application suspension. Live
-Update frames also crossed sunset into night and dawn into day. A simulated mouse click
-on the exit door worked at night. Both home/meadow movement suites still passed.
-Day, sunset and night were visually checked at tablet/phone sizes. The cream UI retains
-its contrast throughout the transitions. Compilation and the final Console had no errors
-or warnings. No publication or physical-device validation is implied by these Editor checks.
+## Build for Android
 
-## Meadow friends
+1. Open **File → Build Profiles**, select Android and switch the active platform if needed.
+2. Confirm that `Assets/Scenes/Home.unity` is enabled in the scene list.
+3. Check Player settings: identifier **`com.mrrabbit.home`**, landscape orientation, **IL2CPP** and **ARM64**. The minimum Android API is **25**; the target API uses Unity's automatic setting.
+4. Build a local APK into **`Builds/Android/`**, using a versioned name such as `MrRabbit-0.10.0.apk`.
 
-Added on 17 October 2026. Both portraits are new designs generated with the built-in
-image generator, using Miss Rabbit as a visual style reference. Their source PNGs are
-in `Assets/Art/Characters/`; the exact prompts are in `ArtSources/Friends.prompts.txt`.
-Each sprite imports at a maximum of 512 pixels with Android/iOS ASTC 6x6, without
-mipmaps or a CPU-readable copy. The feature adds no physics, Animator or particles.
+Signing keys and passwords stay outside Git. Store distribution needs separate signing and publication setup. iOS builds require macOS, Xcode and Apple signing; no iOS release is asserted here.
 
-`MeadowFriend` handles greetings; the `Meadow Friends` layer scrolls with the landscape
-and renders above the sky decorations. `AgentScripts/AddFriends.cs` is a guarded
-one-time scene setup helper. `AgentScripts/VerifyFriends.cs` checks both rabbits with
-shoes and rollers, greeting timing/repeats, night readability, movement during greetings,
-and cleanup on returning home or changing characters.
+Read [Setup and builds](docs/GETTING_STARTED.md) before preparing a distributable build and follow the full [release verification requirements](docs/VERIFICATION.md).
 
-Verified in Unity Play mode at 1440 x 1080 and 2340 x 1080: actual Input System mouse
-and simulated touch events opened the correct greetings without moving the rabbit.
-Bubble bounds were checked at both edges, live frames confirmed timeout and offscreen
-cleanup, and both names and portraits were inspected by day and night. Existing meadow
-and day/night checks passed. Compilation and the final Console had no errors or warnings.
-These are Editor checks; physical-device performance and publishing remain separate work.
+## Checks and contribution
+
+```sh
+python tools/check_repository.py
+```
+
+The **Repository checks** GitHub workflow runs this same lightweight check on pushes and pull requests. It checks asset metadata and GUIDs, package pinning, the build scene and excluded local outputs. It does **not** compile Unity, run gameplay or certify a release. Existing `AgentScripts/Verify*.cs` helpers provide feature-specific Editor checks.
+
+Contributions should keep school progression central, preserve saves and make interactions clear to children aged 6–8. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md).
+
+## Documentation
+
+| Guide | Purpose |
+| --- | --- |
+| [Setup and builds](docs/GETTING_STARTED.md) | First import, Android configuration and troubleshooting |
+| [Architecture](docs/ARCHITECTURE.md) | Runtime systems, scene organization and saved progress |
+| [Assets and audio](docs/ASSETS_AND_AUDIO.md) | Drawings, generated art, offline narration and third-party content |
+| [Verification](docs/VERIFICATION.md) | Repository checks, feature QA, save safety and release gates |
+| [Development history](docs/DEVELOPMENT_HISTORY.md) | Preserved implementation notes and historical release evidence |
+
+## Credits and licensing
+
+Mr Rabbit grew from original drawings, developed into illustrated game assets with source prompts retained in `ArtSources`. Italian narration is synthesized during development and packaged for offline playback. Unity packages, TextMesh Pro resources, fonts and other third-party material retain their licenses and notices.
+
+A project-wide reuse license has not been selected. Public availability alone does not grant a new license to the original code, drawings, artwork, characters or narration. See [Assets and audio](docs/ASSETS_AND_AUDIO.md) for provenance and retained notices.

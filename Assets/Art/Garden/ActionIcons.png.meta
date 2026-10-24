@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 039b7f1b9dcbce44f89e539a7dbf96c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9175795837039238394
+    second: ActionIcons_0
+  - first:
+      213: -8330849250005609385
+    second: ActionIcons_1
+  - first:
+      213: -8541733118111531672
+    second: ActionIcons_2
+  - first:
+      213: 3326406602915988013
+    second: ActionIcons_3
+  - first:
+      213: 4262657829977223113
+    second: ActionIcons_4
+  - first:
+      213: -2028850218544623816
+    second: ActionIcons_5
+  - first:
+      213: -4009777336359089247
+    second: ActionIcons_6
+  - first:
+      213: -6060552479208597544
+    second: ActionIcons_7
+  - first:
+      213: -2624130662996442296
+    second: ActionIcons_8
+  - first:
+      213: 1080851570366547203
+    second: ActionIcons_9
+  - first:
+      213: 4624483108554129647
+    second: ActionIcons_10
+  - first:
+      213: 4861968949662344906
+    second: ActionIcons_11
+  - first:
+      213: -5877949956347017251
+    second: ActionIcons_12
+  - first:
+      213: 500575820276369191
+    second: ActionIcons_13
+  - first:
+      213: 646615295905535382
+    second: ActionIcons_14
+  - first:
+      213: 6910005303561739042
+    second: ActionIcons_15
+  - first:
+      213: 7740283573207806434
+    second: ActionIcons_16
+  - first:
+      213: 8905387687345368725
+    second: ActionIcons_17
+  - first:
+      213: 5944672865230417939
+    second: ActionIcons_18
+  - first:
+      213: -8032703843550358628
+    second: ActionIcons_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ActionIcons_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 873
+        width: 297
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603a4c93d4609a080800000000000000
+      internalID: -9175795837039238394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 857
+        width: 603
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7541610feb0e26c80800000000000000
+      internalID: -8330849250005609385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_2
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1197
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86db5c03cfaa57980800000000000000
+      internalID: -8541733118111531672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 891
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2242596e25c92e20800000000000000
+      internalID: 3326406602915988013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 579
+        width: 236
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf64da36b0082b30800000000000000
+      internalID: 4262657829977223113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_5
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 598
+        width: 299
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f8c2db97318d3e0800000000000000
+      internalID: -2028850218544623816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_6
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 863
+        width: 289
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab87edd1c86a58c0800000000000000
+      internalID: -4009777336359089247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 376
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7982e51a794eba0800000000000000
+      internalID: -6060552479208597544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_8
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 608
+        width: 270
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84303e3b017359bd0800000000000000
+      internalID: -2624130662996442296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_9
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 598
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3050f92d6c4fffe00800000000000000
+      internalID: 1080851570366547203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 351
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0c92bb2e67d2040800000000000000
+      internalID: 4624483108554129647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 302
+        width: 285
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac66a99fffe297340800000000000000
+      internalID: 4861968949662344906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_12
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 308
+        width: 267
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7c96c48a35d6ea0800000000000000
+      internalID: -5877949956347017251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_13
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 280
+        width: 289
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72709be6e0762f600800000000000000
+      internalID: 500575820276369191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_14
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 411
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69598ca8f2d39f800800000000000000
+      internalID: 646615295905535382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_15
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 304
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bdcda763545ef50800000000000000
+      internalID: 6910005303561739042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 379
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1b7d966e20b6b60800000000000000
+      internalID: 7740283573207806434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 43
+        width: 227
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59eab5b3bea469b70800000000000000
+      internalID: 8905387687345368725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_18
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 295
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31076f58978bf7250800000000000000
+      internalID: 5944672865230417939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ActionIcons_19
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 0
+        width: 266
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c931443d96a168090800000000000000
+      internalID: -8032703843550358628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ActionIcons_0: -9175795837039238394
+      ActionIcons_1: -8330849250005609385
+      ActionIcons_10: 4624483108554129647
+      ActionIcons_11: 4861968949662344906
+      ActionIcons_12: -5877949956347017251
+      ActionIcons_13: 500575820276369191
+      ActionIcons_14: 646615295905535382
+      ActionIcons_15: 6910005303561739042
+      ActionIcons_16: 7740283573207806434
+      ActionIcons_17: 8905387687345368725
+      ActionIcons_18: 5944672865230417939
+      ActionIcons_19: -8032703843550358628
+      ActionIcons_2: -8541733118111531672
+      ActionIcons_3: 3326406602915988013
+      ActionIcons_4: 4262657829977223113
+      ActionIcons_5: -2028850218544623816
+      ActionIcons_6: -4009777336359089247
+      ActionIcons_7: -6060552479208597544
+      ActionIcons_8: -2624130662996442296
+      ActionIcons_9: 1080851570366547203
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

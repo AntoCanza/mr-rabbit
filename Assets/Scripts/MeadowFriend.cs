@@ -36,7 +36,7 @@ namespace MrRabbit
         {
             if (!isActiveAndEnabled) return;
             remaining = greetingSeconds;
-            speech.text = greeting;
+            speech.text = "";
             speechBubble.SetActive(true);
             if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
         }
@@ -46,7 +46,7 @@ namespace MrRabbit
         private void LateUpdate()
         {
             if (!IsGreeting) return;
-            // Keep the words inside the meadow when a friend is near a screen edge.
+            // Keep the greeting picture inside the meadow near a screen edge.
             var body = (RectTransform)transform;
             float friendX = viewport.InverseTransformPoint(body.TransformPoint(body.rect.center)).x;
             if (friendX < viewport.rect.xMin - body.rect.width * .5f ||

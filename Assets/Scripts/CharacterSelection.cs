@@ -40,7 +40,6 @@ namespace MrRabbit
         {
             maleButton.onClick.AddListener(ChooseMale);
             femaleButton.onClick.AddListener(ChooseFemale);
-            changeButton.onClick.AddListener(ShowSelection);
         }
 
         private void Start() => ShowSelection();
@@ -58,8 +57,8 @@ namespace MrRabbit
             houseView.SetActive(true);
             player.ResetToStart();
             if (adventure != null) adventure.StartAtHome();
-            movementHint.SetActive(true);
-            changeButton.gameObject.SetActive(true);
+            movementHint.SetActive(false);
+            changeButton.gameObject.SetActive(false);
             // House arrow keys must not keep navigating an invisible selection button.
             if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
         }

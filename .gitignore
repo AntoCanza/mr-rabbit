@@ -115,3 +115,24 @@ Captures/
 # Platform packaging outputs
 *.apk
 *.aab
+
+# Local secrets, signing material and developer environments
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.mobileprovision
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local regression evidence and exported test reports
+/TestResults/
+/TestResults*.xml
+/coverage/

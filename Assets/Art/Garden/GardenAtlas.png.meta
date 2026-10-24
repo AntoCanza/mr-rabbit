@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 4fa641e95b91e214ba92c0c6326aeafa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6715556870671451518
+    second: GardenAtlas_0
+  - first:
+      213: -4287890034833312696
+    second: GardenAtlas_1
+  - first:
+      213: 232009294188719705
+    second: GardenAtlas_2
+  - first:
+      213: -6999201884602041414
+    second: GardenAtlas_3
+  - first:
+      213: -4446185601203251667
+    second: GardenAtlas_4
+  - first:
+      213: -123376147322616225
+    second: GardenAtlas_5
+  - first:
+      213: 6015660162336883194
+    second: GardenAtlas_6
+  - first:
+      213: 7036587238030508770
+    second: GardenAtlas_7
+  - first:
+      213: -7700796094825777817
+    second: GardenAtlas_8
+  - first:
+      213: -7216432183293592318
+    second: GardenAtlas_9
+  - first:
+      213: -5541247424286872231
+    second: GardenAtlas_10
+  - first:
+      213: 7895461524503388579
+    second: GardenAtlas_11
+  - first:
+      213: -4046224778961428744
+    second: GardenAtlas_12
+  - first:
+      213: 466178878204570916
+    second: GardenAtlas_13
+  - first:
+      213: -1627998266596806890
+    second: GardenAtlas_14
+  - first:
+      213: 4842046450190858801
+    second: GardenAtlas_15
+  - first:
+      213: 7401138828763977826
+    second: GardenAtlas_16
+  - first:
+      213: -8082264995710188593
+    second: GardenAtlas_17
+  - first:
+      213: 7560681593260822311
+    second: GardenAtlas_18
+  - first:
+      213: 4813443898198251901
+    second: GardenAtlas_19
+  - first:
+      213: 6173697235561353752
+    second: GardenAtlas_20
+  - first:
+      213: -6730946996179159885
+    second: GardenAtlas_21
+  - first:
+      213: -6925757709081573459
+    second: GardenAtlas_22
+  - first:
+      213: -2463186924533835999
+    second: GardenAtlas_23
+  - first:
+      213: 2991209378112961636
+    second: GardenAtlas_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GardenAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 930
+        width: 269
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ab1be4b9c8dc2a0800000000000000
+      internalID: -6715556870671451518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 873
+        width: 345
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844b2d54bba5e74c0800000000000000
+      internalID: -4287890034833312696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 917
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e25bc4933483300800000000000000
+      internalID: 232009294188719705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 927
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbfc0528f6ddde90800000000000000
+      internalID: -6999201884602041414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 929
+        width: 260
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26d2daa0c9fb42c0800000000000000
+      internalID: -4446185601203251667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 602
+        width: 261
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5644153c0ea94ef0800000000000000
+      internalID: -123376147322616225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 616
+        width: 274
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af10f899b0beb7350800000000000000
+      internalID: 6015660162336883194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 875
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e20bd1cfcaf6a160800000000000000
+      internalID: 7036587238030508770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 625
+        width: 282
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765b13890c6412590800000000000000
+      internalID: -7700796094825777817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 803
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20db611e9251adb90800000000000000
+      internalID: -7216432183293592318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 626
+        width: 255
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d25de83d88913b0800000000000000
+      internalID: -5541247424286872231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_11
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 618
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1e9c1bc60529d60800000000000000
+      internalID: 7895461524503388579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_12
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 630
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fede98500ce8d7c0800000000000000
+      internalID: -4046224778961428744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_13
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 627
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d6c254833387600800000000000000
+      internalID: 466178878204570916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_14
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 612
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fab88b3303869e0800000000000000
+      internalID: -1627998266596806890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_15
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 319
+        width: 257
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a31999797623340800000000000000
+      internalID: 4842046450190858801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_16
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 322
+        width: 240
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268d3d54d8026b660800000000000000
+      internalID: 7401138828763977826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_17
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 408
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3ce1edec606df80800000000000000
+      internalID: -8082264995710188593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 27
+        width: 309
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f4522d9dfece860800000000000000
+      internalID: 7560681593260822311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_19
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 308
+        width: 321
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79d06209b9ccc240800000000000000
+      internalID: 4813443898198251901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_20
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 395
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81212741de06da550800000000000000
+      internalID: 6173697235561353752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_21
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 296
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b432ca7e5fd692a0800000000000000
+      internalID: -6730946996179159885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_22
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 27
+        width: 305
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da705cdce04c2ef90800000000000000
+      internalID: -6925757709081573459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 37
+        width: 263
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12716cbea8001ddd0800000000000000
+      internalID: -2463186924533835999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardenAtlas_24
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 29
+        width: 296
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c7d3fc419e28920800000000000000
+      internalID: 2991209378112961636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GardenAtlas_0: -6715556870671451518
+      GardenAtlas_1: -4287890034833312696
+      GardenAtlas_10: -5541247424286872231
+      GardenAtlas_11: 7895461524503388579
+      GardenAtlas_12: -4046224778961428744
+      GardenAtlas_13: 466178878204570916
+      GardenAtlas_14: -1627998266596806890
+      GardenAtlas_15: 4842046450190858801
+      GardenAtlas_16: 7401138828763977826
+      GardenAtlas_17: -8082264995710188593
+      GardenAtlas_18: 7560681593260822311
+      GardenAtlas_19: 4813443898198251901
+      GardenAtlas_2: 232009294188719705
+      GardenAtlas_20: 6173697235561353752
+      GardenAtlas_21: -6730946996179159885
+      GardenAtlas_22: -6925757709081573459
+      GardenAtlas_23: -2463186924533835999
+      GardenAtlas_24: 2991209378112961636
+      GardenAtlas_3: -6999201884602041414
+      GardenAtlas_4: -4446185601203251667
+      GardenAtlas_5: -123376147322616225
+      GardenAtlas_6: 6015660162336883194
+      GardenAtlas_7: 7036587238030508770
+      GardenAtlas_8: -7700796094825777817
+      GardenAtlas_9: -7216432183293592318
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

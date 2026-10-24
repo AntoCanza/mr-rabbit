@@ -1,0 +1,42 @@
+# Keep Unity YAML and source readable across operating systems.
+* text=auto
+.editorconfig text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.vsconfig text eol=lf
+*.cs text eol=lf
+*.shader text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.scenetemplate text eol=lf
+*.inputactions text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
+*.ttf binary
+*.otf binary
+*.fbx binary
+*.psd binary
+
+# These are genuine content, but should not dominate GitHub's language summary.
+ArtSources/** linguist-vendored
+Assets/Art/** linguist-detectable=false
+Assets/Audio/** linguist-detectable=false
+Assets/Screenshots/** linguist-detectable=false
+Assets/Settings/** linguist-detectable=false
+Assets/Scenes/** linguist-detectable=false
+"Assets/TextMesh Pro/**" linguist-vendored
+ProjectSettings/** linguist-detectable=false

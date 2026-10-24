@@ -19,11 +19,14 @@ namespace MrRabbit
         private TimeOfDay lastLabel = (TimeOfDay)(-1);
         public float NormalizedTime => time;
         public float CycleSeconds => cycleSeconds;
+        public event System.Action<float> GameDaysAdvanced;
         public float NightAmount => Darkness(time);
         public TimeOfDay Period => time < .4f ? TimeOfDay.Giorno : time < .5f ? TimeOfDay.Tramonto :
             time < .9f ? TimeOfDay.Notte : TimeOfDay.Alba;
-        public bool IsAdvancing => !suspended && adventure != null &&
-            (adventure.Location == OutdoorAdventure.Place.Home || adventure.Location == OutdoorAdventure.Place.Meadow);
+        public bool IsAdvancing => !suspended && adventure != null && !(adventure.GetComponent<GameGuide>() is GameGuide guide&&(guide.IntroOpen||guide.MenuOpen)) &&
+            (adventure.Location == OutdoorAdventure.Place.Home || adventure.Location == OutdoorAdventure.Place.Meadow ||
+             adventure.Location == OutdoorAdventure.Place.Visit || adventure.Location == OutdoorAdventure.Place.Garden ||
+             adventure.Location == OutdoorAdventure.Place.City);
 
         public void Configure(OutdoorAdventure travel, UnityEngine.UI.Image house, UnityEngine.UI.Image meadow,
             UnityEngine.UI.Image background, SkyCycleGraphic homeSky, SkyCycleGraphic lawnSky,
@@ -46,10 +49,14 @@ namespace MrRabbit
         public void Advance(float seconds)
         {
             if (IsAdvancing && seconds > 0)
-                time = Mathf.Repeat(time + seconds / Mathf.Max(20, cycleSeconds), 1);
+            {
+                float days = seconds / Mathf.Max(20, cycleSeconds);
+                time = Mathf.Repeat(time + days, 1);
+                GameDaysAdvanced?.Invoke(days);
+            }
             // Twenty small UI updates per second; no lights, shaders, textures or objects allocated at runtime.
             renderDelay -= Mathf.Max(0, seconds);
-            if (renderDelay <= 0 || badge.activeSelf != IsAdvancing)
+            if (renderDelay <= 0)
             {
                 renderDelay = .05f;
                 RefreshVisuals();
@@ -74,8 +81,7 @@ namespace MrRabbit
             meadowPainting.color = Color.Lerp(meadowColor, new Color(1,.65f,.48f), dusk * .45f);
             houseSky.SetTime(time, night);
             meadowSky.SetTime(time, night);
-            bool visible = IsAdvancing;
-            badge.SetActive(visible);
+            badge.SetActive(false);
             // The scenery changes light; the cream UI keeps its contrast throughout dusk and dawn.
             paper.color = paperDay;
             title.color = titleDay;

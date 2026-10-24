@@ -1,0 +1,7 @@
+Tool: built-in image_gen image editing (transparent output), 18 October 2026.
+Target: Assets/Art/City/HomeExterior.png.
+Palette/style reference: Assets/Art/Outdoors/CottagesCutout.png.
+Final project asset: Assets/Art/City/HomeExteriorHarmonized.png.
+
+Final prompt:
+Use case: precise-object-edit. Edit target is image 1, the single Mr Rabbit house. Image 2 (two small cottages) is ONLY the exact COLOR AND PAINTING STYLE REFERENCE, not additional objects. Recolor image 1 to belong naturally beside the cottages in image 2: soft light creamy yellow walls, warm medium brown outlines, simpler gentle shading, bright clear pale cyan windows, warm wooden brown door, light terracotta/coral roof with softened contrast, green leaves and flower boxes matching the cheerful flat storybook palette of image 2. Tone down the orange glow, mottled stone/paper texture and deep shadows of image 1. IMPORTANT preserve the exact single house architecture, silhouette, front-facing perspective, all window and door locations, two storeys, chimney, roof outline and front steps. This is a restrained palette/style harmonization, not an architectural redesign. Preserve the original subject's scale and full composition with small transparent padding; show the whole house and steps. Genuine transparent background. No ground, no lawn, no sky, no other house, no characters, no text, no added objects. Output only the edited single house sprite suitable for a children's 2D game.

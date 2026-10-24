@@ -1,0 +1,1026 @@
+{
+  "profile": {
+    "voice": "it-IT-ElsaNeural",
+    "locale": "it-IT",
+    "rate": "-5%",
+    "volume": "-5%",
+    "pitch": "+0Hz",
+    "sampleRate": 24000,
+    "approvedSample": "VoiceAuditions/Guida-naturale-elsa-prova.mp3",
+    "direction": "Calm, warm, reassuring female voice. Use this same voice for all narration, notifications, lessons and onboarding. No desktop-speech fallback."
+  },
+  "synthetic": true,
+  "generator": "edge-tts",
+  "generatorVersion": "7.3.1",
+  "source": "https://github.com/rany2/edge-tts",
+  "clips": [
+    {
+      "key": "home",
+      "text": "Tocca lo schermo e trascina il dito nella direzione in cui vuoi andare.",
+      "seconds": 4.488,
+      "sha256": "23581c01d7c33b0ff0d330e0cf2dab509db2077380c0b48427038ce10152150e"
+    },
+    {
+      "key": "garden",
+      "text": "Scegli un attrezzo, poi tocca un pezzetto di terra.",
+      "seconds": 3.624,
+      "sha256": "067d640955f8f256c1ae54b439b8bc6c734d1658d282a3bf17de951f0fa4b432"
+    },
+    {
+      "key": "school",
+      "text": "Prepara lo zaino. Poi siediti e ascolta la maestra.",
+      "seconds": 3.912,
+      "sha256": "3e6f687c809c8d96d948322cb19e4d543a42138500cce751af0d3e71e4553aa7"
+    },
+    {
+      "key": "city",
+      "text": "Eccoci in città! Puoi consegnare il raccolto o scegliere un vestito.",
+      "seconds": 4.968,
+      "sha256": "7829ee2b601a72d0f1c4da04c6eae54bf6e3004e21bd3a5455f40c929856a4fd"
+    },
+    {
+      "key": "train",
+      "text": "Scegli dove vuoi andare. Il treno sta per partire!",
+      "seconds": 3.84,
+      "sha256": "787d7b9e079d4fcea950cee19bcad77c2c45ab85ae34fb50f8f6cba4dccd5c34"
+    },
+    {
+      "key": "water",
+      "text": "L'orto ha bisogno d'acqua. Prendi l'annaffiatoio.",
+      "seconds": 3.552,
+      "sha256": "f499829fcf46d1bde5d2285b0b7c619679018681a466d337fe87d12b58b0450d"
+    },
+    {
+      "key": "harvest",
+      "text": "Il raccolto è pronto! Prendi il cesto.",
+      "seconds": 3.288,
+      "sha256": "7b070c76a2fa4bcec12359845d7523e945aff287792b008dcc61b8ad03a55e3d"
+    },
+    {
+      "key": "notebook",
+      "text": "Scegli una tappa. Prima ci esercitiamo, poi puoi provare a conquistare una medaglia.",
+      "seconds": 5.88,
+      "sha256": "f62aab4fa51b5e7cdfc336c4e2015e88c08ae2304e77e5e9bfc1889c3f57b644"
+    },
+    {
+      "key": "vowel",
+      "text": "Guarda il disegno. Scrivi la vocale che manca nella parola.",
+      "seconds": 4.056,
+      "sha256": "ae3d58d6eb115dee990169837411e9408a72cfed12b19b3eadff94f2f2f9a072"
+    },
+    {
+      "key": "syllable",
+      "text": "Guarda il disegno. Scegli la sillaba che completa la parola.",
+      "seconds": 4.104,
+      "sha256": "c69d1a2797981c72c1a789782ddf13e9d529edea291d117c6a8dca4692d8e971"
+    },
+    {
+      "key": "word",
+      "text": "Guarda il disegno. Tocca la parola giusta.",
+      "seconds": 3.12,
+      "sha256": "6c11db2af428fea893cdf0660ec29bfc3b7922772e8d9237206579e38d2176f0"
+    },
+    {
+      "key": "sentence",
+      "text": "Leggi la frase e scegli il disegno giusto.",
+      "seconds": 3.168,
+      "sha256": "363021bdd2b345e0902992726ec8804e244d0dcaa7f0db7030d0e8de164ea7a4"
+    },
+    {
+      "key": "count",
+      "text": "Conta gli oggetti. Poi scrivi quanti sono.",
+      "seconds": 3.384,
+      "sha256": "c92b7925c020a0892d87afd2185f2ca0239c426086cf7ec72ac1d8de9b47fb35"
+    },
+    {
+      "key": "sequence",
+      "text": "Guarda i numeri in ordine. Scrivi quello che viene dopo.",
+      "seconds": 3.768,
+      "sha256": "c562503f23fa02f37201214a879b0e1382f1761afcdc41587a566e39060b82b3"
+    },
+    {
+      "key": "sum",
+      "text": "Quanti sono tutti insieme? Scrivi il risultato.",
+      "seconds": 3.768,
+      "sha256": "464ba2ea5f08579451dfd530d57f308700916f67384586a3e19210ff2500a050"
+    },
+    {
+      "key": "correct",
+      "text": "Bene, ci sei riuscito!",
+      "seconds": 2.304,
+      "sha256": "9511400fcce8639782308d2f05f9712fa811d2569df828bbdbe3db454962968c"
+    },
+    {
+      "key": "retry",
+      "text": "Riproviamo con calma.",
+      "seconds": 1.872,
+      "sha256": "d1b903ebfa3ae5ea45b119842933d3ea530462d4ecd1f30f9437b7e93b7db853"
+    },
+    {
+      "key": "rewrite",
+      "text": "Non ho capito bene il segno. Cancellalo e prova a scriverlo ancora.",
+      "seconds": 4.776,
+      "sha256": "e16bbe71a369a773410144a828eeb106129f2b6179eb2b6807448a7e7f468fd4"
+    },
+    {
+      "key": "help",
+      "text": "Guardiamo insieme un esempio. Ora ci esercitiamo senza perdere nessun premio.",
+      "seconds": 5.52,
+      "sha256": "bf5f0ea6a57a660703c9869368b874d7c92e1bd9706efd21ff20b0c6d8dac9fb"
+    },
+    {
+      "key": "ready",
+      "text": "Hai fatto pratica! Ora puoi provare la verifica con la medaglia.",
+      "seconds": 4.176,
+      "sha256": "10a042db35096dd8b22487bb453034882e861869216f2f30b290506c0f94a3bf"
+    },
+    {
+      "key": "practice",
+      "text": "Ci esercitiamo ancora un poco. Puoi riprovare quando vuoi.",
+      "seconds": 4.008,
+      "sha256": "ca361be77d91adfd5ab4c7b381a36c6ec13d735e30108b8b2607fdc79a4c0aee"
+    },
+    {
+      "key": "passed",
+      "text": "Verifica superata! La tua medaglia è già al sicuro.",
+      "seconds": 3.84,
+      "sha256": "ff548e53ddebfcd25fc5963319d62e1f2b770d8643e6853179dc27259cc6b2ad"
+    },
+    {
+      "key": "wall",
+      "text": "Qui puoi appendere le tue medaglie. Scegline una, poi tocca una cornice.",
+      "seconds": 5.448,
+      "sha256": "d527c4d8994a8b14d29e52a039387c69d62e7555a7a472b77094dae8bd85dc4a"
+    },
+    {
+      "key": "hang",
+      "text": "Scegli una cornice per appendere questa medaglia.",
+      "seconds": 3.12,
+      "sha256": "e88c0b0cfbe5701fd0a672c608dcda7bd90d1e7a485c2f2385337348cac4a953"
+    },
+    {
+      "key": "hung",
+      "text": "Eccola appesa! Puoi spostarla quando vuoi.",
+      "seconds": 3.312,
+      "sha256": "397aefcd670a950f1b48af7fced430a6488b2ca6a3387aa33c94dd5e63e034e4"
+    },
+    {
+      "key": "wardrobe",
+      "text": "Scegli un vestito. Le nuove medaglie sbloccano altri abiti da acquistare con le monete.",
+      "seconds": 5.88,
+      "sha256": "7ba61981ebd41a03830a089efc080e111dcd8e1a771342d5957df292cef301fd"
+    },
+    {
+      "key": "tool_0",
+      "text": "Prendi la zappa, poi tocca la terra da preparare.",
+      "seconds": 3.528,
+      "sha256": "09bac51ae0e5fffb112c1fd65ceab67be0c4d2a2e4d6452c5cacd6fc87b99c99"
+    },
+    {
+      "key": "tool_1",
+      "text": "Scegli i semi. Poi tocca la terra preparata.",
+      "seconds": 3.552,
+      "sha256": "af32f7b40a93c81ec48ebe09b649d668df4f578bdcfe74a851d402dd21b97362"
+    },
+    {
+      "key": "tool_2",
+      "text": "Prendi l'annaffiatoio. Poi tocca la pianta che ha sete.",
+      "seconds": 3.816,
+      "sha256": "a7a897338ab9da0fba959d5dc4811b1a0eba864e5f9a6645b1708d950eb9fb89"
+    },
+    {
+      "key": "tool_3",
+      "text": "Prendi il cesto. Poi tocca le piante con il raccolto pronto.",
+      "seconds": 4.44,
+      "sha256": "699a31109f693dddf69329563de4cec3abb352a72ba363a2845dda964503cdf6"
+    },
+    {
+      "key": "letter_A",
+      "text": "Tocca la lettera a.",
+      "seconds": 1.872,
+      "sha256": "e06acca32c3e6e96c4c29c82ef457d4938893d74ef8b5424a2820b59d3c158e4"
+    },
+    {
+      "key": "letter_B",
+      "text": "Tocca la lettera bi.",
+      "seconds": 1.872,
+      "sha256": "77b3f60590ff9c8111255cec7ecdc0955be296836757ecefe8dc46d8f2e5f6e8"
+    },
+    {
+      "key": "write_B",
+      "text": "Scrivi la lettera bi, in stampatello maiuscolo.",
+      "seconds": 3.576,
+      "sha256": "34f01c243d4fa55805f9a712519f8aedb5a29235c2e7163db50fd553bb389db7"
+    },
+    {
+      "key": "letter_C",
+      "text": "Tocca la lettera ci.",
+      "seconds": 1.872,
+      "sha256": "09cac7a1592a5d0f84f52be43626217758744699a43c5c54f26f95cd0e79153b"
+    },
+    {
+      "key": "write_C",
+      "text": "Scrivi la lettera ci, in stampatello maiuscolo.",
+      "seconds": 3.576,
+      "sha256": "1988bb2a553b31a4ba9dd33ae52ca53a965ffca6716d42bb83ba45e267b60e1b"
+    },
+    {
+      "key": "letter_D",
+      "text": "Tocca la lettera di.",
+      "seconds": 1.872,
+      "sha256": "1fda236e1934f2cedc8fae128ac175a3f7f9618cad8924a5f854cdbeb315b89b"
+    },
+    {
+      "key": "write_D",
+      "text": "Scrivi la lettera di, in stampatello maiuscolo.",
+      "seconds": 3.528,
+      "sha256": "fd48db1a205c7c2f99067fdf63bee2df49767a21156f473edae4f4ed6f9aa4e2"
+    },
+    {
+      "key": "letter_E",
+      "text": "Tocca la lettera e.",
+      "seconds": 1.872,
+      "sha256": "d7a58123c873779e7da68e074fa8a72ffe756d7990d424f1e41798c90a229919"
+    },
+    {
+      "key": "letter_F",
+      "text": "Tocca la lettera effe.",
+      "seconds": 1.872,
+      "sha256": "57b2d034fae20679a32ceefb76f89a2574b8f6bf3f4d35fce98cc4ba9e85a736"
+    },
+    {
+      "key": "write_F",
+      "text": "Scrivi la lettera effe, in stampatello maiuscolo.",
+      "seconds": 3.768,
+      "sha256": "e8762fb5cc2c293d00c1f43622fccb7c1fb26a64651f0631c8a8cff20d96f122"
+    },
+    {
+      "key": "letter_G",
+      "text": "Tocca la lettera gi.",
+      "seconds": 1.872,
+      "sha256": "9f56d8654bd1633fdbf00260b12cb9b18c5c0ef3aa150dd8d4973d909d937307"
+    },
+    {
+      "key": "write_G",
+      "text": "Scrivi la lettera gi, in stampatello maiuscolo.",
+      "seconds": 3.456,
+      "sha256": "ffd4a463b4debd0bde93e11eee72a0fa7f89a8d3392ba02e87c6354cb3917438"
+    },
+    {
+      "key": "letter_H",
+      "text": "Tocca la lettera acca.",
+      "seconds": 1.872,
+      "sha256": "19789fe08d37bf288c4494da51be23022412dce292d7694c87cf90f4fb96c21f"
+    },
+    {
+      "key": "write_H",
+      "text": "Scrivi la lettera acca, in stampatello maiuscolo.",
+      "seconds": 3.72,
+      "sha256": "640e71d6fa5ef7c13b93ed3f1d76c0d5afd819259a8079184a90549a5c7bbdf1"
+    },
+    {
+      "key": "letter_I",
+      "text": "Tocca la lettera i.",
+      "seconds": 1.872,
+      "sha256": "ba36de4609b05ac29b08d74889a12b561010deb6eae10159863e99210921e516"
+    },
+    {
+      "key": "letter_L",
+      "text": "Tocca la lettera elle.",
+      "seconds": 1.872,
+      "sha256": "560e33ac638dbd872037683ab989634958b59859dfd44f22b7ba1efb276b407d"
+    },
+    {
+      "key": "write_L",
+      "text": "Scrivi la lettera elle, in stampatello maiuscolo.",
+      "seconds": 3.624,
+      "sha256": "becdf3624c76bab195a130f1ea7ccea73c2a75bb319cdfbade8470d568421924"
+    },
+    {
+      "key": "letter_M",
+      "text": "Tocca la lettera emme.",
+      "seconds": 1.872,
+      "sha256": "169f788c906820f8d61bbda1433a7988a96f5404d77225b78e76aaf2b56a9119"
+    },
+    {
+      "key": "write_M",
+      "text": "Scrivi la lettera emme, in stampatello maiuscolo.",
+      "seconds": 3.816,
+      "sha256": "ff5e07416850047e673fa2a701d53e5cf65483aa1a53a4ebbe0fb558bbd08415"
+    },
+    {
+      "key": "letter_N",
+      "text": "Tocca la lettera enne.",
+      "seconds": 1.872,
+      "sha256": "776fdf0ddaebdfe56b9d0e0798107bd530a66f3bbf6de17a118515bd43ad00ff"
+    },
+    {
+      "key": "write_N",
+      "text": "Scrivi la lettera enne, in stampatello maiuscolo.",
+      "seconds": 3.84,
+      "sha256": "1b99fb411c2d5eeb8d6c1827025c29e194c3404ab4593d9e0c06bc92dc0d8e39"
+    },
+    {
+      "key": "letter_O",
+      "text": "Tocca la lettera o.",
+      "seconds": 1.872,
+      "sha256": "c7bfed18af852387b62234bd7ea81dd094b286c9b5697b9f4edb52bda8538907"
+    },
+    {
+      "key": "letter_P",
+      "text": "Tocca la lettera pi.",
+      "seconds": 1.872,
+      "sha256": "06f5af245b89adb416ad34157aab754e21c7b1fc82f5b7f006844e0e063a213e"
+    },
+    {
+      "key": "write_P",
+      "text": "Scrivi la lettera pi, in stampatello maiuscolo.",
+      "seconds": 3.624,
+      "sha256": "89dfd72c1a2b8d8b0a630cb13bba1364fdb0ea98138235ca9d89a5b88b66601a"
+    },
+    {
+      "key": "letter_Q",
+      "text": "Tocca la lettera cu.",
+      "seconds": 1.872,
+      "sha256": "2a3c85dd370feffc63e9acd6616ad1a8b82b5232c109f8445be8bfb5bc1c24ec"
+    },
+    {
+      "key": "write_Q",
+      "text": "Scrivi la lettera cu, in stampatello maiuscolo.",
+      "seconds": 3.432,
+      "sha256": "b1d0747eb1df223f67c6b6aeb34842b4f2c321c373096fd8c8bae669cf065059"
+    },
+    {
+      "key": "letter_R",
+      "text": "Tocca la lettera erre.",
+      "seconds": 1.872,
+      "sha256": "4c0b3f04f6bc4d6ee85f8d39285754d4ce3b4420aecb8ee52b8fe5512cb0ce34"
+    },
+    {
+      "key": "write_R",
+      "text": "Scrivi la lettera erre, in stampatello maiuscolo.",
+      "seconds": 3.84,
+      "sha256": "67b114800a9a373ee9ba7f48e6e8658748eca181903837dbb41f2f6cb1fa2a8a"
+    },
+    {
+      "key": "letter_S",
+      "text": "Tocca la lettera esse.",
+      "seconds": 1.872,
+      "sha256": "fdd3275c4905c40500e4ed00e777dcecaadbe7dae910b448e0cea8cae80baee4"
+    },
+    {
+      "key": "write_S",
+      "text": "Scrivi la lettera esse, in stampatello maiuscolo.",
+      "seconds": 3.696,
+      "sha256": "9b16ee00b4c9e757caf814cece95e21af2aca0b184317305d43cad600bb784ae"
+    },
+    {
+      "key": "letter_T",
+      "text": "Tocca la lettera ti.",
+      "seconds": 1.872,
+      "sha256": "5c4922c049a84ef6fd0148ea459744687194907ab8cbe94fbe92ecf40b0eb0ea"
+    },
+    {
+      "key": "write_T",
+      "text": "Scrivi la lettera ti, in stampatello maiuscolo.",
+      "seconds": 3.48,
+      "sha256": "3725b333c695e6034d85634a75823036d79f5c3d4edd9b9a3e57fd44813f5341"
+    },
+    {
+      "key": "letter_U",
+      "text": "Tocca la lettera u.",
+      "seconds": 1.872,
+      "sha256": "421893b1ed812e9894e2c326e931d0c5cce6764da6f3c639b06d1531da718fb4"
+    },
+    {
+      "key": "letter_V",
+      "text": "Tocca la lettera vu.",
+      "seconds": 1.872,
+      "sha256": "44d8a00b3e0625015592aeefe9b5920d853341ef0ef6632e9e91484e1d5b5489"
+    },
+    {
+      "key": "write_V",
+      "text": "Scrivi la lettera vu, in stampatello maiuscolo.",
+      "seconds": 3.504,
+      "sha256": "22be3b525f943b881350005aae56ec6b9c8e163e91b55ccbfcaeecb2458c2108"
+    },
+    {
+      "key": "letter_Z",
+      "text": "Tocca la lettera zeta.",
+      "seconds": 1.896,
+      "sha256": "49f2982bf1b31657991110bc111b35d3aac94e3be7dd90366482d7efd9454d9a"
+    },
+    {
+      "key": "write_Z",
+      "text": "Scrivi la lettera zeta, in stampatello maiuscolo.",
+      "seconds": 3.84,
+      "sha256": "36b2991cca93a056c4158c8bc16c90002a944a292972c8f75883f0b1d1758e29"
+    },
+    {
+      "key": "skill_0",
+      "text": "Vocali. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.256,
+      "sha256": "15bfb91f1d43764f1b46441296a98de5a25a51c1ff1fcc9c090d52e2e586e58f"
+    },
+    {
+      "key": "medal_0",
+      "text": "Hai conquistato una medaglia! Hai sbloccato i semi di zucca!",
+      "seconds": 4.464,
+      "sha256": "f31b469237b41bde98dd0ee8efd3f0371eb047fe69f2967163c40ecbc6d3dde6"
+    },
+    {
+      "key": "skill_1",
+      "text": "Suoni e lettere. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.664,
+      "sha256": "39c03ffc892084ceddf910abfeb49ba2974aebb758c3dfa036db6d6d6522c607"
+    },
+    {
+      "key": "medal_1",
+      "text": "Hai conquistato una medaglia! Portala a casa e scegli dove appenderla.",
+      "seconds": 5.016,
+      "sha256": "5117b5e060ecb4b585116717269374c46c9f383c732a6f0c6a07ad0b3b32a047"
+    },
+    {
+      "key": "skill_2",
+      "text": "Sillabe. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.352,
+      "sha256": "5f15b342f429166c5fc8b17b3265fa891fd65f09ecc2aded5c90fadf44ed65d8"
+    },
+    {
+      "key": "medal_2",
+      "text": "Hai conquistato una medaglia! Portala a casa e scegli dove appenderla.",
+      "seconds": 5.016,
+      "sha256": "405bfd68ff57358125b78647d93d2688940cb97feec20dad345c4565e04f6b1c"
+    },
+    {
+      "key": "skill_3",
+      "text": "Parole. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.088,
+      "sha256": "f0a03876818dea3f6937159431fc50523df535a65b4825e72bb8695e2fc6135e"
+    },
+    {
+      "key": "medal_3",
+      "text": "Hai conquistato una medaglia! Portala a casa e scegli dove appenderla.",
+      "seconds": 5.016,
+      "sha256": "746ae522c29b688a368b1d743c6a629a058eb48f00c73aeb26a26c514118090e"
+    },
+    {
+      "key": "skill_4",
+      "text": "Piccole frasi. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.544,
+      "sha256": "cac3c47be6202a4d8515725776a2c5853d8fdcd79d1930813db695151830c7f6"
+    },
+    {
+      "key": "medal_4",
+      "text": "Hai conquistato una medaglia! Hai sbloccato una decorazione per la casa!",
+      "seconds": 5.088,
+      "sha256": "79f746c170e54657dda2c4ee7ae56eafdc4e6ab8b14fccebe5bd4b8bb51403df"
+    },
+    {
+      "key": "skill_5",
+      "text": "Numeri fino a dieci. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 6.168,
+      "sha256": "c2c152c770f8f936faa37f3e59621ea51ac93432e7fb2678e936e8fa7e31eaae"
+    },
+    {
+      "key": "medal_5",
+      "text": "Hai conquistato una medaglia! Portala a casa e scegli dove appenderla.",
+      "seconds": 5.016,
+      "sha256": "b41ca0045366d681138f72de1c4a9753c8b7332b92ad23018f549b033b4fef56"
+    },
+    {
+      "key": "skill_6",
+      "text": "Numeri fino a venti. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.976,
+      "sha256": "fa66f4e66a3bd2195896a43bb9d23110b53df80ec256d715d1007683fce8788d"
+    },
+    {
+      "key": "medal_6",
+      "text": "Hai conquistato una medaglia! Portala a casa e scegli dove appenderla.",
+      "seconds": 5.016,
+      "sha256": "12578c8570a6eff5aeb919e1160a5aca60bb2067185d6b06f8c4753586ba50dc"
+    },
+    {
+      "key": "skill_7",
+      "text": "Somme fino a cinque. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 6.096,
+      "sha256": "e96d997b9deecddfece82dc6ba692500ef6090cd5a56a095e5d802445630c4e6"
+    },
+    {
+      "key": "medal_7",
+      "text": "Hai conquistato una medaglia! Portala a casa e scegli dove appenderla.",
+      "seconds": 5.016,
+      "sha256": "086a2733e1b286e070a770df079ccee31a48be1f8917650bad4f36177d15c7b3"
+    },
+    {
+      "key": "skill_8",
+      "text": "Somme fino a dieci. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 6.12,
+      "sha256": "78062a2c099035b247c7ed6286e041fa53d60d1ba1f18e57e2f226615cf69405"
+    },
+    {
+      "key": "medal_8",
+      "text": "Hai conquistato una medaglia! Hai sbloccato i mirtilli!",
+      "seconds": 4.176,
+      "sha256": "51abfe0148bf60c73da5ca86dc234816bee161903a8550f7f240ced62204d411"
+    },
+    {
+      "key": "skill_9",
+      "text": "Somme fino a venti. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.88,
+      "sha256": "7c2b2f542a335ab6f7bacf07882286dfe7515cf3a4980b67f8f3e9f079f3d169"
+    },
+    {
+      "key": "medal_9",
+      "text": "Hai conquistato una medaglia! In negozio ti aspetta il nuovo abito smeraldo!",
+      "seconds": 5.376,
+      "sha256": "a3abf6f6c93fba5a09c4c2319cabaaa9a936f3f8aa9d385751daf9c34312a9fa"
+    },
+    {
+      "key": "skill_10",
+      "text": "Scrivo le lettere. Tocca la matita per esercitarti, o la medaglia per la verifica.",
+      "seconds": 5.712,
+      "sha256": "00ddf4beda2e9130bacc680501fa440d69cc6782850741d1709c30cda95a993e"
+    },
+    {
+      "key": "medal_10",
+      "text": "Hai conquistato una medaglia! In negozio ti aspetta il nuovo abito dorato!",
+      "seconds": 5.064,
+      "sha256": "04ca3422c821b16eb6d9f11d4e769b6557899e981b6a399f4fc797e909b32c1e"
+    },
+    {
+      "key": "order_0_3",
+      "text": "Il cliente cerca 3 carote. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.584,
+      "sha256": "de8ddae09f7142ab4543b2e36f3215280ea6db6e2472e6467eed88ff19193e72"
+    },
+    {
+      "key": "order_0_6",
+      "text": "Il cliente cerca 6 carote. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.632,
+      "sha256": "dfb61e9200cdb96e443e000ace4522311a66bbf5bb067908d9876587fa0e5271"
+    },
+    {
+      "key": "order_1_3",
+      "text": "Il cliente cerca 3 grano. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.416,
+      "sha256": "342754f7f5a3630a7239771abe3848e6d630b5ba64092c40368d55af2e3bf14a"
+    },
+    {
+      "key": "order_1_6",
+      "text": "Il cliente cerca 6 grano. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.56,
+      "sha256": "b93d56ec395dc74585d8927361be5c3c0055d306ff5032ecd2f83ff03d80324a"
+    },
+    {
+      "key": "order_2_3",
+      "text": "Il cliente cerca 3 pomodori. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.656,
+      "sha256": "bcb4b1ff70f65396d27a91407b3b3a218dfb6c6d9742da931531d84d557c1667"
+    },
+    {
+      "key": "order_2_6",
+      "text": "Il cliente cerca 6 pomodori. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.704,
+      "sha256": "dd146ad397c2f78b148af7f64220341156a87a04dc226f754b75edec588ada04"
+    },
+    {
+      "key": "order_3_3",
+      "text": "Il cliente cerca 3 fragole. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.584,
+      "sha256": "cf757f043a40cd660478e65f25c483c182dd9bc39c068c1b9fbea53f34f9f1dc"
+    },
+    {
+      "key": "order_3_6",
+      "text": "Il cliente cerca 6 fragole. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.584,
+      "sha256": "e62894189ae06f4bfdcb2f00054bf1cb68623f45df1c30cd9ff8a36f43466920"
+    },
+    {
+      "key": "order_4_3",
+      "text": "Il cliente cerca 3 zucche. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.656,
+      "sha256": "378bc891b2e8d9a6f0f4a7c203dd85f5f578ca143303a45c0c17a0f859147f07"
+    },
+    {
+      "key": "order_4_6",
+      "text": "Il cliente cerca 6 zucche. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.656,
+      "sha256": "a2cf2ed74a3dbd918c778c245da5502ee98df9c08637383af0f1ca04c48d9778"
+    },
+    {
+      "key": "order_5_3",
+      "text": "Il cliente cerca 3 mirtilli. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.68,
+      "sha256": "0b5621f177c6704d45d50abf9d00819a3b1540a86844ebb7b01037936cb4fc57"
+    },
+    {
+      "key": "order_5_6",
+      "text": "Il cliente cerca 6 mirtilli. Accetta la richiesta, raccogli e torna qui. Ogni prodotto vale una moneta.",
+      "seconds": 7.656,
+      "sha256": "3bfcff35b51f8e4f6a350945f34ae5ec8c9ee577d6ee1134d523b121bd3373dd"
+    },
+    {
+      "key": "guide_intro_0",
+      "text": "Ciao! Sono Elsa. Ti accompagno a scoprire il gioco. Qui puoi imparare, prenderti cura dell'orto ed esplorare.",
+      "seconds": 8.256,
+      "sha256": "b507f2ea516a27d093a7548c7aa22d64e601f2041c0f13b79667aa07df3a61e6"
+    },
+    {
+      "key": "guide_intro_1",
+      "text": "La scuola è il cuore della nostra avventura. Ci esercitiamo con lettere e numeri. Le medaglie sbloccano nuovi semi e vestiti!",
+      "seconds": 8.472,
+      "sha256": "171a53c426c1114802a0920b8529d36ca86f9fb41bc0e8849ada6f09771ed232"
+    },
+    {
+      "key": "guide_intro_2",
+      "text": "Nell'orto prepariamo la terra, piantiamo e diamo acqua. Quando il raccolto è pronto, possiamo cucinare oppure portarlo al mercato.",
+      "seconds": 8.832,
+      "sha256": "a9afed783ca51998722b00df2ab82e2e3e47d09f79724470908338b97aa6d108"
+    },
+    {
+      "key": "guide_intro_3",
+      "text": "Il treno ci porta in città. Al mercato consegniamo i prodotti richiesti e riceviamo monete. Poi possiamo scegliere un vestito. Cominciamo!",
+      "seconds": 9.648,
+      "sha256": "ee8b12763dc3e6cced6d7cdc35d6942045a4e35c97bbfe37be00d5cad2482a47"
+    },
+    {
+      "key": "guide_choose",
+      "text": "Scegli il coniglietto con cui vuoi giocare. Tocca Mr Rabbit oppure Miss Rabbit.",
+      "seconds": 5.448,
+      "sha256": "a46513d3d91cda3e8c51d34e52fb01ee182293b8c64e3aee33b89f4fa9cb14e1"
+    },
+    {
+      "key": "guide_move",
+      "text": "Appoggia il dito sullo schermo e trascinalo verso destra o sinistra. Il coniglietto seguirà la direzione. Prova tu!",
+      "seconds": 8.184,
+      "sha256": "4741fc654ce8e7c7aaa09a96d09107880f00b225bcc3ac8d5124801df5df5f24"
+    },
+    {
+      "key": "guide_walk",
+      "text": "Trascina il dito nella direzione indicata dalla manina. Quando vedi l'icona del posto, puoi toccarla per raggiungerlo.",
+      "seconds": 7.68,
+      "sha256": "ee75c4a59a58ca0d07f2c0e9c3efa5379cce8dc153e0a585255ca445a135e8c0"
+    },
+    {
+      "key": "guide_bag",
+      "text": "Prepariamo lo zaino per andare a scuola. Tocca lo zaino.",
+      "seconds": 3.84,
+      "sha256": "55771986f99584d4714fd503ab7f47e8743b29573d387072d299e3bd44bc7774"
+    },
+    {
+      "key": "guide_pack_0",
+      "text": "Per prima cosa, tocca lo zaino aperto.",
+      "seconds": 3.0,
+      "sha256": "b1835e339816e0d5a244da8a2d6cf04d701615ae362aa24f404439fab459c24b"
+    },
+    {
+      "key": "guide_pack_1",
+      "text": "Mettiamo la merenda nello zaino. Tocca il panino.",
+      "seconds": 3.504,
+      "sha256": "a07db773d752309cddaf079898f7374483151534ba6434768e92b10c5b2fea07"
+    },
+    {
+      "key": "guide_pack_2",
+      "text": "Ora prendiamo la borraccia. Toccala e saremo pronti per la scuola.",
+      "seconds": 4.368,
+      "sha256": "3a7ba1adc2185212d992f57f863f841999dc1b3a6fff17c0a53cf29e2e544daa"
+    },
+    {
+      "key": "guide_exit",
+      "text": "Siamo pronti! Tocca l'icona sulla porta per uscire di casa.",
+      "seconds": 4.248,
+      "sha256": "4fbc2750cf13b85882be902f035ed433bf959ceee7cccbab049057ca6e05feb3"
+    },
+    {
+      "key": "guide_shoes",
+      "text": "Come vuoi uscire? Scegli le scarpe oppure i pattini.",
+      "seconds": 4.032,
+      "sha256": "2ae2a40a21a5b9ad87da1c4c9735d3fe4067ca9e38a28c5686120dc347909fa5"
+    },
+    {
+      "key": "guide_school",
+      "text": "Andiamo a scuola. Tocca il libro con le lettere: il coniglietto raggiungerà la scuola.",
+      "seconds": 5.784,
+      "sha256": "c5a327426125c809ed3539f152f3a73ba5f34ab78d6140f66669bf6b52eee61c"
+    },
+    {
+      "key": "guide_sit",
+      "text": "Tocca il banco per sederti. Poi ascolteremo insieme la maestra.",
+      "seconds": 4.488,
+      "sha256": "70e4187b6e18b477aa8be13cd9a2bae31f60421725fee7b379401c78139fa0e9"
+    },
+    {
+      "key": "guide_listen",
+      "text": "Ora tocca l'icona per ascoltare la maestra.",
+      "seconds": 2.76,
+      "sha256": "9cb3833cab1fa65daf25826a23b712da2cbd2374b98c1814999baf6a1ec52c4e"
+    },
+    {
+      "key": "guide_notebook",
+      "text": "Apri il libro per scegliere una tappa del tuo percorso.",
+      "seconds": 3.552,
+      "sha256": "f79d92f8c9a638ceeb54b42cfcb208dd6b50fc5b6e1a0ad2d8217fd33433b6bc"
+    },
+    {
+      "key": "guide_practice",
+      "text": "Scegli lettere oppure numeri. Tocca la matita per esercitarti. Possiamo provare con calma.",
+      "seconds": 6.36,
+      "sha256": "f285b15646f6aa57637009392a70204c5376e88bee176d5209373dd01c13f8d5"
+    },
+    {
+      "key": "guide_write",
+      "text": "Con il dito, scrivi nello spazio chiaro. Se vuoi vedere un esempio, puoi toccare il piccolo libro.",
+      "seconds": 6.792,
+      "sha256": "9b9eeef616392d45f914b97c4cd691ef790f2abcdf0c468c4de1b61aa80fe33e"
+    },
+    {
+      "key": "guide_submit",
+      "text": "Hai scritto? Tocca il segno di spunta per controllare. Con la gomma puoi cancellare e riprovare.",
+      "seconds": 6.768,
+      "sha256": "4aaa03aba3602cf688fb32f8b44fef5ba2a852d7947a625158339292b3273573"
+    },
+    {
+      "key": "guide_answer",
+      "text": "Guarda la domanda e i disegni. Tocca la risposta che ti sembra giusta. Prenditi il tempo che vuoi.",
+      "seconds": 6.432,
+      "sha256": "caca556e1860a56fadfd31a3348d2bcd2d551be753c0771a53bb4b8c14046b30"
+    },
+    {
+      "key": "guide_next",
+      "text": "Tocca la freccia per continuare con la prossima domanda.",
+      "seconds": 3.432,
+      "sha256": "37e8e0d61f0e26bfe4673035b72dca53aca6ca87cac2f590e131f61b0bf71d83"
+    },
+    {
+      "key": "guide_assessment",
+      "text": "Ti sei esercitato! Se vuoi, tocca la medaglia per provare una verifica. Non c'è fretta.",
+      "seconds": 6.624,
+      "sha256": "d4ab3e81b065e95a980639d09d4cd8832d336e045b03a1ab7e71c33e68efd515"
+    },
+    {
+      "key": "guide_result",
+      "text": "Ecco com'è andata. Le medaglie conquistate restano tue. Tocca il libro per tornare al percorso.",
+      "seconds": 6.864,
+      "sha256": "1c20aaaf74e90a38bd4ab26f044dcc08b18ac88b578479867c5ab28941ee2311"
+    },
+    {
+      "key": "guide_return_medal",
+      "text": "A casa possiamo appendere la tua medaglia. Tocca l'icona sulla porta di casa.",
+      "seconds": 5.088,
+      "sha256": "30a0065bd544b0557e31cb1cc52c0e3dee2e6f758d86ce1498ee1f67b008fb60"
+    },
+    {
+      "key": "guide_wall",
+      "text": "Tocca il quadro delle medaglie. Qui puoi vedere e appendere quelle che hai conquistato.",
+      "seconds": 5.424,
+      "sha256": "6566edd40a73cebba6df157c80105f3f168a85721b0688eb2eb97a82a23727e6"
+    },
+    {
+      "key": "guide_wall_empty",
+      "text": "Qui appenderemo le tue medaglie. Le conquisti a scuola, esercitandoti e superando una verifica.",
+      "seconds": 6.888,
+      "sha256": "d1bd9337a8dc0cc6ae00b32a625ea701351c7523c82d81013c366919695e00a7"
+    },
+    {
+      "key": "guide_medal_choice",
+      "text": "Scegli una delle medaglie che hai conquistato. Poi scegli dove appenderla.",
+      "seconds": 4.848,
+      "sha256": "227fcc0d5abb215218e84eba95fca1b6e453d8fc76c76743d56031a2633924fe"
+    },
+    {
+      "key": "guide_hang",
+      "text": "Tocca una cornice per appendere la medaglia. Potrai spostarla quando vuoi.",
+      "seconds": 4.968,
+      "sha256": "641ac8413194aa5b34a46ff6266c63678ba2b35280116699249095706fc92542"
+    },
+    {
+      "key": "guide_garden",
+      "text": "Entriamo nell'orto. Tocca l'icona sul cancello.",
+      "seconds": 3.504,
+      "sha256": "a4e710c9d9b07b82147237ba3a021f23a9a618185fcc560d196a847dae2e781b"
+    },
+    {
+      "key": "guide_hoe_tool",
+      "text": "Prima prepariamo la terra. Tocca la zappa.",
+      "seconds": 3.144,
+      "sha256": "725c940e7f77965dad1aa691045161545e7d20082ce4dfb720b4997fa84aae75"
+    },
+    {
+      "key": "guide_hoe",
+      "text": "Ora tocca il pezzetto di terra da preparare.",
+      "seconds": 2.736,
+      "sha256": "abd0f741ba7cce7e8930bb7ff1383c2428da8b423bf7fe527df6fd1cdb3efb32"
+    },
+    {
+      "key": "guide_seeds_tool",
+      "text": "Scegliamo cosa piantare. Tocca il sacchetto dei semi.",
+      "seconds": 3.816,
+      "sha256": "cfd780005d2ffba92f8717383e7f13b2d52018ee8d70e15c5c35e166ce69f619"
+    },
+    {
+      "key": "guide_seeds",
+      "text": "Tocca i semi che vuoi piantare. Le medaglie della scuola sbloccheranno nuove piante.",
+      "seconds": 5.64,
+      "sha256": "7dca603d1b28c4d30bbc7504950806b1d1a47fd25ebcc651b4001ce8adfd5f37"
+    },
+    {
+      "key": "guide_sow",
+      "text": "Ora tocca la terra preparata per piantare i semi.",
+      "seconds": 3.36,
+      "sha256": "ce646f8ab1abf1aec318b7ced5c5ae0e266efa22b979bda76bd5f351ae2848b2"
+    },
+    {
+      "key": "guide_water_tool",
+      "text": "La piantina ha sete. Tocca l'annaffiatoio.",
+      "seconds": 3.432,
+      "sha256": "a1da637ab3e772deb1d91ef0dee0f6fca5c9e7c6e15af0604fe0a3b87421e547"
+    },
+    {
+      "key": "guide_water",
+      "text": "Tocca la piantina con la gocciolina per darle acqua.",
+      "seconds": 3.432,
+      "sha256": "fb9761b425b832be91df9540d574df719343321a136512c420b179af904080c7"
+    },
+    {
+      "key": "guide_growing",
+      "text": "La piantina sta crescendo. Ogni tanto avrà ancora bisogno d'acqua. Intanto puoi uscire ed esplorare: ti avviserò quando servirà aiuto.",
+      "seconds": 9.432,
+      "sha256": "c421c9b21c37b428fe0f1c92af153922f9748a2b29b9c086294d36ef7c85a3b5"
+    },
+    {
+      "key": "guide_harvest_tool",
+      "text": "Il raccolto è pronto. Tocca il cesto.",
+      "seconds": 3.0,
+      "sha256": "a2c814ae238ca673558224dc37df6bd0a1af514ae5ee692ac3ac83a18ce6fc26"
+    },
+    {
+      "key": "guide_harvest",
+      "text": "Tocca la pianta matura per raccogliere i suoi prodotti.",
+      "seconds": 3.456,
+      "sha256": "c2d18184ae7e1c4809790dde6b5ab63f19d79ecddd4c7383144ac24597d9fb12"
+    },
+    {
+      "key": "guide_kitchen",
+      "text": "Con il raccolto possiamo preparare qualcosa di buono. Tocca la cucina.",
+      "seconds": 4.704,
+      "sha256": "a8024af845e874b4d2428877624d7826f695f57a03609ec115b30c10d3ad6982"
+    },
+    {
+      "key": "guide_recipe",
+      "text": "Scegli un piatto per cui hai già gli ingredienti, oppure un piatto già pronto.",
+      "seconds": 5.04,
+      "sha256": "1b6c200f32e7884d05bc0116ecd5e22e546f879b2d0a0141824161e4322a053d"
+    },
+    {
+      "key": "guide_cook",
+      "text": "Tocca la pentola per cucinare. Useremo un prodotto del tuo raccolto.",
+      "seconds": 4.584,
+      "sha256": "1da41a2db68ccf03825d4c378febf8a06edcf9c5e2bb441cd4992d3d9bfab9c2"
+    },
+    {
+      "key": "guide_eat",
+      "text": "Il piatto è pronto. Tocca il piatto per andare a tavola e mangiare.",
+      "seconds": 4.488,
+      "sha256": "8cdf8ad9811a1eefa3afd994627037f1d3a8d038459011ed8e43b046f7c3c218"
+    },
+    {
+      "key": "guide_no_food",
+      "text": "Per cucinare ci serve il raccolto dell'orto. Puoi tornare qui quando avrai un ingrediente.",
+      "seconds": 5.784,
+      "sha256": "c164d5cc81cdaf967d89057be2324e6a781af3b133f123b8b4370f006ae2ee24"
+    },
+    {
+      "key": "guide_tv",
+      "text": "Qui puoi riposarti un poco. Tocca la poltrona per guardare la televisione.",
+      "seconds": 4.896,
+      "sha256": "8add79ee6e9434867495e49ca5c56520a4cbfe4866ab6e2a69c0b901e71c3e52"
+    },
+    {
+      "key": "guide_sleep",
+      "text": "Tocca il letto per andare a riposare. Il coniglietto salirà le scale da solo.",
+      "seconds": 5.088,
+      "sha256": "7de56978260adbc46b5bc54d9d6e6ca7e844c401b5d8fe2f449933733398e113"
+    },
+    {
+      "key": "guide_wake",
+      "text": "Per alzarti, tocca di nuovo il letto.",
+      "seconds": 2.88,
+      "sha256": "30c2505106b811e9f057804e3be0fd30ccd9072dc5cbe79a347c784a773556d4"
+    },
+    {
+      "key": "guide_home_explore",
+      "text": "Puoi uscire, tornare a scuola, coltivare o visitare le amichette. Tocca le icone dei posti che vuoi scoprire.",
+      "seconds": 7.632,
+      "sha256": "a6da2dc56566675cb9d818ba033bc30f72ef0c4bdff2086fee914ecd99ad139b"
+    },
+    {
+      "key": "guide_station",
+      "text": "Scopriamo la città. Tocca il treno per raggiungere la stazione.",
+      "seconds": 4.272,
+      "sha256": "35f9d94915fea0578b15483f096f928ddfd9609d9b9aad9675064c80efe358f2"
+    },
+    {
+      "key": "guide_destination",
+      "text": "Questa è la mappa. Tocca il luogo che vuoi raggiungere. Il viaggio in treno durerà qualche secondo.",
+      "seconds": 6.624,
+      "sha256": "eb8f7abf7a29344a1c7cbbdd20e6a280b8287b61611527238cbc976d859576a3"
+    },
+    {
+      "key": "guide_market",
+      "text": "Tocca il banco del mercato. Il cliente ci dirà quali prodotti desidera.",
+      "seconds": 5.088,
+      "sha256": "9e354d740149a8351badcd6c2b2a7bb1f0da92c654efa1f112c3d0b91b81eb64"
+    },
+    {
+      "key": "guide_accept",
+      "text": "Guarda il prodotto e la quantità richiesti. Tocca il segno di spunta per accettare la richiesta.",
+      "seconds": 6.12,
+      "sha256": "a6b07aa629e20982cc97df0669748f8a0966efcb72445564839781982ec07387"
+    },
+    {
+      "key": "guide_collect_order",
+      "text": "La richiesta resta nell'icona in alto. Torna nell'orto e raccogli proprio quel prodotto, nella quantità indicata.",
+      "seconds": 7.32,
+      "sha256": "f2fe057c1ec1b03a058988a05c15e1fe15d4ac7ade494d41750f041dddd1bf3f"
+    },
+    {
+      "key": "guide_deliver",
+      "text": "Hai tutti i prodotti richiesti! Tocca la consegna per venderli. Ogni prodotto vale una moneta.",
+      "seconds": 6.528,
+      "sha256": "4a07688e71a903c97b08b542335c5dd6eb895d60b8b4095782dd8be8d9d2ec6b"
+    },
+    {
+      "key": "guide_boutique",
+      "text": "Tocca la maglietta per entrare nel negozio dei vestiti.",
+      "seconds": 3.744,
+      "sha256": "7f28def750151b97e85cde2d4e3775116e4d3edaab3ad36903d52c43853c6a02"
+    },
+    {
+      "key": "guide_outfit",
+      "text": "Scegli il vestito che vuoi indossare. Il numero con la moneta indica quanto costa. Quelli già tuoi puoi rimetterli quando vuoi.",
+      "seconds": 8.088,
+      "sha256": "cad1c2f221454b16d7742936128c5555196143a026f2d065567360cb8f0da177"
+    },
+    {
+      "key": "guide_clothes_later",
+      "text": "Per questi abiti servono altre monete o una medaglia della scuola. Puoi tornare quando vuoi: continueremo a imparare e raccogliere.",
+      "seconds": 8.112,
+      "sha256": "c15720f5d9a62cd93c5a0ad3d85f24aa2829bb443c47db3e45558fd69e100d36"
+    },
+    {
+      "key": "guide_city_return",
+      "text": "Per tornare in campagna, raggiungi la stazione e scegli casa sulla mappa.",
+      "seconds": 4.92,
+      "sha256": "03db1862cc85a27a04311d7b770423e3da25b9896875c8cfca3c3f481d5a4eaa"
+    },
+    {
+      "key": "guide_visit",
+      "text": "Tocca la porta per andare a trovare un'amichetta.",
+      "seconds": 3.072,
+      "sha256": "1bb82deb7b51bb5b3e076477ea9966cc1dda96dae7c68f018383a82fe6a8c8b3"
+    },
+    {
+      "key": "guide_greet",
+      "text": "Tocca la tua amichetta per salutarla.",
+      "seconds": 2.616,
+      "sha256": "7f9feec07f974ced8ded14821d68ca71a7597c873e15dba0e4931d3aaf24d97e"
+    },
+    {
+      "key": "guide_visit_exit",
+      "text": "Quando vuoi uscire, tocca l'icona sulla porta.",
+      "seconds": 3.168,
+      "sha256": "302c0bd93d4a768157c594476d141cd8f578bf938afe94d51a1a8688c3907a47"
+    },
+    {
+      "key": "guide_paper",
+      "text": "Tocca il foglio sul banco per aprire l'esercizio.",
+      "seconds": 3.288,
+      "sha256": "0e7affa7bc58274596e0fcdf665842c3190c0db828449e37a942b53270f0d0c1"
+    },
+    {
+      "key": "guide_pencil",
+      "text": "Tocca la matita. Poi potrai scrivere con il dito nello spazio chiaro.",
+      "seconds": 4.8,
+      "sha256": "f409d07c2e475978db2278ac3bc1088d0ada7c8d7a74a41a6e95ea10f4d97bdf"
+    },
+    {
+      "key": "guide_menu",
+      "text": "La casetta ripete la presentazione del gioco. L'altoparlante spiega cosa puoi fare qui. Puoi anche mettere in pausa la guida o saltare questo passo.",
+      "seconds": 9.648,
+      "sha256": "d1cbb40b9c12cf433bfc777b27849a64ff4226b0cd63b5b9f66b4962738385ee"
+    },
+    {
+      "key": "guide_tv_controls",
+      "text": "Puoi toccare lo schermo per cambiare programma. L'altoparlante accende o spegne l'audio. Tocca l'icona per alzarti quando vuoi continuare a giocare.",
+      "seconds": 9.552,
+      "sha256": "b7a20d4cb7b48556e3bd0e78e3cc85dc83dc64c9668acf3e7022e69369d7f9d2"
+    },
+    {
+      "key": "guide_stairs",
+      "text": "Per raggiungere il letto, avvicinati alle scale trascinando il dito. Poi trascina verso l'alto per salire. In cima troverai il letto.",
+      "seconds": 9.144,
+      "sha256": "997fd75c7b4516bcec7901f41ad61d5754d3bb68e399377a162003cdfb566281"
+    }
+  ]
+}

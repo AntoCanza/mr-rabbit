@@ -1,0 +1,84 @@
+18 October 2026 — Built-in image_gen tool, true alpha requested for cutouts and characters.
+All final images copied into this project; originals retained in the Codex generated_images folder.
+
+Final assets and prompt set
+
+Assets/Art/City/CityPanorama.png
+Production 2D children's game panoramic city background, landscape 3:1. Warm hand-drawn
+storybook watercolor/gouache, dark soft outlines, cream clouds, rounded architecture.
+Front-on side-scroller: left turquoise-roof train station, center fruit/vegetable market
+with peach-striped awning, right lilac/gold clothing boutique. Pastel sparkling skyscrapers
+behind, continuous cream pavement at 22% image height from bottom, no characters or text.
+
+Assets/Art/City/CountryStation.png
+One panoramic countryside train station background, charming hand-drawn watercolor/gouache,
+wide 3:1. Cream station, turquoise roof, clock, flowers, doorway at center. Walking path
+22% from bottom, soft hills, no characters, train or text. Preserved source; the scene now
+uses its transparent station extraction below.
+
+Assets/Art/City/Train.png
+Transparent passenger train side-view facing right, long turquoise carriage and short coral
+locomotive. Dark warm brown outlines, watercolor paper texture, cream window frames,
+gold details, chunky wheels. Three pale-blue windows; central window especially wide.
+Whole sprite, no track, background, passengers, ground or text. True alpha exterior.
+
+Assets/Art/City/HomeExterior.png
+Transparent front-on welcoming two-storey cream cottage, coral/terracotta roof, yellow front
+door toward left, round upstairs window, blue glass windows, flower boxes and stone doorstep.
+Rounded hand-painted storybook forms, no trees, sky, lawn, people or text; square canvas.
+
+Assets/Art/City/MrRabbitCity.png
+Edit ONLY clothes of Assets/Art/Characters/MrRabbit.png. Preserve exact shape, face, pink skin,
+long rectangular snout, ears, silhouette, pose, right-facing orientation, feet and proportions.
+Grey shirt becomes teal-blue jacket with little gold buttons, trousers navy. Keep brown
+shoes and blue tie. Single full body, true transparent exterior, no glow, shadow or backdrop.
+
+Assets/Art/City/MissRabbitCity.png
+Edit ONLY clothes of Assets/Art/Characters/MissRabbit.png. Preserve single original right-facing
+rectangular pink face, eyes, ears, silhouette, pose and proportions. Lavender-purple dress
+with little gold stars, purple bow and shoes, gold necklace. Single whole character, true
+alpha exterior, no glow, shadow, extra snout, background or extra character.
+
+Assets/Art/City/MrRabbitCitySeated.png and MissRabbitCitySeated.png
+Edit ONLY clothes of the corresponding Assets/Art/Home/*Seated.png (first reference).
+The corresponding *City.png standing sprite is the clothing reference. Preserve exact
+seated pose, left-facing face, ears, hands in lap, bent legs and silhouette. Apply teal/navy
+male or lavender/gold-star female outfit. True alpha background, no chair, floor or glow.
+
+Assets/Art/Outdoors/SharedLandscape.png — full final generation prompt:
+Production seamless horizontal countryside panorama background for a children's 2D rabbit
+storybook game. Create ONE unified painted landscape WITHOUT any houses, schools, stations,
+fences, sheds, garden plots or characters. Wide 3:1 landscape canvas. Soft watercolor/gouache
+textured hand-drawn look, green rounded rolling hills, a few distant rounded trees, sky blue
+upper half with soft cream clouds. A perfectly straight horizontal warm pale-cream walking
+path runs all the way from left edge to right edge at 22% image height measured from BOTTOM.
+Path spans y 18% to 27% from bottom; lush green lawn below and above. Grass has sparse tiny
+blades and white daisies, fine consistent paper texture, low contrast so characters remain
+readable. Foreground ground is level, no curves or perspective bends in the path. Left and
+right edges should tile seamlessly, same sky/ground colors and path levels. No buildings,
+no signs, no letters, no UI, no border. Match a cozy soft children's picture book, consistent
+green lawn and golden-cream path across the WHOLE image.
+
+Assets/Art/Outdoors/CottagesCutout.png
+Reference: Assets/Art/Outdoors/Neighborhood.png. Extract only both cottages, attached flower
+boxes and foundation plants; keep exact positions, spacing, appearance and scale on original
+3:1 canvas. Remove all sky, hills, trees, detached bushes, grass and path. True alpha.
+
+Assets/Art/Outdoors/SchoolCutout.png
+Reference: Assets/Art/School/SchoolMeadow.png. Extract only school, entrance steps and attached
+plants. Preserve exact original left-side placement, appearance and scale, original canvas.
+Remove all sky, clouds, hills, detached trees, lawn and path. True alpha exterior.
+
+Assets/Art/Outdoors/GardenCutout.png
+Reference: Assets/Art/Garden/GardenApproach.png. Extract fenced garden, crops, gate and shed,
+with dirt inside growing beds. Remove all surrounding sky, hills, trees, outside bushes,
+grass and path. True alpha. Renderer placement compensates for generated extraction scale
+to align gate and shed with the existing interaction positions.
+
+Assets/Art/Outdoors/StationCutout.png
+Reference: Assets/Art/City/CountryStation.png. Extract central station, roof, door, canopies,
+posts, clock, attached flowers, benches and narrow supporting platform. Remove sky, landscape,
+lake, detached trees/fences, lawn and path. True alpha. Renderer is fitted to existing station.
+
+Action pictograms are project-native CitySymbol geometry. Existing painted garden action
+atlas is reused for gate, water, growth and harvest cues. Original art is never overwritten.

@@ -1,0 +1,22 @@
+name: Feature proposal
+description: Suggest a focused improvement to learning, play or development.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would this help a child or contributor do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the interaction and how it supports the Italian learning experience.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Existing progress and alternatives
+      description: Mention save compatibility, accessibility, available rewards and alternatives where relevant.

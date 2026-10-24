@@ -3,33 +3,57 @@ using UnityEngine.EventSystems;
 
 namespace MrRabbit
 {
+    // A captured gesture sets a direction, never a world point that the camera can overtake.
     public sealed class OutdoorPointerInput : MonoBehaviour, IPointerDownHandler, IDragHandler,
-        IBeginDragHandler, IPointerUpHandler, IEndDragHandler
+        IInitializePotentialDragHandler, IBeginDragHandler, IPointerUpHandler, IEndDragHandler, ICancelHandler
     {
         [SerializeField] private OutdoorAdventure adventure;
-        private int activePointer = int.MinValue;
-        public void Configure(OutdoorAdventure value) => adventure = value;
+        [SerializeField] private MovementDirectionGraphic arrow;
+        private readonly RelativeDragGesture gesture=new RelativeDragGesture();
+        public bool IsHolding=>gesture.Active;
+        public float Direction=>adventure.TouchDirection;
+        public MovementDirectionGraphic Arrow=>arrow;
+        public void Configure(OutdoorAdventure value)=>adventure=value;
+        public void SetArrow(MovementDirectionGraphic value)=>arrow=value;
         public void OnPointerDown(PointerEventData data)
         {
-            if (activePointer != int.MinValue || data.button != PointerEventData.InputButton.Left) return;
-            activePointer = data.pointerId;
-            SetDestination(data);
+            if(adventure.Location!=OutdoorAdventure.Place.Meadow||!gesture.Begin(data))return;
+            adventure.BeginTouchMovement();ShowArrow();
         }
-        public void OnBeginDrag(PointerEventData data) { }
+        public void OnInitializePotentialDrag(PointerEventData data)=>data.useDragThreshold=false;
+        public void OnBeginDrag(PointerEventData data)=>OnDrag(data);
         public void OnDrag(PointerEventData data)
         {
-            if (data.pointerId == activePointer) SetDestination(data);
+            if(gesture.Drag(data))adventure.SetTouchDirection(gesture.Direction.x);
+            ShowArrow();
         }
-        public void OnPointerUp(PointerEventData data) => Release(data.pointerId);
-        public void OnEndDrag(PointerEventData data) => Release(data.pointerId);
-        private void Release(int id) { if (id == activePointer) activePointer = int.MinValue; }
-        private void OnDisable() => activePointer = int.MinValue;
-        private void SetDestination(PointerEventData data)
+        private void Update()=>AdvanceHold(Time.unscaledDeltaTime);
+        public void AdvanceHold(float seconds)
         {
-            var area = (RectTransform)transform;
-            if (area.rect.width > 0 && RectTransformUtility.ScreenPointToLocalPointInRectangle(area,
-                data.position, data.pressEventCamera, out Vector2 point))
-                adventure.WalkToScreen((point.x - area.rect.xMin) / area.rect.width);
+            if(!IsHolding)return;
+            if(adventure.Location!=OutdoorAdventure.Place.Meadow||!adventure.TouchHeld){CancelHold();return;}
+            ShowArrow();
         }
+        private void LateUpdate()=>ShowArrow();
+        private void ShowArrow()
+        {
+            if(arrow==null)return;
+            bool visible=IsHolding&&adventure.TouchHeld&&adventure.TouchDirection!=0&&adventure.Location==OutdoorAdventure.Place.Meadow;
+            arrow.enabled=visible;
+            if(!visible)return;
+            float direction=adventure.TouchDirection;
+            var body=adventure.PlayerRect;var r=arrow.rectTransform;
+            float x=(body.anchorMin.x+body.anchorMax.x)*.5f+direction*.105f;
+            r.anchorMin=new Vector2(x-.035f,.115f);r.anchorMax=new Vector2(x+.035f,.16f);
+            r.offsetMin=r.offsetMax=Vector2.zero;r.localScale=new Vector3(direction,1,1);
+        }
+        public void OnPointerUp(PointerEventData data)=>Release(data.pointerId);
+        public void OnEndDrag(PointerEventData data)=>Release(data.pointerId);
+        private void Release(int id){if(gesture.Release(id))CancelHold();}
+        public void CancelHold(){gesture.Cancel();if(adventure!=null)adventure.EndTouchMovement();if(arrow!=null)arrow.enabled=false;}
+        public void OnCancel(BaseEventData data)=>CancelHold();
+        private void OnDisable()=>CancelHold();
+        private void OnApplicationPause(bool paused){if(paused)CancelHold();}
+        private void OnApplicationFocus(bool focused){if(!focused)CancelHold();}
     }
 }

@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible gameplay, input or setup problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Please keep children's names, real saves and personal information out of public reports."
+  - type: input
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Game/source version, Unity version, device, operating system and resolution.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the starting location and actions that cause the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots and relevant errors
+      description: Include only the information needed to explain the problem.

@@ -1,0 +1,10 @@
+Created with the built-in image generation tool. Reference files: MrRabbit.png, MissRabbit.png, House.png.
+
+male
+Create a transparent game sprite of the EXACT Mr Rabbit character in reference, preserving head shape pink long horizontal muzzle, tall ears, grey suit and blue tie, brown shoes, watercolor texture and brown outlines. Change only pose: sitting comfortably on an invisible armchair, side view facing LEFT, bent knees with shoes forward left, hands resting on lap. No chair, no floor, no shadow, no background, no text. Full body entirely in frame with small margin. This will overlay an existing armchair in a children's picture-book game.
+
+female
+Create a transparent game sprite of the EXACT Miss Rabbit character in reference, preserving head shape pink long horizontal muzzle, tall ears with turquoise bow, yellow orange spotted dress and pink necklace, watercolor texture and brown outlines. Change only pose: sitting comfortably on an invisible armchair, side view facing LEFT, bent knees under dress with shoes forward left, hands resting on lap. No chair, no floor, no shadow, no background, no text. Full body entirely in frame with small margin. This will overlay an existing armchair in a children's picture-book game.
+
+kitchen
+Create ONE isolated transparent 2D sprite: compact rustic cooking worktable to place next to the fireplace in the reference children's dollhouse. Match its warm watercolor paper texture, simple dark brown outlines and front view perspective. Small honey wood table with two short legs, turquoise drawer, a ceramic soup pot on a small dark stove hob on top, wooden spoon, tiny cutting board with carrot and tomato, lower shelf with bread loaf and strawberry jar. Broad compact silhouette approximately 1.2 wide to 1 high, no tall backsplash, no room or walls, no characters, no text, no shadow outside the object. Fully transparent outside, full object with small transparent margin.

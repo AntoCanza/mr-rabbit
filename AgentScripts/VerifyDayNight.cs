@@ -12,7 +12,7 @@ public static class VerifyDayNight
         var select=UnityEngine.Object.FindFirstObjectByType<CharacterSelection>();
         var travel=UnityEngine.Object.FindFirstObjectByType<OutdoorAdventure>();
         var rabbit=UnityEngine.Object.FindFirstObjectByType<RabbitWalker>(FindObjectsInactive.Include);
-        var painting=travel.transform.Find("Meadow Viewport/Meadow/Scrolling Landscape/Meadow Painting").GetComponent<UnityEngine.UI.Image>();
+        var painting=travel.transform.parent.Find("Meadow Viewport/Meadow/Scrolling Landscape/Meadow Painting").GetComponent<UnityEngine.UI.Image>();
         var label=travel.transform.Find("Time Of Day/Label").GetComponent<TMPro.TMP_Text>();
         var passed=new List<string>();
 

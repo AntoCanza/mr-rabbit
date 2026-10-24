@@ -1,0 +1,25 @@
+{
+  "status": "audition only; not included in game",
+  "synthetic": true,
+  "generator": "edge-tts",
+  "generatorSource": "https://github.com/rany2/edge-tts",
+  "text": "Ciao! Facciamo un piccolo passo insieme. Guarda la gocciolina: l'orto ha bisogno d'acqua. Prendi l'annaffiatoio, poi tocca la piantina. Bravissimo. Possiamo continuare con calma.",
+  "samples": [
+    {
+      "voice": "it-IT-IsabellaNeural",
+      "rate": "-5%",
+      "volume": "-5%",
+      "file": "Guida-naturale-isabella-prova.mp3",
+      "bytes": 101808,
+      "sha256": "c01658bb4f9ccacce689dd4c290e257adf03af267f6347a96c2359b12c1a80ba"
+    },
+    {
+      "voice": "it-IT-ElsaNeural",
+      "rate": "-5%",
+      "volume": "-5%",
+      "file": "Guida-naturale-elsa-prova.mp3",
+      "bytes": 76752,
+      "sha256": "1b3dee9d00e53410c6c68da264707298a945436b83d0335a501f76b797c22e68"
+    }
+  ]
+}

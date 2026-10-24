@@ -12,8 +12,8 @@ public static class VerifyMeadow
         var choices = UnityEngine.Object.FindFirstObjectByType<CharacterSelection>();
         var adventure = UnityEngine.Object.FindFirstObjectByType<OutdoorAdventure>();
         var rabbit = UnityEngine.Object.FindFirstObjectByType<RabbitWalker>(FindObjectsInactive.Include);
-        var pair = adventure.transform.Find("Meadow Viewport/Meadow/Outdoor Rabbit/Roller Pair").gameObject;
-        var outdoor = adventure.transform.Find("Meadow Viewport").gameObject;
+        var pair = adventure.transform.parent.Find("Meadow Viewport/Meadow/Outdoor Rabbit/Roller Pair").gameObject;
+        var outdoor = adventure.transform.parent.Find("Meadow Viewport").gameObject;
         var graphic = outdoor.GetComponentInChildren<RabbitGraphic>(true);
         var passed = new List<string>();
         foreach (bool female in new[] { false, true })
@@ -50,10 +50,11 @@ public static class VerifyMeadow
                 float expected = rollers ? .16f : .09f;
                 Require(Mathf.Abs(start - adventure.Position - expected) < .0001f, "Wrong walking/skating speed");
                 adventure.Advance(-1,100);
-                Require(Mathf.Approximately(adventure.Position,OutdoorAdventure.LeftEdge) && adventure.CameraLeft == 0, "Left boundary/camera failed");
+                Require(Mathf.Approximately(adventure.Position,OutdoorAdventure.LeftEdge) && Mathf.Approximately(adventure.CameraLeft,OutdoorAdventure.WorldLeft), "Left boundary/camera failed");
+                float expectedTarget=adventure.CameraLeft+.8f;
                 adventure.WalkToScreen(.8f);
                 DrainMeadow(adventure);
-                Require(Mathf.Abs(adventure.Position-.8f)<.001f, "Tap destination on lawn failed");
+                Require(Mathf.Abs(adventure.Position-expectedTarget)<.001f, "Programmatic destination on lawn failed");
                 adventure.WalkToScreen(.9f);
                 adventure.Advance(-1,.01f);
                 Require(!adventure.HasDestination, "Keyboard must override lawn taps");
@@ -61,7 +62,7 @@ public static class VerifyMeadow
                 DrainMeadow(adventure);
                 Require(adventure.Location == OutdoorAdventure.Place.Home && !adventure.UsingRollers && !pair.activeSelf, "Return must remove skates");
                 Require(!outdoor.activeSelf && rabbit.gameObject.activeInHierarchy && rabbit.MovementEnabled, "Return visibility/input failed");
-                Require(rabbit.Surface == RabbitWalker.WalkSurface.GroundFloor && Mathf.Abs(rabbit.PositionNormalized.x-.265f)<.001f, "Return not at ground-floor door");
+                Require(rabbit.Surface == RabbitWalker.WalkSurface.GroundFloor && rabbit.PositionNormalized.x>rabbit.DoorReach, "Return must stand safely inside the door");
                 rabbit.Advance(Vector2.right,.25f);
                 Require(rabbit.PositionNormalized.x > .265f && !rabbit.HasDestination, "Movement did not resume indoors");
                 passed.Add((female ? "Miss Rabbit" : "Mr Rabbit") + (rollers ? " with rollers" : " with shoes") + ": left exploration, camera, bounds, tap, keyboard override, return with shoes");

@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 5c5925d19b96db548b1c4c43ec012e58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3407964855058199943
+    second: SchoolCutout_0
+  - first:
+      213: 3447831285513615710
+    second: SchoolCutout_1
+  - first:
+      213: 396517689954639518
+    second: SchoolCutout_2
+  - first:
+      213: -2569093995717575038
+    second: SchoolCutout_3
+  - first:
+      213: -8693805675838848164
+    second: SchoolCutout_4
+  - first:
+      213: -6213685298705692669
+    second: SchoolCutout_5
+  - first:
+      213: -7641354740410693557
+    second: SchoolCutout_6
+  - first:
+      213: 1537644685861181742
+    second: SchoolCutout_7
+  - first:
+      213: 3638513493479345653
+    second: SchoolCutout_8
+  - first:
+      213: 7875258007446408681
+    second: SchoolCutout_9
+  - first:
+      213: -3174531203074618385
+    second: SchoolCutout_10
+  - first:
+      213: -3688583959456578905
+    second: SchoolCutout_11
+  - first:
+      213: -2538700663912377655
+    second: SchoolCutout_12
+  - first:
+      213: 4014657498064070568
+    second: SchoolCutout_13
+  - first:
+      213: 1060389782081938319
+    second: SchoolCutout_14
+  - first:
+      213: 8061999849247650936
+    second: SchoolCutout_15
+  - first:
+      213: 7375777025530779433
+    second: SchoolCutout_16
+  - first:
+      213: -3616184586834594116
+    second: SchoolCutout_17
+  - first:
+      213: -5100006280586891670
+    second: SchoolCutout_18
+  - first:
+      213: 1168704218565607782
+    second: SchoolCutout_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SchoolCutout_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 1539
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a8d3f350a74b0d0800000000000000
+      internalID: -3407964855058199943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 759
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59748a694829df20800000000000000
+      internalID: 3447831285513615710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 764
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e97e8fcb6b08500800000000000000
+      internalID: 396517689954639518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_3
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 182
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e3aae5f9eb85cd0800000000000000
+      internalID: -2569093995717575038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 88
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53c951bcc5695780800000000000000
+      internalID: -8693805675838848164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 63
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3088490742e84c9a0800000000000000
+      internalID: -6213685298705692669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_6
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 82
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48c217695474f590800000000000000
+      internalID: -7641354740410693557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_7
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 79
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29d58be1bfc65510800000000000000
+      internalID: 1537644685861181742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_8
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 63
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd4d41aeb89e7230800000000000000
+      internalID: 3638513493479345653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_9
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 78
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edc460de698a4d60800000000000000
+      internalID: 7875258007446408681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 69
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb0850b0bcc1f3d0800000000000000
+      internalID: -3174531203074618385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_11
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 51
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2036c8e648fccc0800000000000000
+      internalID: -3688583959456578905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_12
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 33
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c254706239b4ccd0800000000000000
+      internalID: -2538700663912377655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 56
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7a7f259bde6b730800000000000000
+      internalID: 4014657498064070568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 32
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83a27c73e247be00800000000000000
+      internalID: 1060389782081938319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 27
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874b8a9062af1ef60800000000000000
+      internalID: 8061999849247650936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_16
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 33
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927df3d40260c5660800000000000000
+      internalID: 7375777025530779433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_17
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 31
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb63b73174bb0ddc0800000000000000
+      internalID: -3616184586834594116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_18
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 37
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e6b5d0f432939b0800000000000000
+      internalID: -5100006280586891670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolCutout_19
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6618a137b42183010800000000000000
+      internalID: 1168704218565607782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SchoolCutout_0: -3407964855058199943
+      SchoolCutout_1: 3447831285513615710
+      SchoolCutout_10: -3174531203074618385
+      SchoolCutout_11: -3688583959456578905
+      SchoolCutout_12: -2538700663912377655
+      SchoolCutout_13: 4014657498064070568
+      SchoolCutout_14: 1060389782081938319
+      SchoolCutout_15: 8061999849247650936
+      SchoolCutout_16: 7375777025530779433
+      SchoolCutout_17: -3616184586834594116
+      SchoolCutout_18: -5100006280586891670
+      SchoolCutout_19: 1168704218565607782
+      SchoolCutout_2: 396517689954639518
+      SchoolCutout_3: -2569093995717575038
+      SchoolCutout_4: -8693805675838848164
+      SchoolCutout_5: -6213685298705692669
+      SchoolCutout_6: -7641354740410693557
+      SchoolCutout_7: 1537644685861181742
+      SchoolCutout_8: 3638513493479345653
+      SchoolCutout_9: 7875258007446408681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

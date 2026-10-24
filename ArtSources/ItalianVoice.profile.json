@@ -1,0 +1,10 @@
+{
+  "voice": "it-IT-ElsaNeural",
+  "locale": "it-IT",
+  "rate": "-5%",
+  "volume": "-5%",
+  "pitch": "+0Hz",
+  "sampleRate": 24000,
+  "approvedSample": "VoiceAuditions/Guida-naturale-elsa-prova.mp3",
+  "direction": "Calm, warm, reassuring female voice. Use this same voice for all narration, notifications, lessons and onboarding. No desktop-speech fallback."
+}

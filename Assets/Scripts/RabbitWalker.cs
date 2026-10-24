@@ -33,7 +33,14 @@ namespace MrRabbit
         private float gait;
         private int facing = 1;
         private bool hasDestination;
-        private bool exitPending;
+        private bool doorArmed = true;
+        private GameGuide guide;
+        private Vector2 touchDirection;
+        public bool TouchHeld {get;private set;}
+        public void BeginTouchMovement(){TouchHeld=true;hasDestination=false;touchDirection=Vector2.zero;}
+        public void SetTouchDirection(Vector2 direction){if(TouchHeld)touchDirection=direction;}
+        public void EndTouchMovement(){TouchHeld=false;touchDirection=Vector2.zero;}
+        public float DoorReach => floorLimits.x + .04f;
         public event System.Action ExitRequested;
         public bool MovementEnabled { get; set; } = true;
         private WalkSurface destinationSurface;
@@ -50,6 +57,7 @@ namespace MrRabbit
 
         private void Awake()
         {
+            guide=UnityEngine.Object.FindFirstObjectByType<GameGuide>();
             body = (RectTransform)transform;
             graphic = GetComponent<RabbitGraphic>();
             if (house == null) house = transform.parent as RectTransform;
@@ -61,8 +69,9 @@ namespace MrRabbit
 
         public void ResetToStart()
         {
+            EndTouchMovement();
             MovementEnabled = true;
-            exitPending = false;
+            doorArmed = true;
             if (body == null || graphic == null) return;
             surface = WalkSurface.GroundFloor;
             coordinate = Mathf.Clamp(.39f, floorLimits.x, floorLimits.y);
@@ -75,6 +84,7 @@ namespace MrRabbit
 
         private void Update()
         {
+            if(guide!=null&&(guide.IntroOpen||guide.MenuOpen))return;
             var keyboard = Keyboard.current;
             Vector2 input = keyboard == null ? Vector2.zero : new Vector2(
                 (keyboard.rightArrowKey.isPressed ? 1 : 0) - (keyboard.leftArrowKey.isPressed ? 1 : 0),
@@ -85,13 +95,13 @@ namespace MrRabbit
         // Shared by keyboard movement and automated play checks. No physics or per-frame allocations.
         public void Advance(Vector2 input, float deltaTime)
         {
+            if(TouchHeld)input=touchDirection;
             if (!MovementEnabled || house == null || body == null) return;
             Vector2 before = PositionNormalized;
             float distance = walkingSpeed * Mathf.Max(0, deltaTime);
             if (input.sqrMagnitude > 0)
             {
                 hasDestination = false;
-                exitPending = false;
                 MoveWithArrows(input, distance);
             }
             else if (hasDestination) MoveToDestination(distance);
@@ -105,17 +115,17 @@ namespace MrRabbit
                 ApplyPosition();
             }
             graphic.SetGait(gait, facing, travelled > .00001f);
-            if (surface == WalkSurface.GroundFloor && coordinate <= floorLimits.x + .0001f &&
-                (input.x < 0 || exitPending))
+            if (surface != WalkSurface.GroundFloor || coordinate > DoorReach + .025f) doorArmed = true;
+            if (surface == WalkSurface.GroundFloor && coordinate <= DoorReach && doorArmed)
             {
-                exitPending = false;
+                doorArmed = false;
                 ExitRequested?.Invoke();
             }
         }
 
         public void StopWalking()
         {
-            hasDestination = exitPending = false;
+            hasDestination = false;
             if (graphic != null) graphic.SetGait(0, facing, false);
         }
 
@@ -123,13 +133,12 @@ namespace MrRabbit
         {
             if (!MovementEnabled) return;
             WalkTo(new Vector2(floorLimits.x, stairs[0].y));
-            exitPending = true;
         }
 
         public void ReturnThroughDoor()
         {
             ResetToStart();
-            coordinate = floorLimits.x + .045f;
+            coordinate = DoorReach + .04f;
             ApplyPosition();
         }
 
@@ -156,8 +165,8 @@ namespace MrRabbit
         // Taps select the nearest walkway, then follow the connected floors/staircase to it.
         public void WalkTo(Vector2 normalizedPoint)
         {
+            EndTouchMovement();
             if (!MovementEnabled) return;
-            exitPending = false;
             float x = Mathf.Clamp(normalizedPoint.x, floorLimits.x, floorLimits.y);
             destinationSurface = WalkSurface.GroundFloor;
             destinationCoordinate = x;
