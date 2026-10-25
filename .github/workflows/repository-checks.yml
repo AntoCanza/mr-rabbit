@@ -21,3 +21,5 @@ jobs:
           python-version: '3.12'
       - name: Validate repository
         run: python tools/check_repository.py
+      - name: Verifica sito pubblico e indicizzazione
+        run: python tools/check_site.py

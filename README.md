@@ -1,6 +1,6 @@
 <div align="center">
   <img src="Assets/Art/Characters/MrRabbitIcon.png" alt="Mr Rabbit" width="120" />
-  <h1>Mr Rabbit</h1>
+  <h1>Mr Rabbit — Gioco educativo in italiano</h1>
   <p><strong>Un piccolo mondo da esplorare. La scuola al centro dell'avventura.</strong></p>
   <p>Un gioco educativo illustrato in italiano per bambini di 6–8 anni, realizzato con Unity.</p>
   <p>
@@ -10,7 +10,7 @@
     <img alt="Italiano" src="https://img.shields.io/badge/lingua-italiano-639D9C" />
     <a href="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml"><img alt="Controlli del repository" src="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml/badge.svg?branch=main" /></a>
   </p>
-  <p><a href="#primi-passi">Primi passi</a> · <a href="#nel-gioco">Il gioco</a> · <a href="#struttura-del-repository">Struttura del repository</a> · <a href="docs/ARCHITECTURE.md">Architettura</a> · <a href="CONTRIBUTING.md">Come contribuire</a></p>
+  <p><a href="https://antocanza.github.io/mr-rabbit/">Sito del gioco</a> · <a href="#primi-passi">Primi passi</a> · <a href="#nel-gioco">Il gioco</a> · <a href="#struttura-del-repository">Struttura del repository</a> · <a href="docs/ARCHITECTURE.md">Architettura</a> · <a href="CONTRIBUTING.md">Come contribuire</a></p>
 </div>
 
 ![Mr Rabbit in casa, con la cucina, la scala e la parete delle medaglie](docs/images/home.png)
@@ -155,6 +155,7 @@ I contributi devono mantenere centrale l'apprendimento scolastico, preservare i 
 | [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md) | Disegni, illustrazioni generate, narrazione offline e materiali di terzi |
 | [Verifiche](docs/VERIFICATION.md) | Controlli del repository, prove delle funzionalità, tutela dei salvataggi e requisiti di rilascio |
 | [Cronologia dello sviluppo](docs/DEVELOPMENT_HISTORY.md) | Note di implementazione conservate ed evidenze dei rilasci precedenti |
+| [Sito pubblico e indicizzazione](docs/SEARCH_INDEXING.md) | GitHub Pages, metadati, mappa del sito e configurazione di Google Search Console |
 
 ## Pubblicazione su Google Play
 
