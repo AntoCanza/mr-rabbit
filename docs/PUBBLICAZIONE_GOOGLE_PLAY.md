@@ -159,7 +159,7 @@ verifica su dispositivo fisico. Seguire [AGENTS.md](../AGENTS.md) e
 
 ## Passaggi residui
 
-1. Attendere i controlli preliminari e la revisione Google del test chiuso Alpha, rispondendo agli eventuali rilievi effettivi della console.
+1. Attendere l'esito della revisione Google del test chiuso Alpha, rispondendo agli eventuali rilievi effettivi della console.
 2. Reclutare tester reali, aggiungerli alla mailing list o al gruppo autorizzato e farli aderire con il proprio account Google. Al momento non è configurato alcun elenco di tester.
 3. Raccogliere feedback d'uso e mantenere almeno 12 tester iscritti continuativamente per 14 giorni. La prova eseguita dal solo titolare non sostituisce questo requisito.
 4. Richiedere l'accesso alla produzione quando la console conferma i requisiti e presentare la successiva versione pubblica alla revisione.
@@ -189,6 +189,6 @@ annunci di reclutamento.
 - Creato il test chiuso **Alpha**, con release **0.10.1 (18) - Test chiuso** e disponibilità nei 178 paesi/regioni proposti dalla console. Disattivata l'adesione automatica a Google Play Games on PC: questa preparazione non certifica una versione PC.
 - L'unico errore iniziale di convalida della release era l'assenza dei paesi; risolto impostando la disponibilità del canale. Il controllo preliminare ha poi richiesto la dichiarazione ID pubblicità, completata con «No» sulla base del manifesto e degli SDK presenti.
 - Restano avvisi non bloccanti per assenza di tester, file di deoffuscamento R8/ProGuard e simboli nativi. Non sono stati generati nuovi pacchetti per eliminare avvisi facoltativi.
-- Inviate **14 modifiche per la revisione**. La console conferma **«Modifiche in fase di revisione»**, con controlli rapidi ancora in corso e successivo inoltro alla revisione al loro termine. Nessun tester risulta iscritto e nessuna disponibilità pubblica è stata confermata. Non è stato creato un rilascio di produzione.
+- Inviate **14 modifiche per la revisione**. Dopo la coda dei controlli rapidi, il riscontro finale della console conferma **«Modifiche in fase di revisione»** e «Le modifiche sono ora in fase di revisione». Nessun tester risulta iscritto e nessuna disponibilità pubblica è stata confermata. Non è stato creato un rilascio di produzione.
 
 Evidenze locali del ricontrollo: `Captures/GooglePlay-2026-10-26`.

@@ -159,7 +159,7 @@ I contributi devono mantenere centrale l'apprendimento scolastico, preservare i 
 
 ## Pubblicazione su Google Play
 
-La pubblicazione è prevista come gioco **gratuito, senza pubblicità né acquisti in-app**, con nome sviluppatore **SofiaAntonio Games** e contatto pubblico **antoniocanza@gmail.com**. Il 26 ottobre 2026 l'app è stata creata in Play Console e la scheda italiana, le dichiarazioni e la versione 0.10.1 sono state inviate per la revisione del **test chiuso Alpha**. La console mostra «Modifiche in fase di revisione», con i controlli automatici preliminari ancora in corso. Il gioco non è ancora disponibile pubblicamente: l'accesso alla produzione richiede un test chiuso con almeno 12 tester iscritti continuativamente per 14 giorni e la successiva approvazione di Google. Non risultano ancora tester iscritti.
+La pubblicazione è prevista come gioco **gratuito, senza pubblicità né acquisti in-app**, con nome sviluppatore **SofiaAntonio Games** e contatto pubblico **antoniocanza@gmail.com**. Il 26 ottobre 2026 l'app è stata creata in Play Console e la scheda italiana, le dichiarazioni e la versione 0.10.1 sono state inviate per la revisione del **test chiuso Alpha**. La console mostra «Modifiche in fase di revisione». Il gioco non è ancora disponibile pubblicamente: l'accesso alla produzione richiede un test chiuso con almeno 12 tester iscritti continuativamente per 14 giorni e la successiva approvazione di Google. Non risultano ancora tester iscritti.
 
 La versione 0.10.1 aggiunge l'informativa privacy offline, accessibile da **Per i genitori · Privacy** nella scelta del personaggio. Il manifesto Android rimuove i permessi di rete e disabilita il backup dei salvataggi, che restano sul dispositivo.
 
