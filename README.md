@@ -8,6 +8,7 @@
     <a href="ProjectSettings/ProjectSettings.asset"><img alt="Versione 0.10.1" src="https://img.shields.io/badge/versione-0.10.1-D99A45" /></a>
     <img alt="Tablet Android" src="https://img.shields.io/badge/Android-tablet-87A878?logo=android&amp;logoColor=white" />
     <img alt="Italiano" src="https://img.shields.io/badge/lingua-italiano-639D9C" />
+    <a href="LICENSE"><img alt="Licenza MIT" src="https://img.shields.io/badge/licenza-MIT-blue" /></a>
     <a href="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml"><img alt="Controlli del repository" src="https://github.com/AntoCanza/mr-rabbit/actions/workflows/repository-checks.yml/badge.svg?branch=main" /></a>
   </p>
   <p><a href="https://antocanza.github.io/mr-rabbit/">Sito del gioco</a> · <a href="#primi-passi">Primi passi</a> · <a href="#nel-gioco">Il gioco</a> · <a href="#struttura-del-repository">Struttura del repository</a> · <a href="docs/ARCHITECTURE.md">Architettura</a> · <a href="CONTRIBUTING.md">Come contribuire</a></p>
@@ -156,6 +157,7 @@ I contributi devono mantenere centrale l'apprendimento scolastico, preservare i 
 | [Verifiche](docs/VERIFICATION.md) | Controlli del repository, prove delle funzionalità, tutela dei salvataggi e requisiti di rilascio |
 | [Cronologia dello sviluppo](docs/DEVELOPMENT_HISTORY.md) | Note di implementazione conservate ed evidenze dei rilasci precedenti |
 | [Sito pubblico e indicizzazione](docs/SEARCH_INDEXING.md) | GitHub Pages, metadati, mappa del sito e configurazione di Google Search Console |
+| [Licenza MIT](LICENSE) | Uso, modifica e ridistribuzione dei materiali originali, anche commerciale; conservazione di copyright e licenza |
 
 ## Pubblicazione su Google Play
 
@@ -169,4 +171,8 @@ Consultare la [preparazione della pubblicazione](docs/PUBBLICAZIONE_GOOGLE_PLAY.
 
 Mr Rabbit nasce da disegni originali, trasformati in risorse illustrate per il gioco; i prompt sorgente sono conservati in `ArtSources`. La narrazione italiana viene sintetizzata durante lo sviluppo e inclusa per l'ascolto offline. Pacchetti Unity, risorse TextMesh Pro, caratteri tipografici e altri materiali di terzi conservano le rispettive licenze e note.
 
-Non è stata scelta una licenza generale di riutilizzo del progetto. La disponibilità pubblica non concede automaticamente una nuova licenza su codice originale, disegni, illustrazioni, personaggi o narrazione. Consultare [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md) per provenienza e note conservate.
+Il progetto è open source con [licenza MIT](LICENSE), identificatore SPDX `MIT`. La licenza copre il codice, gli strumenti, la documentazione e i contenuti originali del progetto, compresi disegni, illustrazioni, personaggi e narrazione, per i diritti detenuti dai rispettivi titolari e salvo le condizioni dei materiali di terzi indicate nella [guida alle risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md).
+
+È consentito usare, modificare e ridistribuire questi materiali, anche per scopi commerciali, conservando l'avviso di copyright e il testo della licenza. Le versioni derivate possono adottare termini diversi e non devono necessariamente pubblicare il proprio codice sorgente. Il progetto viene fornito senza garanzie.
+
+La licenza MIT del progetto non sostituisce le licenze di Unity, dei pacchetti, dei caratteri e delle altre risorse di terzi, né modifica le condizioni dei servizi usati per generare l'audio.

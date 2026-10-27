@@ -31,4 +31,6 @@ Eseguire la regressione completa delle funzionalità prima di creare il pacchett
 
 ## Licenze
 
-Non è stata scelta una licenza generale di riutilizzo. Non sostituire le note esistenti e non introdurre nuove risorse di terzi senza registrarne origine e condizioni applicabili. Consultare [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md).
+I contributi originali al progetto sono distribuiti con [licenza MIT](LICENSE), come il resto del progetto. Inviando un contributo, si accetta di renderlo disponibile secondo questi termini e si conferma di avere i diritti necessari per farlo.
+
+Conservare il testo della licenza e gli avvisi di copyright quando si ridistribuisce il progetto. Non sostituire le note esistenti e non introdurre nuove risorse di terzi senza registrarne origine e condizioni applicabili. Consultare [Risorse grafiche e audio](docs/ASSETS_AND_AUDIO.md).

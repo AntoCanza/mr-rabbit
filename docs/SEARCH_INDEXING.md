@@ -9,6 +9,7 @@ Il repository GitHub rimane il riferimento per codice e documentazione tecnica. 
 - Titolo, descrizione e contenuti in italiano, un solo titolo principale e collegamenti HTML navigabili.
 - Indirizzo canonico HTTPS, URL Open Graph coerente e anteprime con immagini locali.
 - Dati strutturati WebSite, WebPage, VideoGame e SoftwareApplication, senza recensioni, prezzi, collegamenti allo store o disponibilità inventati.
+- FAQ sul riutilizzo open source, collegamento alla licenza MIT nel piè di pagina e proprietà `license` nei dati strutturati del gioco, tutti riferiti al [testo canonico della licenza](../LICENSE) nel repository.
 - [Mappa del sito](sitemap.xml) con la pagina principale e l'[informativa privacy](privacy/). Le date di modifica sono omesse per non segnalare aggiornamenti inesistenti.
 - Pagina di errore con `noindex`; GitHub Pages restituisce HTTP 404 per i percorsi inesistenti.
 - Impaginazione adattabile a telefoni e tablet, dimensioni delle immagini dichiarate e copie WebP leggere delle schermate esistenti.
@@ -31,6 +32,8 @@ Un file `/mr-rabbit/robots.txt` non controllerebbe la scansione: i robot leggono
 Google decide se e quando indicizzare una pagina idonea. La mappa e i metadati non garantiscono indicizzazione o posizione nei risultati. L'idoneità ai risultati avanzati è distinta dall'indicizzazione generale; il gioco non ha ancora un'offerta pubblica o recensioni.
 
 ## Manutenzione
+
+Mantenere coerenti la FAQ open source, il collegamento alla licenza nel piè di pagina e la proprietà `license` dei dati strutturati con [LICENSE](../LICENSE), [README](../README.md#crediti-e-licenze) e [Risorse grafiche e audio](ASSETS_AND_AUDIO.md#contenuti-di-terzi-e-licenze). La concessione MIT riguarda i materiali originali del progetto; conservare le condizioni dei componenti di terzi e della generazione vocale.
 
 Conservare l'italiano e la distinzione tra obiettivi educativi e copertura attuale: competenze selezionate di italiano e matematica, con la scuola al centro. Non dichiarare la copertura dell'intero programma né la disponibilità su Google Play prima della conferma. Se cambia l'indirizzo del sito, aggiornare insieme indirizzi canonici, mappa, dati strutturati, anteprime e sito nella sezione About. Collegare ogni nuova pagina dalle pagine esistenti e aggiungere soltanto i suoi indirizzi canonici alla mappa.
 
